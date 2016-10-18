@@ -23,7 +23,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 ## Lab 0	- Step by Step Lab Instructions
 
-### 0.0a - Install Node.js on Windows
+#### 0.1a - Install Node.js on Windows
 
 1. If you don't have node already installed on your machine, then please proceed.  Otherwise, move on to section 1.1  
 
@@ -89,7 +89,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. You are now ready to move on to section 0.1 below.
 
-### 0.0b - Install Node.js on Linux
+#### 0.1b - Install Node.js on Linux
 
 1. Install the essentials to run node.js `sudo apt-get install build-essential libssl-dev curl git-core`
 
@@ -120,7 +120,7 @@ For this lab, you will be starting with your local image and installing node.js 
 7. Install API Connect by issuing this command `npm install -g apiconnect --no-optional --ignore-scripts` it will take several minutes to complete.
 8. Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter. You are now ready to move on to section 1.1 below.
 
-### 0.0c - Install Node.js on Mac
+#### 0.1c - Install Node.js on Mac
 
 1. Check to see if node is already installed.
 
@@ -207,7 +207,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter.
 
-## 0.1 - Create your Bluemix account
+### 0.2 - Create your Bluemix account
 
 1. Open a browser and visit http://www.bluemix.net
 
@@ -251,7 +251,7 @@ For this lab, you will be starting with your local image and installing node.js 
  	
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-complete.png)
 
-## 0.1a - Enable the API Connect Service on your Bluemix Account
+#### 0.2a - Enable the API Connect Service on your Bluemix Account
 
 1. The next step is to enable the API Connect service on your Bluemix account.  To start the process, click on the `CATALOG` tab in the upper right hand side of the screen
 
@@ -293,7 +293,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/34.png)
 
-## Lab 0.2 Create your Developer Portal Instance for your API Connect Catalog
+### Lab 0.3 Create your Developer Portal Instance for your API Connect Catalog
 
 1. Open a new tab in your web browser by clicking on the new tab `+` button.
 

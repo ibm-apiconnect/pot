@@ -23,7 +23,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 ## Lab 0	- Step by Step Lab Instructions
 
-#### 0.1a - Install Node.js on Windows
+### 0.1 - Install Node.js
+
+#### 0.1a - Windows
 
 1. If you don't have node already installed on your machine, then please proceed.  Otherwise, move on to section 1.1  
 
@@ -89,7 +91,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. You are now ready to move on to section 0.1 below.
 
-#### 0.1b - Install Node.js on Linux
+#### 0.1b - Linux
 
 1. Install the essentials to run node.js `sudo apt-get install build-essential libssl-dev curl git-core`
 
@@ -120,7 +122,7 @@ For this lab, you will be starting with your local image and installing node.js 
 7. Install API Connect by issuing this command `npm install -g apiconnect --no-optional --ignore-scripts` it will take several minutes to complete.
 8. Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter. You are now ready to move on to section 1.1 below.
 
-#### 0.1c - Install Node.js on Mac
+#### 0.1c - Mac OS
 
 1. Check to see if node is already installed.
 

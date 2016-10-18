@@ -1,11 +1,12 @@
-# Lab 6 - Working with API Products
-
-API's published by API Connect are bundled into an object called a **Product**. The Product combines one or more API's with one or more Plans.
-
-A **Plan** is effectively a contract between the API Provider and API Consumer which specifies the allowed rate of API calls over a given period of time.
-
 ---
-# Lab 6 - Objective
+title: Lab 6 - Working with API Products
+toc: true
+sidebar: labs_sidebar
+permalink: /lab6.html
+summary: API's published by API Connect are bundled into an object called a **Product**. The Product combines one or more API's with one or more Plans.\nA **Plan** is effectively a contract between the API Provider and API Consumer which specifies the allowed rate of API calls over a given period of time.
+---
+
+## Lab 6 - Objective
 
 In the following lab, you will learn:
 
@@ -14,17 +15,15 @@ In the following lab, you will learn:
 + How to create a Plan
 + How to publish a Product
 
----
-# Lab 6	- Case Study Used in this Tutorial
+## Lab 6	- Case Study Used in this Tutorial
 
 Your work as an Application Developer / API Designer is now complete. It's time to switch roles and become an API Product Manager. The role of the API Product Manager is to take the developed assets and bundle them together using a go-to-market strategy.
 
 In the case of **ThinkIBM**, you will publish all of our API's together as a single product offering to API Consumers. Additionally, you will create two plans which have different levels of access to your APIs.
 
----
-# Lab 6	- Step by Step Lab Instructions
+## Lab 6	- Step by Step Lab Instructions
 
-## 6.1 - Creating an API Product
+### 6.1 - Creating an API Product
 
 1. If the API Designer screen has not already been launched, open a terminal and start the designer by issuing the following commands:
 
@@ -109,7 +108,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/save-icon.png)
 
-## 6.2 - Publishing the API Product
+### 6.2 - Publishing the API Product
 
 1. Click the `Publish` icon.
 
@@ -139,7 +138,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. In the `Terminal Emulator`, use the `control+c` keyboard command to quit the API Designer process.
 
-# Lab 6 - Conclusion
+## Lab 6 - Conclusion
 
 **Congratulations!** You have completed Lab 6.
 
@@ -148,7 +147,7 @@ In this lab, you learned:
 + About API Products
 + How to publish an API Product
 
-Proceed to [Lab 7 - Consumer Experience](../Lab%207%20-%20Consumer%20Experience)
+Proceed to [Lab 7 - Consumer Experience](lab7.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/common/info.png "Information"

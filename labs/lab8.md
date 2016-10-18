@@ -1,11 +1,12 @@
-# Lab 8	- Analytics in API Connect
-
-In this lab, you will gain a high level understanding of how analytics are used to visualize the information captured by the gateway node. You can filter, sort and aggregate your API event data; then present the results within correlated charts, tables and maps to help you manage service levels, set quotas, establish controls, set up security policies, manage communities and analyze trends.
-
-API Analytics is built on the Kibana V4.3 open source analytics and visualization platform, which is designed to work with the Elastic Search real-time distributed search and analytics engine.
-
 ---
-# Lab 8 - Objective
+title: Lab 8 - Analytics in API Connect
+toc: true
+sidebar: labs_sidebar
+permalink: /lab8.html
+summary: In this lab, you will gain a high level understanding of how analytics are used to visualize the information captured by the gateway node. You can filter, sort and aggregate your API event data; then present the results within correlated charts, tables and maps to help you manage service levels, set quotas, establish controls, set up security policies, manage communities and analyze trends.\nAPI Analytics is built on the Kibana V4.3 open source analytics and visualization platform, which is designed to work with the Elastic Search real-time distributed search and analytics engine.
+---
+
+## Lab 8 - Objective
  
 In this lab, you will learn:
 
@@ -14,15 +15,13 @@ In this lab, you will learn:
 + How to add visualizations to a dashboard 
 + How to customize and arrange visualizations in the dashboard
 
----
-# Lab 8	- Case Study Used in this Tutorial
+## Lab 8	- Case Study Used in this Tutorial
 
 In this tutorial, you will simulate a good amount of traffic passing through the API Connect platform by executing a script that will invoke a series of `curl` commands that will hit a dummy API. Upon that script finishing, you will go into the API Manager and get some hands on experience with customizing a dashboard and viewing the analytics for traffic run on the system.
 
----
-# Lab 8	- Step by Step Lab Instructions
+## Lab 8	- Step by Step Lab Instructions
 
-# 8.1	- Stage the API Calls to Populate the Analytics Data in API Connect
+## 8.1	- Stage the API Calls to Populate the Analytics Data in API Connect
 
 1. If not already open, launch the `Firefox Web Browser` from the favorites menu.
 
@@ -84,8 +83,7 @@ In this tutorial, you will simulate a good amount of traffic passing through the
 
 1. Return back to the analytics view and notice how the data is refreshed automatically.
 
----
-# Lab 8 - Completion
+## Lab 8 - Completion
 
 **Congratulations!** You have completed all of the labs!
 

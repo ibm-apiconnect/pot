@@ -1,11 +1,12 @@
-# Lab 7 - Consumer Experience
-
-In this lab, you will learn the consumer experience for APIs that have been exposed to your developer organization.
-
-Using the developer portal, you will first login in as the admin user to load a Think IBM custom theme. You will then login as a developer to register your application and then subscribe to an API and test that API.
-
 ---
-# Lab 7 - Objective
+title: Lab 7 - Consumer Experience
+toc: true
+sidebar: labs_sidebar
+permalink: /lab7.html
+summary: In this lab, you will learn the consumer experience for APIs that have been exposed to your developer organization.\nUsing the developer portal, you will first login in as the admin user to load a Think IBM custom theme. You will then login as a developer to register your application and then subscribe to an API and test that API.
+---
+
+## Lab 7 - Objective
 
 In the this lab, you will learn:
 
@@ -15,15 +16,13 @@ In the this lab, you will learn:
 + How to test an API from the developer portal.
 + How to consume an API from a sample test application.
 
----
-# Lab 7 - Case Study Used in this Tutorial
+## Lab 7 - Case Study Used in this Tutorial
 
 In this tutorial, **ThinkIBM** wishes to brand their developer portal to their own look and feel. They also want to provide a self-service experience to application developers who are potential consumers of their APIs. 
 
----
-# Lab 7	- Step by Step Lab Instructions
+## Lab 7	- Step by Step Lab Instructions
 
-## 7.1 - Customize the Developer Portal
+### 7.1 - Customize the Developer Portal
 
 In this section, you will leverage a custom prebuilt theme. A theme file is packaged as a zip file that contains a set of predefined files. The theme zip file is what is loaded into the developer portal. The best method for creating a custom theme is to obtain an existing custom theme, rename it and change the files as explained in the table below to meet your customization needs.
 
@@ -38,7 +37,7 @@ In this section, you will leverage a custom prebuilt theme. A theme file is pack
 |`favicon.ico`|In web development, you can provide a small logo for your site that appears near the address bar and in the bookmarks folder in a visitor's browser. This logo is called the favicon. Drupal provides a default one, which is the recognizable water drop logo. Using the Drupal logo as the favicon is fine but if you really want to make your site stand out, you should provide your own. Favicon files are in the .ico format and are extremely small in dimensions. The default Drupal favicon is 32 pixels high by 32 pixels wide, many browsers use a 16 x 16 pixel version that can be included in the same file. This is because the favicon is only an icon that shows up in the address bar and favorites (bookmarks) list and typically there is not a lot of room there. Any favicon that you create should be just as small.|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 |`logo.png`|The default logo that appears at the top left-hand side of the developer portal page.|
 
-### 7.1.1 - Install and Configure a Custom Theme
+#### 7.1.1 - Install and Configure a Custom Theme
 
 Now that we have explained the contents of a custom theme file, it is time to load the custom theme.
 
@@ -80,7 +79,7 @@ Now that we have explained the contents of a custom theme file, it is time to lo
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/CloseThemeSettings.png)
 
-### 7.1.2 - Customize the Welcome Banner
+#### 7.1.2 - Customize the Welcome Banner
 
 Now we want to change the default Welcome banner to use our custom Welcome banner image. 
 
@@ -110,7 +109,7 @@ Now we want to change the default Welcome banner to use our custom Welcome banne
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/close-content-block.png)
 
-### 7.1.3 - Change the Region Settings for the Content Blocks
+#### 7.1.3 - Change the Region Settings for the Content Blocks
 
 The region settings for some of the content blocks were reset when we loaded the new theme, so we will set these back.
 
@@ -140,7 +139,7 @@ The region settings for some of the content blocks were reset when we loaded the
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalAdminLogout.png)
 
-## 7.2 - Register an Application as a Developer 
+### 7.2 - Register an Application as a Developer 
 
 In this section, you will log into the portal as a user in the application developer role, then register an application that will be used to consume APIs. If you have not created your developer account from Lab 1, you will need to use the `Create an account` link to do so now.
 
@@ -164,7 +163,7 @@ In this section, you will log into the portal as a user in the application devel
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/SaveClientIDandSecret.png)
 
-## 7.3 - Subscribe to a Plan for the ThinkIBM APIs 
+### 7.3 - Subscribe to a Plan for the ThinkIBM APIs 
 In this section, we will subscribe to a plan for the ThinkIBM APIs using the ThinkIBM Consumer application.
 
 1. Click the `API Products` link.
@@ -189,7 +188,7 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 
 1. The `Think IBM Web Consumer` Web application is now subscribed to the Silver plan for the `think` API product.
 
-## 7.4 - Test `think` Product APIs from the Developer Portal
+### 7.4 - Test `think` Product APIs from the Developer Portal
 
 In this section, we will use the developer portal to test one of the think product APIs. This is useful for application developers to **_try out_** the APIs before their application is fully developed or to simply see the expected response based on inputs they provide the API. Later in this lab, you will run an actual application that is already developed and uses these same APIs. We will test the `logistics` API from the developer portal.
 
@@ -205,7 +204,7 @@ In this section, we will use the developer portal to test one of the think produ
   
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalTryShippingOperationResultsSuccess.png)
 
-## 7.5 - Test the APIs from the Think IBM Web Consumer Application
+### 7.5 - Test the APIs from the Think IBM Web Consumer Application
 
 Now that you have browsed the API Portal and registered / tested the API's that **ThinkIBM** is providing, it's time to test them out from a real application. We have provided a sample consumer application which will be used to interract with the **ThinkIBM** API's.
 
@@ -259,11 +258,11 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 1. Repeat the steps on a few of products to drive data into the analytics database.
 
-# Lab 7 - Completion
+## Lab 7 - Completion
 
 **Congratulations!** You have completed Lab 7!
 
-Proceed to [Lab 8 - Analytics in API Connect](../Lab%208%20-%20Analytics%20in%20API%20Connect)
+Proceed to [Lab 8 - Analytics in API Connect](lab8.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"

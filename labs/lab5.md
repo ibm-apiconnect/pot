@@ -1,9 +1,12 @@
-# Lab 5 - Advanced API Assembly
-
-In this lab, you will learn how to create advanced API assemblies. Using the graphical design tools, you will create a new API called `financing` which will expose an existing SOAP service as a RESTful API. Additionally, you will create another API called `logistics` which connects to existing public services and uses the assembly tools to map responses into a desired format.
-
 ---
-# Lab 5 - Objective
+title: Lab 5 - Advanced API Assembly
+toc: true
+sidebar: labs_sidebar
+permalink: /lab5.html
+summary: In this lab, you will learn how to create advanced API assemblies. Using the graphical design tools, you will create a new API called `financing` which will expose an existing SOAP service as a RESTful API. Additionally, you will create another API called `logistics` which connects to existing public services and uses the assembly tools to map responses into a desired format.
+---
+
+## Lab 5 - Objective
 
 In the following lab, you will learn:
 
@@ -13,15 +16,13 @@ In the following lab, you will learn:
 + How to map data retrieved from multiple API calls into an aggregate response
 + How to use gatewayscript directly within an API assembly
 
----
-# Lab 5	- Case Study Used in this Tutorial
+## Lab 5	- Case Study Used in this Tutorial
 
 In this tutorial, you will expand the product offerings for **ThinkIBM**. In addition to the Inventory API, **ThinkIBM** wishes to provide API's that offer financing and shipping logistics to consumer applications. Your goal is to utilize existing enterprise and public assets to create these API offerings.
 
----
-# Lab 5	- Step by Step Lab Instructions
+## Lab 5	- Step by Step Lab Instructions
 
-## 5.1 - Create the Financing API (REST to SOAP)
+### 5.1 - Create the Financing API (REST to SOAP)
 
 1. If the API Designer screen has not already been launched, open a terminal and start the designer by issuing the following commands:
 
@@ -34,7 +35,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. Otherwise, click the `All APIs` link to return to the main Designer screen.
 
-### 5.1.1 - Create the API Definition
+#### 5.1.1 - Create the API Definition
 
 1. Click on the `+ Add` button and select `API`.
 
@@ -176,7 +177,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. You have completed the creation of the new API definition. The path and model data will be presented to our consumers on the developer portal once it's published.
 
-### 5.1.2 - Build the Financing API Assembly
+#### 5.1.2 - Build the Financing API Assembly
 
 1. Click on the `Assemble` tab to access the assembly editor.
 
@@ -298,13 +299,13 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab5/save-icon.png)
 
-## 5.2 - Add Logistics API (Advanced Assembly)
+### 5.2 - Add Logistics API (Advanced Assembly)
 
 In this lab section, we will be adding a new API called `logistics` which will provide helper services around calculating shipping rates and locating nearby stores.
  
 Rather than require you to build the entire API from scratch again, you will see how you can use the source editor to paste in an API definition that has already been started for you.  
 
-### 5.2.1 - Import Predefined API Definition
+#### 5.2.1 - Import Predefined API Definition
 
 1. Click on the `All APIs` link to return to the main API Designer screen.
 
@@ -322,7 +323,7 @@ Rather than require you to build the entire API from scratch again, you will see
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab5/logistics_api_after_import_refresh_on_browser.png)
 
-### 5.2.2 - Create the Logistics API Assembly
+#### 5.2.2 - Create the Logistics API Assembly
 
 1. Switch to the `Assemble` tab and click the `Create assembly` button.
 
@@ -346,7 +347,7 @@ Rather than require you to build the entire API from scratch again, you will see
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab5/logistics-twopipelines.png)
 
-#### 5.2.2.1 - Configure the `shipping.calc` Case:
+##### 5.2.2.1 - Configure the `shipping.calc` Case:
 
 This operation will end up invoking two separate back-end services to acquire shipping rates for the respective companies, then utilize a map action to combine the two separate responses back into a single, consolidated message for our consumers.
 
@@ -489,7 +490,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab5/save-icon.png)
 
-#### 5.2.2.2 - Configure the `get.stores` Case:
+##### 5.2.2.2 - Configure the `get.stores` Case:
 
 This operation will call out to the Google Geocode API to obtain location information about the provided zip code, then utilize a simple gatewayscript to modify the response and provide a formatted Google Maps link.
 
@@ -548,7 +549,7 @@ This operation will call out to the Google Geocode API to obtain location inform
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab5/save-icon.png)
 
-# Lab 5 - Validation
+## Lab 5 - Validation
 
 We will validate the financing and logistics APIs created above against with our lab 5 finished goods by instructor.  As each created API is saved as an Open API definition (a.k.a Swagger document), we can use Diffchecker online tool `https://www.diffchecker.com/` to compare any mistake or missing piece in APIs.
 
@@ -568,11 +569,11 @@ We will validate the financing and logistics APIs created above against with our
 	
 1. Repeat above step for logistics API comparing with the finished goods from `https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml`	
 
-# Lab 5 - Conclusion
+## Lab 5 - Conclusion
 
 **Congratulations!** You have successfully configured two new API's with advanced assemblies. In the next lab, you will bundle the API's into a Product and publish it to the consumer portal.
 
-Proceed to [Lab 6 - Working with API Products](../Lab%206%20-%20Working%20with%20API%20Products)
+Proceed to [Lab 6 - Working with API Products](lab6.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/common/info.png "Information"

@@ -92,11 +92,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Next, click on the `start` button located on the bottom panel of the API Designer to launch the `notes` application.  On a Windows environment, you might see 2 node windows pop up on your screen.  Minimize, but do not close these windows.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/6.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/6.png)
 	
 1. Once start completes, you should see a screen similar to this:
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/7.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/7.png)
 	
 1. Notice that once the application is up and running, stop and restart buttons will appear on the bottom side of the screen:
 	
@@ -110,11 +110,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Click the `Explore` button to switch to the API Explorer view.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/8.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/8.png)
 	
 	You will see all the exposed service paths displayed.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/exploreScreen.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/exploreScreen.png)
 
 1. Now we're going to test the services using the GUI presented on the explore screen. You'll notice that on the left several REST services are defined for us. In particular, take a look `POST /notes` and `GET /notes`.
 
@@ -126,9 +126,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Press the `Generate` link to generate some sample data.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/generate-data.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/generate-data.png)
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/generate.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/generate.png)
 	
 	Your data will look different, but you're ready to test the service.
 	
@@ -136,19 +136,19 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 	In the results, you should see a `Code: 200 OK` which indicates that a new `note` was created. If you received a different response, see the troubleshooting steps below.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/POST-results.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/POST-results.png)
 	
 	> ![][troubleshooting]
 	>
 	> You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/CORS-support-error.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/CORS-support-error.png)
 	
 	> ![][troubleshooting]
 	>
 	> If you see a 500 error like the one below, make sure you press the `Generate` button before you press the `Call operation` button again. Otherwise, you're trying to create a duplicate note.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/duplicateRecordError.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/duplicateRecordError.png)
 
 1. Once you have created one note, go ahead and create another one or two.
 
@@ -158,11 +158,11 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 1. Finally, let's test the `GET /notes` service. We should have two, three, or more notes created at this point. In the left hand column click the `GET /notes` link.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/get-notes.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/get-notes.png)
 
 1. Scroll down to the `Call operation` button and press it. Then scroll down to the results.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/GET-results.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/GET-results.png)
 		
 	You should see all the notes that you generated in the result set.
 		
@@ -174,33 +174,33 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Click on the `Stop` button to stop the application.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/9.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/9.png)
 
 ### 1.4	- Publishing the API to the Developer Portal
 
 1. Click the `Publish` icon.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/publishButton.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/publishButton.png)
 
 1. Select `Add and Manage Targets` from the menu.
 
 1. Select `Add IBM Bluemix target`.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/15.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/15.png)
 
 1. Provide connection information to sign into the IBM API Connect Bluemix service then click the `Sign in` button: **Note you should be logged in already to Bluemix, so you should not need to reauthenticate.  It will automatically populate your information and have the `Sandbox` catalog already selected, so at this point you only need to click `Next`.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/10.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/10.png)
 
 1. On the "Select an App" screen, choose `None` application and click the `Save` button.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/11.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/11.png)
 
 	Our offline toolkit environment is now configured to speak to API Connect on Bluemix.
 
 1. Click `Publish` button once more and select our target:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/12.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/12.png)
 
 1. Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could choose specific ones to publish.
 	
@@ -208,13 +208,13 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 	Click the `Publish` button:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/publish-api.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/publish-api.png)
 
 1. Click the `Publish` button to make the API available in the Developer Portal.
 
 1. Wait a moment while the Product is published, a Success message will appear letting you know the step is complete:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/publish-success.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/publish-success.png)
 
 ### 1.5	- Browsing the API in the Developer Portal
 
@@ -230,7 +230,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Click on `Create an account` at the top right
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/35.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/35.png)
 	
 1. Enter in your account information for the developer account.  This must be a different email address than your bluemix account.  Click `Create New Account` once all the requisite data in the form has been filled out.
 
@@ -238,7 +238,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Once you are authenticated in, you can then Browse the `API Products` and see your `notes` product that is now published to your environment.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/26.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/26.png)
 
 1. At this point we will stop, as we will be building additional apis and services that will be published to the portal.
 

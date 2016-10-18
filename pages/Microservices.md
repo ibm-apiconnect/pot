@@ -4,7 +4,7 @@ toc: false
 keywords:
 tags:
 sidebar: gs_sidebar
-permalink: /microservices.html
+permalink: microservices.html
 summary:
 ---
 ### Creating a Hello World Micro Service
@@ -27,4 +27,3 @@ summary:
 ### Deploying LoopBack Applications to Bluemix
 
 Link to existing docs.
-  

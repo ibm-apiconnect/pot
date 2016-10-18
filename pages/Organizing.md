@@ -4,7 +4,7 @@ toc: false
 keywords:
 tags:
 sidebar: gs_sidebar
-permalink: /organizing.html
+permalink: organizing.html
 summary:
 ---
 ### Version controlling your API Connect Project
@@ -12,4 +12,3 @@ summary:
 ### Creating your first Product and API Definition
 
 ### Publishing a Product to a Catalog on Bluemix
-  

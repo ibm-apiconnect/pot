@@ -125,7 +125,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
   rouge
 
 BUNDLED WITH

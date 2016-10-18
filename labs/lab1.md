@@ -16,18 +16,15 @@ In the following lab, you will learn:
 + How to test a REST API
 + How to publish an API to the Developer Portal
 
----
-# Lab 1 - Case Study used in this tutorial
+## Lab 1 - Case Study used in this tutorial
 In this tutorial, you will be starting from scratch to set up your development environment on your local machine, and then you will test the components of the toolkit by creating the default Notes LoopBack application. We will look at the created artifacts to get a better understanding of what is created for you. The notes application is a simple RESTful service that holds a set of "notes" in memory. In this lab we may be creating a new RESTful service and API, but in future labs you'll be creating APIs with existing services.
 
----
-# Lab 1	- Before you begin
+## Lab 1	- Before you begin
 For this lab, you will be starting with your local image and installing node.js and the developer toolkit.  After that, if you do not already have a Bluemix account, you will be creating one for you and enabling the API Connect Essentials service on your account. The instructions you will follow will vary by the host operating system you are using. The three host OS's supported by this are `Windows`, `Linux - Intel` and `Linux - Mac`.  Skip to the section for your appropriate operating system.
 
----
-# Lab 1	- Step by Step Lab Instructions
+## Lab 1	- Step by Step Lab Instructions
 
-# 1.2	- Creating a `notes` Application
+# 1.1	- Creating a `notes` Application
 
 1.	We will use the API Connect Developer Toolkit command line interface to create the initial application and explore the created artifacts.
 
@@ -87,7 +84,7 @@ For this lab, you will be starting with your local image and installing node.js 
 >
 > `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
 
-# 1.3	- Launching the `notes` Application
+# 1.2	- Launching the `notes` Application
 
 1. Now that we've explored what is created by the application generator, let's move on to the API Designer. From the command line:
 
@@ -111,7 +108,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	> 
 	> We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
 
-# 1.4	- Testing the `notes` Application
+# 1.3	- Testing the `notes` Application
 
 1. Click the `Explore` button to switch to the API Explorer view.
 
@@ -181,7 +178,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/9.png)
 
-# 1.5	- Publishing the API to the Developer Portal
+# 1.4	- Publishing the API to the Developer Portal
 
 1. Click the `Publish` icon.
 
@@ -221,7 +218,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/publish-success.png)
 
-# 1.6	- Browsing the API in the Developer Portal
+# 1.5	- Browsing the API in the Developer Portal
 
 1. To view the Published API, direct your browser to your developer portal link you set up in the previous lab.
 
@@ -253,7 +250,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. In the terminal, use the `control+c` keyboard command to quit the API Designer program.
 
-# Lab 1 - Conclusion
+## Lab 1 - Conclusion
 
 **Congratulations!** You have developed and published your first API!
 

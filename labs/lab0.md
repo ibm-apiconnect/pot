@@ -53,22 +53,29 @@ For this lab, you will be starting with your local image and installing node.js 
 1. Install Node.js
 	1. Go to this link to install Node `https://nodejs.org/en/download/`
 
-	2. Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
+	1. Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/4.png)
 
-	3. Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
-	4. Before moving on, You will need to update your version of `npm` to version `3.8.10`
-	5. To do so, perform the following steps:
+	1. Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
+	
+	1. Before moving on, You will need to update your version of `npm` to version `3.8.10`
+	
+	1. To do so, perform the following steps:
+	
 	1. Click on `Start` and then in the search window type in `Powershell`.  Right click on `Windows PowerShell` and then select `Run as Administrator`
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/4a.png)
+	  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/4a.png)
 
-	5. Execute these commands in Powershell
+	1. Execute these commands in Powershell
+		
 		1. `Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`
-		2. `npm install -g npm-windows-upgrade`
-		3. `npm-windows-upgrade`
-		4. Select the `3.10.8` version of npm.  This is the recommended version to run with.  Close the Powershell.
+		
+		1. `npm install -g npm-windows-upgrade`
+		
+		1. `npm-windows-upgrade`
+		
+		1. Select the `3.10.8` version of npm.  This is the recommended version to run with.  Close the Powershell.
 
 
 1. Install API Connect on to your machine by starting up a command line window as Administrator and issue this command - `npm install -g apiconnect --no-optional --ignore-scripts`.

@@ -63,8 +63,6 @@ For more information on Remote Hooks please see:
 1. Open up a new tab on your browser, and open the following file via github:
 
   [https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js](https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js)
-
-  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
 	
 1. You have two choices in how to implement this change.  You can either copy and paste in the code from github by simply copying the contents from the github to the clipboard and pasting it to your local `item.js` file.
 
@@ -72,66 +70,64 @@ For more information on Remote Hooks please see:
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2a.png)
 
-```javascript
-
-module.exports = function (Item) {
-
-/* Inject DATE into new REVIEW */
-
-Item.beforeRemote('prototype.__updateById__review', function (ctx, review, next) {
-  var req = ctx.req;
-  req.body.date = Date.now();
-  ctx.args.data = req.body;
-  next();
-});
-
-/* Inject DATE into new REVIEW */
-
-Item.beforeRemote('prototype.__create__reviews', function (ctx, review, next) {
-  var req = ctx.req;
-  req.body.date = Date.now();
-  ctx.args.data = req.body;
-  next();
-});
-
-/* Update ITEM rating after new REVIEW is submitted */
-
-Item.afterRemote('prototype.__create__reviews', function (ctx, remoteMethodOutput, next) {                            // Set up a function to run after a review is created
-  var itemId = remoteMethodOutput.itemId;                                                                             // Get the id of the item that the review was just created for
-
-  console.log("calculating new rating for item: " + itemId);
-
-  var searchQuery = {include: {relation: 'reviews'}};                                                                 // Set up the search query to find all the existing reviews for the item
-
-  Item.findById(itemId, searchQuery, function findItemReviewRatings(err, findResult) {                                // Run the search and save the results to a variable called findResult
-    var reviewArray = findResult.reviews();                                                                           // Store each of the reviews in an array
-    var reviewCount = reviewArray.length;                                                                             // Count the number of reviews
-    var ratingSum = 0;                                                                                                // Set up the baseline review score
-
-    for (var i = 0; i < reviewCount; i++) {                                                                           // Add all the review scores
-      ratingSum += reviewArray[i].rating;
-    }
-
-    var updatedRating = Math.round((ratingSum / reviewCount) * 100) / 100;                                            // Take an average of all the review scores
-
-    console.log("new calculated rating: " + updatedRating);
-
-    findResult.updateAttribute("rating", updatedRating, function (err) {                                              // Update the rating attribute of the item with the newly calculated review score
-      if (!err) {
-        console.log("item rating successfully updated");
-      } else {
-        console.log("error updating rating for item: " + err);
-      }
-    });
-
-    next();
-  });
-
-});
-
-};
-
-```
+	```javascript
+	module.exports = function (Item) {
+	
+		/* Inject DATE into new REVIEW */
+		
+		Item.beforeRemote('prototype.__updateById__review', function (ctx, review, next) {
+		  var req = ctx.req;
+		  req.body.date = Date.now();
+		  ctx.args.data = req.body;
+		  next();
+		});
+		
+		/* Inject DATE into new REVIEW */
+		
+		Item.beforeRemote('prototype.__create__reviews', function (ctx, review, next) {
+		  var req = ctx.req;
+		  req.body.date = Date.now();
+		  ctx.args.data = req.body;
+		  next();
+		});
+		
+		/* Update ITEM rating after new REVIEW is submitted */
+		
+		Item.afterRemote('prototype.__create__reviews', function (ctx, remoteMethodOutput, next) {                            // Set up a function to run after a review is created
+		  var itemId = remoteMethodOutput.itemId;                                                                             // Get the id of the item that the review was just created for
+		
+		  console.log("calculating new rating for item: " + itemId);
+		
+		  var searchQuery = {include: {relation: 'reviews'}};                                                                 // Set up the search query to find all the existing reviews for the item
+		
+		  Item.findById(itemId, searchQuery, function findItemReviewRatings(err, findResult) {                                // Run the search and save the results to a variable called findResult
+		    var reviewArray = findResult.reviews();                                                                           // Store each of the reviews in an array
+		    var reviewCount = reviewArray.length;                                                                             // Count the number of reviews
+		    var ratingSum = 0;                                                                                                // Set up the baseline review score
+		
+		    for (var i = 0; i < reviewCount; i++) {                                                                           // Add all the review scores
+		      ratingSum += reviewArray[i].rating;
+		    }
+		
+		    var updatedRating = Math.round((ratingSum / reviewCount) * 100) / 100;                                            // Take an average of all the review scores
+		
+		    console.log("new calculated rating: " + updatedRating);
+		
+		    findResult.updateAttribute("rating", updatedRating, function (err) {                                              // Update the rating attribute of the item with the newly calculated review score
+		      if (!err) {
+		        console.log("item rating successfully updated");
+		      } else {
+		        console.log("error updating rating for item: " + err);
+		      }
+		    });
+		
+		    next();
+		  });
+		
+		});
+		
+	};
+	```
 
 1. Save the changes to the `item.js`.
 

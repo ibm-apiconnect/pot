@@ -2,7 +2,7 @@
 title: Lab 2	- Create a Loopback Application
 toc: true
 sidebar: labs_sidebar
-permalink: /lab1.html
+permalink: /lab2.html
 summary: In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation.
 At the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
 ---

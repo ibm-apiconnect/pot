@@ -1,9 +1,12 @@
-# Lab 3 - Customize and Deploy the Inventory Application
-
-In this lab, you will add capabilities into the LoopBack application which was created in Lab 2. You will add custom javascript code which will alter the default behavior of the application. Once your edits are complete, you will package the application and publish it to Bluemix as a Cloud Foundry Application where it will be managed and enforced by the API Connect solution.
-
 ---
-# Lab 3 - Objective
+title: Lab 3 - Customize and Deploy the Inventory Application
+toc: true
+sidebar: labs_sidebar
+permalink: /lab3.html
+summary: In this lab, you will add capabilities into the LoopBack application which was created in Lab 2. You will add custom javascript code which will alter the default behavior of the application. Once your edits are complete, you will package the application and publish it to Bluemix as a Cloud Foundry Application where it will be managed and enforced by the API Connect solution.
+---
+
+## Lab 3 - Objective
 
 In the following lab, you will learn:
 
@@ -11,8 +14,7 @@ In the following lab, you will learn:
 + How to create a remote hook
 + How to publish a LoopBack application to Bluemix
 
----
-# Lab 3 - Case Study Used in this Tutorial
+## Lab 3 - Case Study Used in this Tutorial
 
 At this point, you have: created a basic application template, added an `item` data model backed by a datasource, added a `review` data model backed by another data source, added a relationship between the `item` and `review` models.
 
@@ -20,10 +22,9 @@ In this tutorial you will extend the `inventory` application by adding a remote 
 
 Then, you will publish your LoopBack Inventory application to Bluemix where it will run
 
----
-# Lab 3 - Step by Step Lab Instructions
+## Lab 3 - Step by Step Lab Instructions
 
-## Lab 3.1 - Edit the Application Configuration
+### Lab 3.1 - Edit the Application Configuration
 
 Before publishing the API for our application, the configuration file that was generated for you needs to be edited. By default, the generated application uses a base path of `/api`. In the next few steps, you will modify the base path to listen on `/inventory`.
 
@@ -45,9 +46,7 @@ Before publishing the API for our application, the configuration file that was g
 
 1. Save the changes.
 
-
-
-## Lab 3.2 - Create a Remote Hook
+### Lab 3.2 - Create a Remote Hook
 
 Remote hooks are custom javascript code that execute before or after calling an operation on a LoopBack application.
 
@@ -86,8 +85,6 @@ https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
     next();
   });
 
-
-
   /* Inject DATE into new REVIEW */
 
   Item.beforeRemote('prototype.__create__reviews', function (ctx, review, next) {
@@ -96,8 +93,6 @@ https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
     ctx.args.data = req.body;
     next();
   });
-
-
 
   /* Update ITEM rating after new REVIEW is submitted */
 
@@ -139,11 +134,11 @@ https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
 
 1. Save the changes to the `item.js`.
 
-## Lab 3.3 - Publish App to Bluemix
+### Lab 3.3 - Publish App to Bluemix
 
 In this section, you will publish the `inventory` application to Bluemix
 
-### 3.3.1 - Configure the Developer Toolkit to Communicate with API Connect
+#### 3.3.1 - Configure the Developer Toolkit to Communicate with API Connect
 
 1. Return to your `Terminal Emulator` session, or open a new one if you had closed it previously.
 
@@ -179,7 +174,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/select-inventory-app.png)
 
-### 3.3.3 - Publish the Application
+#### 3.3.3 - Publish the Application
 
 1. Click `Publish` button once more and select our target catalog, indicated by the grey highlighting.
 
@@ -223,7 +218,7 @@ In this section, you will publish the `inventory` application to Bluemix
 	> to you. Note that you will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.  This will be used in the next lab.
 	> 
 
-# Lab 3 - Conclusion
+## Lab 3 - Conclusion
 
 In this lab you learned:
 
@@ -231,7 +226,7 @@ In this lab you learned:
 + How to test the remote hook
 + Publish App to Bluemix
 
-Proceed to [Lab 4 - Configure and Secure an API](../Lab%204%20-%20Configure%20and%20Secure%20an%20API)
+Proceed to [Lab 4 - Configure and Secure an API](lab4.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"

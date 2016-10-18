@@ -1,6 +1,6 @@
 ---
 title: Lab 0 - Setup IBM API Connect
-toc: false
+toc: true
 keywords: [setup]
 tags: [setup]
 sidebar: labs_sidebar

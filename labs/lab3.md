@@ -62,10 +62,9 @@ For more information on Remote Hooks please see:
 
 1. Open up a new tab on your browser, and open the following file via github:
 
-`https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js`
+  [](https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js)
 
-![](
-https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
+  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
 	
 1. You have two choices in how to implement this change.  You can either copy and paste in the code from github by simply copying the contents from the github to the clipboard and pasting it to your local `item.js` file.
 

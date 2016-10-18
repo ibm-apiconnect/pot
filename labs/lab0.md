@@ -45,15 +45,15 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 		1. Go to `Control Panel` -> `System` -> `Advanced System Settings`
 
-		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/1.png)
+		![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/1.png)
 
 		1. Click `Environment Variables`.
 
-		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/2.png)
+		![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/2.png)
 
 		1. Click `Edit` and append `;C:\python27` (or wherever you installed python) to the Path variable.
 
-		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/3.png)
+		![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/3.png)
 
 1. Install Node.js
 
@@ -61,7 +61,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	1. Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/4.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4.png)
 
 	1. Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
 	
@@ -71,7 +71,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 	1. Click on `Start` and then in the search window type in `Powershell`.  Right click on `Windows PowerShell` and then select `Run as Administrator`
 	
-	  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/4a.png)
+	  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4a.png)
 
 	1. Execute these commands in Powershell
 		
@@ -151,39 +151,39 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. This will open a dialog informing you that the comannd linde developer tools are required for install. Press the Install button.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-xcode-tools-confirm-install.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
 1. Agree to the license
 
-	![Xcode Tools Confirm License](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-xcode-tools-confirm-license.png)
+	![Xcode Tools Confirm License](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-license.png)
 1. The software install will begin
 
-	![Xcode Tools Installing](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-xcode-tools-progress.png)
+	![Xcode Tools Installing](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-progress.png)
 1. The install is complete when you see the "The software was installed" message.
 
-	![Xcode Tools Install Complete](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-xcode-tools-install-complete.png)
+	![Xcode Tools Install Complete](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-install-complete.png)
 
 1. Next install git. You may already have a version, but if you want to have the latest version you will need to download the install from https://git-scm.com/download/mac
 
 1. Once on the install page the download should start immediately. However if it does not start immediately, click the "click here to download manually" link.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-download.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-download.png)
 
 1. Once the download has completed, you should have a file named similar to git-2.8.1-intel-universal-mavericks.dmg. Double-click to unpack the disk image.
 
 1. Once the disk image is unpacked and open, double-click the git-2.8.1-intel-universal-mavericks.pkg file. Note that if you downloaded a different version the file name will be refelcted accordingly.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-package.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-package.png)
 
 1. You may get a dialog box with a message stating that the file can't be opened because it is from an unidentified developer. Click the OK button. Open your System Preferences and select the Security & Privacy component. In the section called "Allow apps downloaded from:" you will notice a message that states '"git-2.8.1-..ericks.pkg" was blocked from opening because it is not from an identified developer.', press the Open Anyway button. This will open the installer for git.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-unsecure.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-unsecure.png)
 		
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-security.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-security.png)
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-start.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
 1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."		
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-complete.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
 
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 
@@ -213,23 +213,23 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Press the SIGN UP button
  	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup.png)
 
 1. Complete the form and press the CREATE ACCOUNT button
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-account-details.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-account-details.png)
 
 1. Check your email for your next steps.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-confirmation-email.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email.png)
 
 1. Open the email and click the Confirm your account link
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-confirmation-email-detail.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
 
 1. Once confirmed, you will be taken to a page that says Success! To login, click the Log In link
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-success.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-success.png)
 
 1. Enter your email address and press the CONTINUE button
 
@@ -237,19 +237,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-create-org.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-org.png)
 
 1. Next you will be prompted to create a space such as dev, test, prod, etc. You can name it whatever you would like (again notice the recommendations). Then press the CREATE button.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-create-space.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-space.png)
 
 1. Next you will see the Summary page where you can review your entries. Press the I'm Ready button
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-summary.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
 
 2. You're account has been created and configured once you see the following screen.
  	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-bluemix-setup-complete.png)
+	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
 
 ### 0.3 - Enable the API Connect Service on your Bluemix Account
 
@@ -349,6 +349,6 @@ In this lab you learned:
 - Proceed to [Lab 1 - Quick Start](lab1.html) **or**
 - Proceed to [Lab 2 - Create a LoopBack Application](lab2.html)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

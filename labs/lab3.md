@@ -30,7 +30,7 @@ Before publishing the API for our application, the configuration file that was g
 
 1. Using the text editor of choice, then navigate to the `ThinkIBM / inventory` folder. 
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/list-folder.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/list-folder.png)
 
 	> ![][info]
 	> 
@@ -38,11 +38,11 @@ Before publishing the API for our application, the configuration file that was g
 
 1. From the folder tree menu, expand the `server` folder and click on the `config.json` file to view the source.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/open-folder.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/open-folder.png)
 
 1. Edit line 2 of the `config.json` file. Change `/api` to `/inventory`.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/atom-edit-config.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/atom-edit-config.png)
 
 1. Save the changes.
 
@@ -56,7 +56,7 @@ For more information on Remote Hooks please see:
 
 1. In the your text editor, expand the local directory structure for the `common/models` location and open up the `item.js` file for editing.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/atom-item-file1.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/atom-item-file1.png)
 
 1. You are going to update this file to include a new remote hook function which will run *after* a new review is submitted for an item. The function will take an average of all reviews for that item, then update the item rating in the data source.
 
@@ -66,7 +66,7 @@ For more information on Remote Hooks please see:
 
 1. Alternatively, you can copy and paste the contents of the text box below.  Be sure to **Remove** everything in the `item.js` file. Then paste the contents of your clipboard to update the file.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2a.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/2a.png)
 
 	```javascript
 	module.exports = function (Item) {
@@ -151,23 +151,23 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1. Click the `Publish` icon.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/publishButton.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/publishButton.png)
 
 1. Select `Add and Manage Targets` from the menu.
 
 1. Select `Add IBM Bluemix target`.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/15.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/15.png)
 
 1. Provide connection information to sign into the IBM API Connect Bluemix service then click the `Sign in` button: 
 
 1. On the "Select an organization and catalog" screen, choose the `Sandbox` catalog and click the `Next` button.
 
-	![](https://raw.githubusercontent.com/ibm-apiconnect/pot-bluemix-docs/master/img/lab3/10.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/10.png)
 	
 1. Select the `inventory` application, then click `Save`.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/select-inventory-app.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-inventory-app.png)
 
 #### 3.3.3 - Publish the Application
 
@@ -175,7 +175,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1. Click the check box to select `Publish application`, then click the `Publish` button.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/publish-application.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/publish-application.png)
 	
 	> ![][info]
 	> 
@@ -185,7 +185,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1. Wait for the application publish process to complete:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/publish-app-success.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/publish-app-success.png)
 
 1. Close the Firefox browser by clicking the `x` on the tab or browser window.
 
@@ -197,13 +197,13 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1. Notice that logs were generated during the application publishing process:
 
-  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2.png)
+  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/2.png)
 
 1. You will need the `API Target URL`that is returned in the next lab.
 
 3. **Highlight** the contents of the `API target urls:` value and then copy to the clipboard
 
-  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/3.png)
+  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/3.png)
 	
 1. Paste the contents into a file on your system somewhere (e.g. Notepad, notes etc).  Be sure to save this and keep it handy for the next lab.
 
@@ -223,7 +223,7 @@ In this lab you learned:
 
 Proceed to [Lab 4 - Configure and Secure an API](lab4.html)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"
 

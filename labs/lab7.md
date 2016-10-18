@@ -49,35 +49,35 @@ Now that we have explained the contents of a custom theme file, it is time to lo
 	
 	Click on the `Portal URL` link to launch the Developer Portal.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/launch-portal.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/launch-portal.png)
 
 1. Login into the developer portal as an administrator using a username of `admin` and the password you set up in Lab 1.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalAdminLogin.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalAdminLogin.png)
 
 1. From the Administrator menu, select `Appearance` and then `Install new theme`.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/InstallNewPortalTheme.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/InstallNewPortalTheme.png)
 
 1. In the `Install from a URL` field, enter the following URL then click the `Install` button:
 
 	[https://thinkibm-services.mybluemix.net/portal/theme.zip](https://thinkibm-services.mybluemix.net/portal/theme.zip)
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/install-theme.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/install-theme.png)
     
 1. Once the installation of the custom theme completes, click the `Enable newly added themes` link.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/enable-theme.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/enable-theme.png)
    
 1. Scroll down the list of themes to find the `thinkibm_connect 7.50` theme.
 
 	Click the `Enable and set default link` link.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/set-default-theme.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/set-default-theme.png)
 	
 1. Click the `Home` icon in the top-left corner of the screen to return to the home page.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/CloseThemeSettings.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/CloseThemeSettings.png)
 
 #### 7.1.2 - Customize the Welcome Banner
 
@@ -85,11 +85,11 @@ Now we want to change the default Welcome banner to use our custom Welcome banne
 
 1. Navigate to the blocks content page by selecting `Content > Blocks` from the admin menu.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/ThinkIBMBlocks.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/ThinkIBMBlocks.png)
 
 1. Underneath operations select `Edit` to the right of the Welcome banner block.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/edit-welcome-banner.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/edit-welcome-banner.png)
 
 1. Before you can set the image, you will need to download it to your local computer's disc drive. You can download the file from this URL:
 
@@ -97,7 +97,7 @@ Now we want to change the default Welcome banner to use our custom Welcome banne
 
 1. Scroll down the banner edit page, locate the *Image* section and click the `Chose file` button to launch the file explorer.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/choose-banner-file.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/choose-banner-file.png)
 
 1. Find the `welcome-banner.png` file. Then, click the `Open` button.
 
@@ -107,7 +107,7 @@ Now we want to change the default Welcome banner to use our custom Welcome banne
 
 1. Click on the `x` button to close the content block settings.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/close-content-block.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/close-content-block.png)
 
 #### 7.1.3 - Change the Region Settings for the Content Blocks
 
@@ -115,29 +115,29 @@ The region settings for some of the content blocks were reset when we loaded the
 
 1. Navigate to the region settings for block content page by selecting `Structure > Blocks` from the admin menu.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/ThinkIBMBlockRegionSettings.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/ThinkIBMBlockRegionSettings.png)
 
 1. Locate the **Sidebar first** block. You will see entries for `Navigation`, `Support` and `User login`.
 
 1. For **both** the `Navigation` and `User Login` entries, select `- None -` from the drop down menu.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/SetBlockRegionstoNone.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/SetBlockRegionstoNone.png)
 
 1. The only entry left in the section should be `Support`.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/sidebar-first-complete.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/sidebar-first-complete.png)
 
 1. Scroll down to the bottom of the screen anc click the `Save Blocks` button.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/SaveBlockRegions.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/SaveBlockRegions.png)
 
 1. Scroll back to the top and click the `x` button to close the block region settings.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/close-region-block.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/close-region-block.png)
 
 1. You are finished with customizing the developer portal. There is a lot more that can be customized than what we have time for in this lab. Log out of the developer portal.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalAdminLogout.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalAdminLogout.png)
 
 ### 7.2 - Register an Application as a Developer 
 
@@ -157,18 +157,18 @@ In this section, you will log into the portal as a user in the application devel
 
 1. We need to capture the Client Secret and Client ID in a text editor for later use by our test application. Select the `Show Client Secret` checkbox next to Client Secret at the top of the page and the `Show` checkbox next to Client ID.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/ShowClientSecretandID.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/ShowClientSecretandID.png)
 
 1. Open your favorite text editor and copy/paste both the Client ID and Client Secret to your editor. Add a notation above each item so you know which value is the Client ID and which is the Client Secret.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/SaveClientIDandSecret.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/SaveClientIDandSecret.png)
 
 ### 7.3 - Subscribe to a Plan for the ThinkIBM APIs 
 In this section, we will subscribe to a plan for the ThinkIBM APIs using the ThinkIBM Consumer application.
 
 1. Click the `API Products` link.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalAPIProductsList.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalAPIProductsList.png)
 
 1. Click the `think (v1.0.0)` API product link.
 
@@ -176,7 +176,7 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 
 	Click on the `Subscribe` button under the `Silver` plan.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/SubscribetoThinkSilverPlan.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/SubscribetoThinkSilverPlan.png)
 	
 	> ![Alt text][info]
 	> 
@@ -184,7 +184,7 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 
 1. Select the `Think IBM Web Consumer` toggle and click the `Subscribe` button.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/subscribe-to-plan.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/subscribe-to-plan.png)
 
 1. The `Think IBM Web Consumer` Web application is now subscribed to the Silver plan for the `think` API product.
 
@@ -194,15 +194,15 @@ In this section, we will use the developer portal to test one of the think produ
 
 1. Click the `logistics` link on the left-hand navigation menu and then expand the `GET /shipping` path by clicking on the twisty next to the path.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalExpandShipping.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalExpandShipping.png)
 
 1. Scroll down to the **Try this operation** section for the `GET /shipping` path. Enter any zip code and click the `Call Operation` button.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalTryShippingOperation.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalTryShippingOperation.png)
 
 1. Scoll down below the `Call operation` button. You should see a `200 OK` and a response body as shown below.
   
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/PortalTryShippingOperationResultsSuccess.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/PortalTryShippingOperationResultsSuccess.png)
 
 ### 7.5 - Test the APIs from the Think IBM Web Consumer Application
 
@@ -216,11 +216,11 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 1. Using the Client ID and Client Secret values you saved earlier in your text editor, copy/paste them into the `Client ID` and `Client Secret` fields as shown below:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/consumer-app-config-creds.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/consumer-app-config-creds.png)
 
 1. You will also need to enter the API Connect Host, Organization and Catalog values. The easiest way to find these is to return to the API Manager on Bluemix and browse the Catalog Endpoint Settings as shown below:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/consumer-app-config-host.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/consumer-app-config-host.png)
 
 1. Click the `Submit` button to complete the application configuration. The test application saves your settings in browser session variables.
 
@@ -228,13 +228,13 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 1. Enter any Username and Password then click the `Log In` button. Our sample authentication service is a dummy repository that will accept any credentials provided.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/enter-oauth-creds.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/enter-oauth-creds.png)
 
 	> ![][info]
 	> 
 	> The consumer app will contact our OAuth Token URL and handle the token exchange using standard OAuth proceedures. If you're interested in seeing the token, you can open your browser's developer tools and view the Console logs and Network trace
 	>
-	> ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/consumer-app-console.png)
+	> ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/consumer-app-console.png)
 
 1. Once you are logged in, the consumer application will redirect you to the item inventory page. The data displayed on the page is being powered by our `inventory` API! The consumer application is calling to our API, which is then being sent to our LoopBack application which handles the connection to the Cloudant data source where the inventory item data is persisted.
 
@@ -242,19 +242,19 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 	Notice how the product rating is updated automatically as new reviews are posted. This happens because of the custom code you added to the LoopBack application in **Lab 3**.
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/customer-reviews.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/customer-reviews.png)
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/updated-rating.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/updated-rating.png)
 
 1. Continue testing the features of the consumer application. Try entering your home zip code to obtain shipping data. This feature is powered by the `logistics` APIs that were built using advanced assembly techniques in Lab 5. Your quotes will vary based on the zip code provided.
 
 	Notice how you are also provided a link to the nearest store. Clicking here will launch the Google Maps link which was also built in our Lab 5 assembly.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/shipping-results.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/shipping-results.png)
 
 1. Finally, try clicking on the `Calculate Monthly Payment` link. This feature is powered by the `financing` API that was created using our REST-to-SOAP assembly in Lab 5.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab7/financing-results.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/financing-results.png)
 
 1. Repeat the steps on a few of products to drive data into the analytics database.
 
@@ -264,6 +264,6 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 Proceed to [Lab 8 - Analytics in API Connect](lab8.html)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

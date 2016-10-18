@@ -34,7 +34,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. Switch to the `Products` tab
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/products.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/products.png)
 
 1. Click the link for the `inventory` product.
 	
@@ -56,7 +56,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Contact URL: `http://www.ibm.com`  
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-infocontact.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-infocontact.png)
 
 1. Specify a License and Terms of Service:
 
@@ -66,17 +66,17 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 		
 	> Terms of Service: paste the contents of the `http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/lab-files/lab6/license.txt` file
 	  
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-licensetos.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-licensetos.png)
 	
 1. Modify the Visibility so that the `think` product is only visible to `Authenticated users`:
   
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-visibility.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-visibility.png)
 	
 1. Navigate to the APIs section. Click the `+` button to add all of our new APIs to this product.
 
 1. Check the checkboxes next to `financing`, `logistics` and `oauth`, ensuring that `inventory` is left selected.
 	 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-apis.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-apis.png)
 
 1. Click the `Apply` button.
 
@@ -88,7 +88,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Description: `Limited access to these APIs`
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-silverplan.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-silverplan.png)
 
 1. Click the `+` button to create a new plan. Give it the following properties:
 
@@ -102,25 +102,25 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Approval: check `Require subscription approval`  
 	
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-goldplan.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-goldplan.png)
 
 1. Save your changes.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/save-icon.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/save-icon.png)
 
 ### 6.2 - Publishing the API Product
 
 1. Click the `Publish` icon.
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/think-publish.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-publish.png)
 
 1. Select our target:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/publish-target.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-target.png)
 
 1. Check the box to `Stage or Publish products`:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/publish-product.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-product.png)
 
 	> ![][info]
 	> 
@@ -132,7 +132,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. Wait a moment while the Product is published, a `Success` message will appear letting you know the step is complete:
 
-	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab6/publish-success.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-success.png)
 
 1. Close the Firefox web browser.
 
@@ -149,6 +149,6 @@ In this lab, you learned:
 
 Proceed to [Lab 7 - Consumer Experience](lab7.html)
 
-[important]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

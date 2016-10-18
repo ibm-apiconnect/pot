@@ -87,7 +87,6 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- gs_sidebar
 - labs_sidebar
 
 description: "IBM API Connect Proof of Technology"

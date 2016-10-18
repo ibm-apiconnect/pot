@@ -24,7 +24,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 ## Lab 1	- Step by Step Lab Instructions
 
-# 1.1	- Creating a `notes` Application
+### 1.1	- Creating a `notes` Application
 
 1.	We will use the API Connect Developer Toolkit command line interface to create the initial application and explore the created artifacts.
 
@@ -84,7 +84,7 @@ For this lab, you will be starting with your local image and installing node.js 
 >
 > `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
 
-# 1.2	- Launching the `notes` Application
+### 1.2	- Launching the `notes` Application
 
 1. Now that we've explored what is created by the application generator, let's move on to the API Designer. From the command line:
 
@@ -108,7 +108,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	> 
 	> We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
 
-# 1.3	- Testing the `notes` Application
+### 1.3	- Testing the `notes` Application
 
 1. Click the `Explore` button to switch to the API Explorer view.
 
@@ -178,7 +178,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/9.png)
 
-# 1.4	- Publishing the API to the Developer Portal
+### 1.4	- Publishing the API to the Developer Portal
 
 1. Click the `Publish` icon.
 
@@ -218,7 +218,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/publish-success.png)
 
-# 1.5	- Browsing the API in the Developer Portal
+### 1.5	- Browsing the API in the Developer Portal
 
 1. To view the Published API, direct your browser to your developer portal link you set up in the previous lab.
 

@@ -73,64 +73,64 @@ https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2a.png)
 
-```javascript
-	module.exports = function (Item) {
-
-  /* Inject DATE into new REVIEW */
-
-  Item.beforeRemote('prototype.__updateById__review', function (ctx, review, next) {
-    var req = ctx.req;
-    req.body.date = Date.now();
-    ctx.args.data = req.body;
-    next();
-  });
-
-  /* Inject DATE into new REVIEW */
-
-  Item.beforeRemote('prototype.__create__reviews', function (ctx, review, next) {
-    var req = ctx.req;
-    req.body.date = Date.now();
-    ctx.args.data = req.body;
-    next();
-  });
-
-  /* Update ITEM rating after new REVIEW is submitted */
-
-  Item.afterRemote('prototype.__create__reviews', function (ctx, remoteMethodOutput, next) {                            // Set up a function to run after a review is created
-    var itemId = remoteMethodOutput.itemId;                                                                             // Get the id of the item that the review was just created for
-
-    console.log("calculating new rating for item: " + itemId);
-
-    var searchQuery = {include: {relation: 'reviews'}};                                                                 // Set up the search query to find all the existing reviews for the item
-
-    Item.findById(itemId, searchQuery, function findItemReviewRatings(err, findResult) {                                // Run the search and save the results to a variable called findResult
-      var reviewArray = findResult.reviews();                                                                           // Store each of the reviews in an array
-      var reviewCount = reviewArray.length;                                                                             // Count the number of reviews
-      var ratingSum = 0;                                                                                                // Set up the baseline review score
-
-      for (var i = 0; i < reviewCount; i++) {                                                                           // Add all the review scores
-        ratingSum += reviewArray[i].rating;
-      }
-
-      var updatedRating = Math.round((ratingSum / reviewCount) * 100) / 100;                                            // Take an average of all the review scores
-
-      console.log("new calculated rating: " + updatedRating);
-
-      findResult.updateAttribute("rating", updatedRating, function (err) {                                              // Update the rating attribute of the item with the newly calculated review score
-        if (!err) {
-          console.log("item rating successfully updated");
-        } else {
-          console.log("error updating rating for item: " + err);
-        }
-      });
-
+  ```javascript
+    module.exports = function (Item) {
+  
+    /* Inject DATE into new REVIEW */
+  
+    Item.beforeRemote('prototype.__updateById__review', function (ctx, review, next) {
+      var req = ctx.req;
+      req.body.date = Date.now();
+      ctx.args.data = req.body;
       next();
     });
-
-  });
-
-};
-```
+  
+    /* Inject DATE into new REVIEW */
+  
+    Item.beforeRemote('prototype.__create__reviews', function (ctx, review, next) {
+      var req = ctx.req;
+      req.body.date = Date.now();
+      ctx.args.data = req.body;
+      next();
+    });
+  
+    /* Update ITEM rating after new REVIEW is submitted */
+  
+    Item.afterRemote('prototype.__create__reviews', function (ctx, remoteMethodOutput, next) {                            // Set up a function to run after a review is created
+      var itemId = remoteMethodOutput.itemId;                                                                             // Get the id of the item that the review was just created for
+  
+      console.log("calculating new rating for item: " + itemId);
+  
+      var searchQuery = {include: {relation: 'reviews'}};                                                                 // Set up the search query to find all the existing reviews for the item
+  
+      Item.findById(itemId, searchQuery, function findItemReviewRatings(err, findResult) {                                // Run the search and save the results to a variable called findResult
+        var reviewArray = findResult.reviews();                                                                           // Store each of the reviews in an array
+        var reviewCount = reviewArray.length;                                                                             // Count the number of reviews
+        var ratingSum = 0;                                                                                                // Set up the baseline review score
+  
+        for (var i = 0; i < reviewCount; i++) {                                                                           // Add all the review scores
+          ratingSum += reviewArray[i].rating;
+        }
+  
+        var updatedRating = Math.round((ratingSum / reviewCount) * 100) / 100;                                            // Take an average of all the review scores
+  
+        console.log("new calculated rating: " + updatedRating);
+  
+        findResult.updateAttribute("rating", updatedRating, function (err) {                                              // Update the rating attribute of the item with the newly calculated review score
+          if (!err) {
+            console.log("item rating successfully updated");
+          } else {
+            console.log("error updating rating for item: " + err);
+          }
+        });
+  
+        next();
+      });
+  
+    });
+  
+  };
+  ```
 
 1. Save the changes to the `item.js`.
 
@@ -202,13 +202,13 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1. Notice that logs were generated during the application publishing process:
 
-![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2.png)
+  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2.png)
 
 1. You will need the `API Target URL`that is returned in the next lab.
 
 3. **Highlight** the contents of the `API target urls:` value and then copy to the clipboard
 
-![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/3.png)
+  ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/3.png)
 	
 1. Paste the contents into a file on your system somewhere (e.g. Notepad, notes etc).  Be sure to save this and keep it handy for the next lab.
 

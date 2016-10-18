@@ -1,0 +1,21 @@
+{
+  "name": "apiconnect-getting-started",
+  "version": "1.0.0",
+  "description": "**Learn the basics of API Connect by using these guides to build micro services and api proxies.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibm-apiconnect/getting-started.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibm-apiconnect/getting-started/issues"
+  },
+  "homepage": "https://github.com/ibm-apiconnect/getting-started#readme",
+  "dependencies": {
+  }
+}

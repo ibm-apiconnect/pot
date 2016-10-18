@@ -1,0 +1,6 @@
+{% include sidebarconfigs.html %}
+
+<div class="sidebarTitle"><a href="{{sidebar.url}}">{{sidebar.title}}</a></div>
+<ul id="mysidebar" class="nav-list">
+  {% include sidebar_menu_list_items.liquid menuitems=sidebar.children %}
+</ul>

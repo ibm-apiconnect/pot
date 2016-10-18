@@ -1,0 +1,19 @@
+title: Getting started
+url: /index.html
+children:
+
+- title: 'Building an API proxy'
+  url: /Proxy.html
+  output: 'web'
+
+- title: 'Building microservices'
+  url: /Microservices.html
+  output: 'web'
+
+- title: 'Organizing APIs'
+  url: /Organizing.html
+  output: 'web'
+
+- title: 'Glossary'
+  url: /Glossary.html
+  output: 'web'

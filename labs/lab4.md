@@ -1,9 +1,12 @@
-# Lab 4 - Configure and Secure an API
-
-In this lab, you will learn how to configure and secure the `inventory` API created during loopback application generation. Using the graphical design tools in API Designer, you will create an OAuth 2.0 provider API called `oauth` and then update the `inventory` API to use this provider. You will use the API Editor assembly view to specify the API's runtime behavior.
-
 ---
-# Lab 4 - Objective
+title: Lab 4 - Configure and Secure an API
+toc: true
+sidebar: labs_sidebar
+permalink: /lab4.html
+summary: In this lab, you will learn how to configure and secure the `inventory` API created during loopback application generation. Using the graphical design tools in API Designer, you will create an OAuth 2.0 provider API called `oauth` and then update the `inventory` API to use this provider. You will use the API Editor assembly view to specify the API's runtime behavior.
+---
+
+## Lab 4 - Objective
 
 In the following lab, you will learn:
 
@@ -12,15 +15,13 @@ In the following lab, you will learn:
 + How to add catalog-specific properties to an API.
 + How to assemble an API implementation using the activity-log, set-variable and proxy policies
 
----
-# Lab 4 - Case Study Used in this Tutorial
+## Lab 4 - Case Study Used in this Tutorial
 
 In this tutorial, you will secure the Inventory API to protect the resources exposed by **ThinkIBM**. Consumers of your API will be required to obtain & provide a valid OAuth token before they can invoke the Inventory API.
 
----
-# Lab 4	- Step by Step Lab Instructions
+## Lab 4	- Step by Step Lab Instructions
 
-## 4.1 - Working with the Inventory API in API Designer
+### 4.1 - Working with the Inventory API in API Designer
 
 1. First, launch API Designer by typing the following commands from your project directory:
 
@@ -35,7 +36,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	![alt text](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab4/startapidesigner.png)
 
-## 4.2 - Adding a New OAuth 2.0 Provider API
+### 4.2 - Adding a New OAuth 2.0 Provider API
 
 1. Click the `+ Add` button and select `OAuth 2.0 Provider API` from the menu.
 
@@ -126,7 +127,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab4/save-icon.png)
 
-## 4.3 - Configuring and Securing the Inventory API
+### 4.3 - Configuring and Securing the Inventory API
 
 1. Click the `All APIs` link at the top left of the API Editor to return to list of APIs.
 
@@ -200,7 +201,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	Now that the API is secured using our OAuth provider, we can define how the API should behave when called. In the next two sections, we will configure the `inventory` API to call our inventory application which was published at the end of Lab 3.
 	
-## 4.4 - Defining API Processing Behavior
+### 4.4 - Defining API Processing Behavior
 An API Assembly provides collection of policies which are enforced and executed on the API Gateway. Policies include actions like modifying the logging behavior and altering the message content or headers. Additionally, if the out of the box policies do not meet your specific needs, you may opt to create your own policy and have it available for API designers through the API Connect UI.
 
 1. Switch to the `Assemble` tab. A simple assembly has been created for you.  
@@ -235,7 +236,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/lab4/save-icon.png)
 
-# Lab 4 - Validation
+## Lab 4 - Validation
 
 We will validate the inventory application by using an Oauth test app we have running in Bluemix.
 
@@ -291,11 +292,11 @@ We will validate the inventory application by using an Oauth test app we have ru
 	>
 	> You can use the Console, Network and Application Session storage features to trace the calls and logs.
 
-# Lab 4 - Conclusion
+## Lab 4 - Conclusion
 
 **Congratulations!** You have successfully configured and secured the inventory API. You will consume this API in a later step.
 
-Proceed to [Lab 5 - Advanced API Assembly](../Lab%205%20-%20Advanced%20API%20Assembly)
+Proceed to [Lab 5 - Advanced API Assembly](lab5.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/5030/img/common/info.png "Information"

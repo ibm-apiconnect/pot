@@ -19,7 +19,7 @@ google_analytics:
 disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
-baseurl: /pot
+#baseurl: /pot
 
 exclude:
   - .idea/

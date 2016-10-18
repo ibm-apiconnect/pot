@@ -69,6 +69,7 @@ For more information on Remote Hooks please see:
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2a.png)
 
 	```
+	
 	module.exports = function (Item) {
 	
 		/* Inject DATE into new REVIEW */

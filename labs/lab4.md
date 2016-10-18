@@ -116,8 +116,9 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. In the gatewayscript editor, type the following lines of code:
 
-	```javascript
+	```
 	var hm = require('header-metadata');
+	
 	hm.response.set('Access-Control-Allow-Origin','*');
 	```
 

@@ -25,13 +25,15 @@ host: 127.0.0.1
 port: 4001
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
+baseurl: "/pot"
+
 exclude:
   - .idea/
   - .gitignore
   - node_modules
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: rmckinn@us.ibm.com
+feedback_email: bakert@us.ibm.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -93,7 +95,7 @@ defaults:
 sidebars:
 - gs_sidebar
 
-description: "Getting started with IBM API Connect"
+description: "IBM API Connect Proof of Technology"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

@@ -346,8 +346,8 @@ In this lab you learned:
 
 **Options:** Either
 
-- Proceed to [Lab 1 - Quick Start](../lab1.html) **or**
-- Proceed to [Lab 2 - Create a LoopBack Application](../lab2.html)
+- Proceed to [Lab 1 - Quick Start](lab1.html) **or**
+- Proceed to [Lab 2 - Create a LoopBack Application](lab2.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"

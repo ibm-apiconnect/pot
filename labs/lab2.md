@@ -1,11 +1,13 @@
-# Lab 2	- Create a Loopback Application
-
-In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation.
-
-At the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
-
 ---
-# Lab 2 - Objective
+title: Lab 2	- Create a Loopback Application
+toc: true
+sidebar: labs_sidebar
+permalink: /lab1.html
+summary: In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation.
+At the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
+---
+
+## Lab 2 - Objective
 
 In the following lab, you will learn:
 
@@ -16,15 +18,13 @@ In the following lab, you will learn:
 + How to test a REST API
 + How to create relationships between models
 
----
-# Lab 2	- Case Study Used in this Tutorial
+## Lab 2	- Case Study Used in this Tutorial
 
 **ThinkIBM** is a company which sells historical and rare IBM machinery. **ThinkIBM** wants to create easier acess to their inventory database through a collection of APIs. Additionally, the application should also support the ability for buyers to leave reviews. As an application developer, you will create the application that provides access to product inventory.
 
----
-# Lab 2 - Step by Step Lab Instructions
+## Lab 2 - Step by Step Lab Instructions
 
-## 2.1 - Create a Working Directory
+### 2.1 - Create a Working Directory
 
 1. Open up a new window for your Host Operating systems' command line interface (e.g. `cmd` for Windows or `terminal` for Linux).
 
@@ -40,7 +40,7 @@ In the following lab, you will learn:
 	cd ThinkIBM
 	```
 
-## 2.2 - Create the Inventory App
+### 2.2 - Create the Inventory App
 
 To create your Inventory Application you will use LoopBack technology that comes with the API Connect Developer Toolkit. LoopBack enables you to quickly compose scalable APIs, runs on top of the Express web framework and conforms to the Swagger 2.0 specification. LoopBack is a highly-extensible, open-source Node.js framework that enables you to:
 
@@ -99,7 +99,7 @@ LoopBack consists of:
 	cd inventory
 	```
 
-## 2.3 - Create a Data Source Connector to Cloudant
+### 2.3 - Create a Data Source Connector to Cloudant
 
 The datasource is what allows the API to communicate with the backend data repository. In this case we will be using Cloudant to store the inventory item information.
 
@@ -139,7 +139,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	>
 	> <https://www.npmjs.com/package/loopback-connector-cloudant>
 
-## 2.4 - Launch the API Connect Designer
+### 2.4 - Launch the API Connect Designer
 
 1. Ensure you're in the `~/ThinkIBM/inventory` directory, then type the following command:
 
@@ -155,7 +155,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	> 
 	> This API was created as a result of the generation of our LoopBack application.
 
-## 2.5 - Create a Model for the Inventory Items
+### 2.5 - Create a Model for the Inventory Items
 
 In this section, you will define the `item` data model for our `inventory` API and attach it to the Cloudant data source. LoopBack is a data model driven framework. The properties of the data model will become the JSON elements of the API request and response payloads.
 
@@ -175,7 +175,7 @@ In this section, you will define the `item` data model for our `inventory` API a
 
 	![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab2/1.png)
 
-## 2.6 - Create Properties for the `item` Model
+### 2.6 - Create Properties for the `item` Model
 
 The item table in the database has 6 columns that will need to mapped as well. To start creating properties for the item model: 
 
@@ -255,7 +255,7 @@ The item table in the database has 6 columns that will need to mapped as well. T
 
 1. Click the `All Models` link to return to the main API Designer page.
 
-## 2.7 - Verify API
+### 2.7 - Verify API
 
 To confirm that the API has been correctly mapped and can interface with the datasource, you will run the server and test the API.
 
@@ -345,7 +345,7 @@ To confirm that the API has been correctly mapped and can interface with the dat
 	}
 	```
 
-## 2.8 - Create the second Cloudant Data Source for Item Reviews
+### 2.8 - Create the second Cloudant Data Source for Item Reviews
 
 So far, we have created a LoopBack application which provides APIs around our inventory items stored in a Cloudant database in Bluemix.
 
@@ -407,7 +407,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 	> 
 	> <https://www.npmjs.com/package/loopback-connector-cloudant>
 
-## 2.9 - Create Model for Reviews
+### 2.9 - Create Model for Reviews
 
 The `review` data model will be used to store item reviews left by buyers. The reviews will be stored in a MongoDB.
 
@@ -499,7 +499,7 @@ In the earlier steps, you used the API Designer User Experience to create a data
 
 1. To close the wizard, the next time it asks you to add another review proporty, just press `Enter` or `Return` to exit.
 
-## 2.10 - Create a Relationship Between the `item` and `review` Data Models
+### 2.10 - Create a Relationship Between the `item` and `review` Data Models
 
 The next step in this lab is to create a relationship between the `item` model and the `review` model. Even though the models reference entities in entirely different databases, API Connect provides a way to create a logical relationship between them. This logical relationship is then exposed as additional operations for the item model.
 
@@ -523,7 +523,7 @@ The next step in this lab is to create a relationship between the `item` model a
 	? Require a through model? No
 	```
 	
-## 2.11 - Verify the Relationship
+### 2.11 - Verify the Relationship
 
 To verify that the relationship has been created, you will open the API Connect Designer and view the operations on the Explore page.
 
@@ -557,7 +557,7 @@ To verify that the relationship has been created, you will open the API Connect 
 	
 	This will return you to the command line prompt.
 
-# Lab 2 - Conclusion
+## Lab 2 - Conclusion
 
 **Congratulations!** In this lab you learned:
 
@@ -570,7 +570,7 @@ To verify that the relationship has been created, you will open the API Connect 
 
 Lab 3 will build on what you have already created to enable processing hooks and publish the APIs to the API Manager.
 
-Proceed to [Lab 3 - Customize and Deploy an Application](../Lab%203%20-%20Customize%20and%20Deploy%20an%20Application)
+Proceed to [Lab 3 - Customize and Deploy an Application](lab3.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"

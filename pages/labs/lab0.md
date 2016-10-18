@@ -1,5 +1,5 @@
 ---
-title: Setup IBM API Connect
+title: Lab 0 - Setup IBM API Connect
 toc: false
 keywords: [setup]
 tags: [setup]
@@ -8,10 +8,6 @@ permalink: /lab0.html
 summary: In this lab, you’ll start from scratch to install Node.js and the components of the API Connect Developer toolkit.  Once you have the toolkit installed, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
 ---
 
-# Lab 0 - Setup IBM API Connect 
-In this lab, you’ll start from scratch to install Node.js and the components of the API Connect Developer toolkit.  Once you have the toolkit installed, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
-
----
 # Lab 0 - Objective 
 In the following lab, you will learn:
 

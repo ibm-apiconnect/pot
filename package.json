@@ -1,5 +1,5 @@
 {
-  "name": "apiconnect-getting-started",
+  "name": "apiconnect-pot",
   "version": "1.0.0",
   "description": "**Learn the basics of API Connect by using these guides to build micro services and api proxies.**",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibm-apiconnect/getting-started.git"
+    "url": "git+https://github.com/ibm-apiconnect/pot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ibm-apiconnect/getting-started/issues"
+    "url": "https://github.com/ibm-apiconnect/pot/issues"
   },
-  "homepage": "https://github.com/ibm-apiconnect/getting-started#readme",
+  "homepage": "https://github.com/ibm-apiconnect/pot#readme",
   "dependencies": {
   }
 }

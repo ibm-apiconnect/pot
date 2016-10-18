@@ -88,6 +88,7 @@ defaults:
 
 sidebars:
 - gs_sidebar
+- labs_sidebar
 
 description: "IBM API Connect Proof of Technology"
 # the description is used in the feed.xml file

@@ -32,25 +32,31 @@ For this lab, you will be starting with your local image and installing node.js 
 1. The following are pre-requisites that need to be installed before installing node:
 
 	1. Install Python
+	
 		1. version 2.7 is required.  You can download it here:  `https://www.python.org/download/releases/2.7/`
-		2. Note the location where it is installed.  You will need to add this location to your path later on.
-	2. Install .Net Frameworks SDK 2.0 (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988`)
-	3. Install Visual Studio Express (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914`)
-	4. Add Python to the System Path in Windows 7 to the System Path.
+		
+		1. Note the location where it is installed.  You will need to add this location to your path later on.
+		
+	1. Install .Net Frameworks SDK 2.0 (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988`)
+	
+	1. Install Visual Studio Express (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914`)
+	
+	1. Add Python to the System Path in Windows 7 to the System Path.
+	
 		1. Go to `Control Panel` -> `System` -> `Advanced System Settings`
 
 		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/1.png)
 
-		2. Click `Environment Variables`.
+		1. Click `Environment Variables`.
 
 		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/2.png)
 
-		3. Click `Edit` and append `;C:\python27` (or wherever you installed python) to the Path variable.
+		1. Click `Edit` and append `;C:\python27` (or wherever you installed python) to the Path variable.
 
 		![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/3.png)
 
-
 1. Install Node.js
+
 	1. Go to this link to install Node `https://nodejs.org/en/download/`
 
 	1. Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
@@ -76,7 +82,6 @@ For this lab, you will be starting with your local image and installing node.js 
 		1. `npm-windows-upgrade`
 		
 		1. Select the `3.10.8` version of npm.  This is the recommended version to run with.  Close the Powershell.
-
 
 1. Install API Connect on to your machine by starting up a command line window as Administrator and issue this command - `npm install -g apiconnect --no-optional --ignore-scripts`.
 
@@ -175,6 +180,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."		
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/mac-git-install-complete.png)
+
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 
 	```bash

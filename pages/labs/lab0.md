@@ -15,15 +15,12 @@ In the following lab, you will learn:
 + How to enable API Connect on your Bluemix account
 + How to install the APIC Developer Toolkit
 
----
 ## Lab 0 - Case Study used in this tutorial
 In this tutorial, you will be starting from scratch to set up your development environment on your local machine.
 
----
 ## Lab 0	- Before you begin
 For this lab, you will be starting with your local image and installing node.js and the developer toolkit.  After that, if you do not already have a Bluemix account, you will be creating one for you and enabling the API Connect Essentials service on your account. The instructions you will follow will vary by the host operating system you are using. The three host OS's supported by this are `Windows`, `Linux - Intel` and `Linux - Mac`.  Skip to the section for your appropriate operating system.
 
----
 ## Lab 0	- Step by Step Lab Instructions
 
 ### 0.0a - Install Node.js on Windows

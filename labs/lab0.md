@@ -4,7 +4,7 @@ toc: true
 keywords: [setup]
 tags: [setup]
 sidebar: labs_sidebar
-permalink: /labs/lab0.html
+permalink: /lab0.html
 summary: In this lab, you’ll start from scratch to install Node.js and the components of the API Connect Developer toolkit.  Once you have the toolkit installed, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
 ---
 
@@ -348,8 +348,8 @@ In this lab you learned:
 
 **Options:** Either
 
-- Proceed to [Lab 1 - Quick Start](../labs/lab1.html) **or**
-- Proceed to [Lab 2 - Create a LoopBack Application](../labs/lab2.html)
+- Proceed to [Lab 1 - Quick Start](../lab1.html) **or**
+- Proceed to [Lab 2 - Create a LoopBack Application](../lab2.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"

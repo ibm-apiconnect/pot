@@ -4,7 +4,7 @@ toc: true
 keywords: [setup]
 tags: [setup]
 sidebar: labs_sidebar
-permalink: /labs/lab1.html
+permalink: /lab1.html
 summary: In this lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
 ---
 
@@ -261,7 +261,7 @@ In this lab you learned:
 + How to test a REST API
 + How to publish an API to the Developer Portal
 
-Proceed to [Lab 2 - Create a LoopBack Application](../labs/lab1.html)
+Proceed to [Lab 2 - Create a LoopBack Application](../lab1.html)
 
 [important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
 [info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"

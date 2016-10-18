@@ -93,7 +93,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Install the essentials to run node.js `sudo apt-get install build-essential libssl-dev curl git-core`
 
-2. Install Node Version Manager aka "nvm" by issuing this command here: `curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash`
+2. Install Node Version Manager aka "nvm" by issuing this command here:
+
+  ```bash
+  curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+  ```
 
 	> ![][info]
 	> 

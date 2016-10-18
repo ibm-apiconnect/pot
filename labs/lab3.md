@@ -52,7 +52,7 @@ Remote hooks are custom javascript code that execute before or after calling an 
 
 For more information on Remote Hooks please see:
 
-<https://docs.strongloop.com/display/public/LB/Remote+hooks>
+[https://docs.strongloop.com/display/public/LB/Remote+hooks](https://docs.strongloop.com/display/public/LB/Remote+hooks)
 
 1. In the your text editor, expand the local directory structure for the `common/models` location and open up the `item.js` file for editing.
 
@@ -62,7 +62,7 @@ For more information on Remote Hooks please see:
 
 1. Open up a new tab on your browser, and open the following file via github:
 
-  [](https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js)
+  [https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js](https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js)
 
   ![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/1a.js)
 	
@@ -72,7 +72,8 @@ For more information on Remote Hooks please see:
 
 	![](https://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab3/2a.png)
 
-  ```javascript
+```javascript
+
 module.exports = function (Item) {
 
 /* Inject DATE into new REVIEW */
@@ -129,7 +130,8 @@ Item.afterRemote('prototype.__create__reviews', function (ctx, remoteMethodOutpu
 });
 
 };
-  ```
+
+```
 
 1. Save the changes to the `item.js`.
 

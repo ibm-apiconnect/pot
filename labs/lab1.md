@@ -1,8 +1,6 @@
 ---
 title: Lab 1 - Introduction to IBM API Connect
 toc: true
-keywords: [setup]
-tags: [setup]
 sidebar: labs_sidebar
 permalink: /lab1.html
 summary: In this lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.

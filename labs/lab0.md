@@ -117,7 +117,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	Now using node v4.5.0 (npm v2.15.9)
 	```
 
-7. Install API Connect by issuing this command `npm install -g apiconnect --no-optional --ignore-scripts` it will take several minutes to complete.
+7. Install API Connect by issuing this command `npm install -g apiconnect` it will take several minutes to complete.
 8. Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter. You are now ready to move on to section 1.1 below.
 
 #### 0.1c - Mac OS

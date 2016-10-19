@@ -223,7 +223,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email.png)
 
-1. Open the email and click the Confirm your account link
+1. Open the email and click the Confirm your account link.
 	
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
 

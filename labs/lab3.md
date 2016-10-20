@@ -141,15 +141,15 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1.  Ensure you are in the `~/ThinkIBM/inventory` project folder by typing the following command:
 
-	```bash
-	cd ~/ThinkIBM/inventory
-	```
+    ```bash
+    cd ~/ThinkIBM/inventory
+    ```
 
 1.  Launch the API Designer:
 
-	```bash
-	apic edit
-	```
+    ```bash
+    apic edit
+    ```
 
 1.  Click the `Publish` icon.
 
@@ -179,11 +179,11 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/publish-application.png)
 	
-	> ![][info]
-	> 
-	> The Developer Toolkit will package up our Node.js StrongLoop application and deploy it to the runtime collective.
-	> 
-	> We used the web UI in the previous few steps to publish the application. However, we could have also used the API Designer CLI to accomplish the same task.
+    > ![][info]
+    > 
+    > The Developer Toolkit will package up our Node.js StrongLoop application and deploy it to the runtime collective.
+    > 
+    > We used the web UI in the previous few steps to publish the application. However, we could have also used the API Designer CLI to accomplish the same task.
 
 1.  Wait for the application publish process to complete:
 
@@ -193,9 +193,9 @@ In this section, you will publish the `inventory` application to Bluemix
 
 1.  Return to the terminal editor. Stop the API Designer process:
 
-	```bash
-	control+c
-	```
+    ```bash
+    control+c
+    ```
 
 1.  Notice that logs were generated during the application publishing process:
 
@@ -209,10 +209,10 @@ In this section, you will publish the `inventory` application to Bluemix
 	
 1.  Paste the contents into a file on your system somewhere (e.g. Notepad, notes etc).  Be sure to save this and keep it handy for the next lab.
 
-	> ![][info]
-	> 
-	> Note that your API Target URL will be different for your application and is unique to you. Note that you will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.
-	> This will be used in the next lab.
+    > ![][info]
+    > 
+    > Note that your API Target URL will be different for your application and is unique to you. Note that you will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.
+    > This will be used in the next lab.
 
 ## Lab 3 - Conclusion
 

@@ -16,10 +16,10 @@ In the following lab, you will learn:
 ## Case Study used in this tutorial
 In this tutorial, you will be starting from scratch to set up your development environment on your local machine.
 
-## Lab 0	- Before you begin
+## Before you begin
 For this lab, you will be starting with your local image and installing node.js and the developer toolkit.  After that, if you do not already have a Bluemix account, you will be creating one for you and enabling the API Connect Essentials service on your account. The instructions you will follow will vary by the host operating system you are using. The three host OS's supported by this are `Windows`, `Linux - Intel` and `Linux - Mac`.  Skip to the section for your appropriate operating system.
 
-## Lab 0	- Step by Step Lab Instructions
+## Step by Step Lab Instructions
 
 ### 0.1 - Install Node.js
 
@@ -342,7 +342,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/34.png)
 
-### Lab 0.4 Create your Developer Portal Instance for your API Connect Catalog
+### 0.4 Create your Developer Portal Instance for your API Connect Catalog
 
 1.  Open a new tab in your web browser by clicking on the new tab `+` button.
 

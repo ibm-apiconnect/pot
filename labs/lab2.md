@@ -94,9 +94,9 @@ LoopBack consists of:
 
 1.  Change to the newly created `inventory` directory:
 
-	  ```shell
-	  cd inventory
-	  ```
+    ```shell
+    cd inventory
+    ```
 
 ### 2.3 - Create a Data Source Connector to Cloudant
 

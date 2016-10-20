@@ -186,8 +186,6 @@ For this lab, you will be starting with your local image and installing node.js 
 	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
 1. Follow the wizard to install. The installation is complete when you see a message stating that `The installation was successful.`
-
-  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
   
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 

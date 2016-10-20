@@ -185,19 +185,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
-1. Follow the wizard to install. The installation is complete when you see a message stating that `The installation was successful.`
+1. Follow the wizard to install. The installation is complete when you see a message stating that the installation was successful.
   
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 
-```bash
-git clone git://github.com/creationix/nvm.git ~/.nvm
-printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
-NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
-nvm install 4.5.0
-nvm alias default node
-nvm use node
-```
+  ```bash
+  git clone git://github.com/creationix/nvm.git ~/.nvm
+  printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
+  NVM_DIR=~/.nvm
+  source ~/.nvm/nvm.sh
+  nvm install 4.5.0
+  nvm alias default node
+  nvm use node
+  ```
 
 	> **Note:** You may want to update your .bash file so you do not have to source the shell script everytime. To do that, add the following to your .bash file located in your user home directory:
 	> 

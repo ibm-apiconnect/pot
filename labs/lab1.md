@@ -31,7 +31,7 @@ For this lab, you will be starting with your local image and installing node.js 
     ```bash
     apic loopback
     ```
-    
+
     This command starts the application generator, Yeoman, to help scaffold the new project. Just press enter for first two questions and then select **notes** for the kind of application.
     
     ```
@@ -42,7 +42,7 @@ For this lab, you will be starting with your local image and installing node.js 
     hello-world (A project containing a controller, including a single vanilla Message and a single remote method) 
     ❯ notes (A project containing a basic working example, including a memory database)
     ```
-	
+
     This creates an application named "notes" in a directory of the same name. The application is a basic Notes application. You will see a lot of messages printed to the command line window. It is creating a few resources for you and installing the various node modules. Once the node modules are loaded you'll notice that the process creates swagger and product definitions for you. Finally, the process displays some hints about what to do next. Since we've been given such lovely suggestions about what to do next, we may as well follow the first one at least.
 
 1.  Change directories to the project directory:
@@ -57,7 +57,7 @@ For this lab, you will be starting with your local image and installing node.js 
     $ ls
     client  common  definitions  node_modules  package.json  server
     ```
-	
+
     If you're familiar with LoopBack or Node.js applications, some of the directories may be familiar to you. If not, here is a description of some of what is created.
 
 |Directory or file|Description|

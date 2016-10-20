@@ -29,15 +29,15 @@ In the following lab, you will learn:
 
 1. Create a project directory in the on your filesystem called ThinkIBM. 
 
-        ```shell
-        mkdir ThinkIBM
-        ```
+    ```shell
+    mkdir ThinkIBM
+    ```
 
 1. Change to the new `ThinkIBM` directory by typing:
 
-	```shell
-	cd ThinkIBM
-	```
+    ```shell
+    cd ThinkIBM
+    ```
 
 ### 2.2 - Create the Inventory App
 

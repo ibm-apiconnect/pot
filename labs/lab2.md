@@ -104,245 +104,244 @@ The datasource is what allows the API to communicate with the backend data repos
 
 There are two parts to this. First is the definition of how to connect to the backend system. They second is downloading the actual loopback connector for Cloudant. The connector is akin to an ODBC or JDBC connector.
 
-1. In your terminal ensure that you are in the `ThinkIBM/inventory` directory. 
+1.  In your terminal ensure that you are in the `ThinkIBM/inventory` directory. 
 
-1. In your terminal, type: 
+1.  In your terminal, type: 
 
-	```shell
-	apic create --type datasource
-	```
+    ```shell
+    apic create --type datasource
+    ```
 
-	The terminal will bring up the configuration wizard for our new datasource for the item database. The configuration wizard will prompt you with a series of questions. Some questions require text input, others offer a selectable menu of pre-defined choices.
+    The terminal will bring up the configuration wizard for our new datasource for the item database. The configuration wizard will prompt you with a series of questions. Some questions require text input, others offer a selectable menu of pre-defined choices.
 	
-	Answer the questions with the following data:
+    Answer the questions with the following data:
 
-	```shell
-	? Enter the data-source name: item-db-cloudant
-	? Select the connector for item-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
-	Connector-specific configuration:
-	? Connection String url to override other settings (eg: https://username:password@host): https://820923e0-be08-46f5-a34a-003f91f00f5c-bluemix:10d585c237c8d7b599b79cfcca39cb63356f2cea7d79abf27f284801b3c149d9@820923e0-be08-46f5-a34a-003f91f00f5c-bluemix.cloudant.com
-	? database: item
-	? username: (leave blank)
-	? password: (leave blank)
-	? modelIndex: (leave blank)
-	```
+    ```shell
+    ? Enter the data-source name: item-db-cloudant
+    ? Select the connector for item-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
+    Connector-specific configuration:
+    ? Connection String url to override other settings (eg: https://username:password@host): https://820923e0-be08-46f5-a34a-003f91f00f5c-bluemix:10d585c237c8d7b599b79cfcca39cb63356f2cea7d79abf27f284801b3c149d9@820923e0-be08-46f5-a34a-003f91f00f5c-bluemix.cloudant.com
+    ? database: item
+    ? username: (leave blank)
+    ? password: (leave blank)
+    ? modelIndex: (leave blank)
+    ```
 	
-	> ![][info]
-	> 
-	> By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
-	> This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
-	>
-	> `npm install loopback-connector-cloudant --save`
-	>
-	> For more information on the LoopBack Connector for Cloudant, see:
-	>
-	> <https://www.npmjs.com/package/loopback-connector-cloudant>
+    > ![][info]
+    > 
+    > By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
+    > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
+    >
+    > `npm install loopback-connector-cloudant --save`
+    >
+    > For more information on the LoopBack Connector for Cloudant, see:
+    >
+    > <https://www.npmjs.com/package/loopback-connector-cloudant>
 
 ### 2.4 - Launch the API Connect Designer
 
-1. Ensure you're in the `~/ThinkIBM/inventory` directory, then type the following command:
+1.  Ensure you're in the `~/ThinkIBM/inventory` directory, then type the following command:
 
-	```shell
-	apic edit
-	```
+    ```shell
+    apic edit
+    ```
 
-	The Firefox web browser will launch and automatically load the designer screen.
+    The Firefox web browser will launch and automatically load the designer screen.
 
-1. Now that the API Designer is running, you should see the start page with your `inventory` API.
+1.  Now that the API Designer is running, you should see the start page with your `inventory` API.
 
-	> ![][info]
-	> 
-	> This API was created as a result of the generation of our LoopBack application.
+    > ![][info]
+    > 
+    > This API was created as a result of the generation of our LoopBack application.
 
 ### 2.5 - Create a Model for the Inventory Items
 
 In this section, you will define the `item` data model for our `inventory` API and attach it to the Cloudant data source. LoopBack is a data model driven framework. The properties of the data model will become the JSON elements of the API request and response payloads.
 
-1. Click the `Models` tab.
+1.  Click the `Models` tab.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page.png)
 	
-1. Click the `+ Add` button.
+1.  Click the `+ Add` button.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-add-button.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-add-button.png)
 	
-1. In the New LoopBack Model dialog, enter `item` as the model name, then click the `New` button.
+1.  In the New LoopBack Model dialog, enter `item` as the model name, then click the `New` button.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-new-model.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-new-model.png)
 
-1. When the Model edit page for the item model displays, select the `item-db-cloudant` Data Source:
+1.  When the Model edit page for the item model displays, select the `item-db-cloudant` Data Source:
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/1.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/1.png)
 
 ### 2.6 - Create Properties for the `item` Model
 
 The item table in the database has 6 columns that will need to mapped as well. To start creating properties for the item model: 
 
-1. Click the `+` button in the **Properties** section.
+1.  Click the `+` button in the **Properties** section.
 
-1. The `item` data model consists of six properties. Use the data below to add each of the properties:
+1.  The `item` data model consists of six properties. Use the data below to add each of the properties:
 
-	> Required: `yes`
-	
-	> Property Name: `name`
-	
-	> Type: `string`
-	
-	> Description: `item name`
-	
-	> ---
-	
-	> Required: `yes`
-	
-	> Property Name: `description`
-	
-	> Type: `string`
-	
-	> Description: `item description`
-	
-	> ---
-	
-	> Required: `yes`
-	
-	> Property Name: `img`
-	
-	> Type: `string`
-	
-	> Description: `location of item image`
-	
-	> ---
-	
-	> Required: `yes`
-	
-	> Property Name: `img_alt`
-	
-	> Type: `string`
+    > Required: `yes`
+    >
+    > Property Name: `name`
+    >
+    > Type: `string`
+    >
+    > Description: `item name`
+    >
+    > ---
+    
+    > Required: `yes`
+    >
+    > Property Name: `description`
+    >
+    > Type: `string`
+    >
+    > Description: `item description`
+    >
+    > ---
+    >
+    > Required: `yes`
+    >
+    > Property Name: `img`
+    >
+    > Type: `string`
+    >
+    > Description: `location of item image`
+    >
+    > ---
+    >
+    > Required: `yes`
+    >
+    > Property Name: `img_alt`
+    >
+    > Type: `string`
+    >
+    > Description: `item image title`
+    >
+    > ---
+    >
+    > Required: `yes`
+    >
+    > Property Name: `price`
+    >
+    > Type: `number`
+    >
+    > Description: `item price`
+    >
+    > ---
+    >
+    > Required: `no`
+    >
+    > Property Name: `rating`
+    >
+    > Type: `number`
+    >
+    > Description: `item rating`
 
-	> Description: `item image title`
-	
-	> ---
-	
-	> Required: `yes`
-	
-	> Property Name: `price`
-	
-	> Type: `number`
-	
-	> Description: `item price`
-	
-	> ---
-	
-	> Required: `no`
-	
-	> Property Name: `rating`
-	
-	> Type: `number`
-	
-	> Description: `item rating`
+1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
-1. Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
+    > ![][troubleshooting]
+    > 
+    > The host field will show a red line indicating that the field is required. You may ignore this message.
 
-	> ![][troubleshooting]
-	> 
-	> The host field will show a red line indicating that the field is required. You may ignore this message.
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
+1.  Scroll to the top of the page and click the `Save` button to save the data model.
 
-1. Scroll to the top of the page and click the `Save` button to save the data model.
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-model-properties-save.png)
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-model-properties-save.png)
-
-1. Click the `All Models` link to return to the main API Designer page.
+1.  Click the `All Models` link to return to the main API Designer page.
 
 ### 2.7 - Verify API
 
 To confirm that the API has been correctly mapped and can interface with the datasource, you will run the server and test the API.
 
-1. Click the `Run` button to start the `inventory` LoopBack application
+1.  Click the `Run` button to start the `inventory` LoopBack application
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/run.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/run.png)
 
-1. Wait a moment while the servers are started. Proceed to the next step when you see the following:
+1.  Wait a moment while the servers are started. Proceed to the next step when you see the following:
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/app-running.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/app-running.png)
 
-1. Click the `Explore` button to review your APIs. 
+1.  Click the `Explore` button to review your APIs. 
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/explore.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/explore.png)
 
-1. On the left side of the page, notice the list of paths for the `inventory` API. These are the paths and operations that were automatically created for you by the LoopBack framework simply by adding the `item` data model. The operations allow users the ability to create, update, delete and query the data model from the connected data source.
+1.  On the left side of the page, notice the list of paths for the `inventory` API. These are the paths and operations that were automatically created for you by the LoopBack framework simply by adding the `item` data model. The operations allow users the ability to create, update, delete and query the data model from the connected data source.
 
-1. Click the `GET /items` operation.
+1.  Click the `GET /items` operation.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-get-items-api.png)
+	 ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-get-items-api.png)
 
-1. By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
+1.  By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
 
-	On the right side you will see sample code for executing the API in various programming languages and tools such as cURL, Ruby, Python, PHP, Java, Node, Go, and Swift.
+    On the right side you will see sample code for executing the API in various programming languages and tools such as cURL, Ruby, Python, PHP, Java, Node, Go, and Swift.
 
-	In addition to the sample code, if you look further down the page you will see an example response, URL, API identification information, and API parameters.
+    In addition to the sample code, if you look further down the page you will see an example response, URL, API identification information, and API parameters.
 
-1. Scroll down slowly to locate the `Call operation` button.
+1.  Scroll down slowly to locate the `Call operation` button.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-call-operation.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-call-operation.png)
 
 1. Click the `Call operation` button to invoke the API.
 
+    > ![][troubleshooting]
+    > 
+    > The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
 
-	> ![][troubleshooting]
-	> 
-	> The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/cert-error.png)
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/cert-error.png)
+1.  Once complete, return to the API explorer and click on the `Call operation` button again.
 
-1. Once complete, return to the API explorer and click on the `Call operation` button again.
+1.  Scroll down to see the `Request` and `Response` headers. 
 
-1. Scroll down to see the `Request` and `Response` headers. 
+    ```text
+    Request
+    GET https://localhost:4002/inventory/items
+    APIm-Debug: true
+    Content-Type: application/json
+    Accept: application/json
+    X-IBM-Client-Id: default
+    X-IBM-Client-Secret: SECRET
+    ```
 
-	```text
-	Request
-	GET https://localhost:4002/inventory/items
-	APIm-Debug: true
-	Content-Type: application/json
-	Accept: application/json
-	X-IBM-Client-Id: default
-	X-IBM-Client-Secret: SECRET
-	```
+    ```text
+    Response
+    Code: 200 OK
+    Headers:
+    content-type: application/json; charset=utf-8
+    x-ratelimit-limit: 100
+    x-ratelimit-remaining: 99
+    x-ratelimit-reset: 3599999
+    ```
 
-	```text
-	Response
-	Code: 200 OK
-	Headers:
-	content-type: application/json; charset=utf-8
-	x-ratelimit-limit: 100
-	x-ratelimit-remaining: 99
-	x-ratelimit-reset: 3599999
-	```
+1.  Scroll further and the payload returned from the GET request is displayed.
 
-1. Scroll further and the payload returned from the GET request is displayed.
+    ```json
+    [
+    	{
+    		"name": "Dayton Meat Chopper",
+    		"description": "Punched-card tabulating machines and time clocks...",
+    		"img": "images/items/meat-chopper.jpg",
+    		"img_alt": "Dayton Meat Chopper",
+    		"price": 4599.99,
+    		"rating": 0,
+    		"id": 5
+    	},
+    	...
+    ]
+    ```
 
-	```json
-	[
-		{
-			"name": "Dayton Meat Chopper",
-			"description": "Punched-card tabulating machines and time clocks...",
-			"img": "images/items/meat-chopper.jpg",
-			"img_alt": "Dayton Meat Chopper",
-			"price": 4599.99,
-			"rating": 0,
-			"id": 5
-		},
-		...
-	]
-	```
+1.  Test the `GET /items/count` operation by following the same process above. You should receive a count of 12 inventory items.
 
-1. Test the `GET /items/count` operation by following the same process above. You should receive a count of 12 inventory items.
-
-	```json
-	{
-	  "count": 12
-	}
-	```
+    ```json
+    {
+      "count": 12
+    }
+    ```
 
 ### 2.8 - Create the second Cloudant Data Source for Item Reviews
 
@@ -352,59 +351,59 @@ In the next section, you will create the data model for item reviews which will 
 
 First you must create a data source entry for the Cloudant Reviews DB.
 
-1. Click the `x` button on the Firefox tab or window to close the browser.
+1.  Click the `x` button on the Firefox tab or window to close the browser.
 
-1. Select the `Terminal Emulator` from the taskbar to open the command line.
+1.  Select the `Terminal Emulator` from the taskbar to open the command line.
 
-1. Even though we closed the browser, the API Designer application itself is still running.
+1.  Even though we closed the browser, the API Designer application itself is still running.
 
-	Hold the `control` key and press the `c` key to end the API Designer session:
+    Hold the `control` key and press the `c` key to end the API Designer session:
 	
-	```shell
-	control+c
-	```
+    ```shell
+    control+c
+    ```
 	
-	This will return you to the command line prompt.
+    	This will return you to the command line prompt.
 	
-1. Also, our `inventory` LoopBack app is still running. In the terminal, type:
+1.  Also, our `inventory` LoopBack app is still running. In the terminal, type:
 
-	```shell
-	apic stop
-	```
+    ```shell
+    apic stop
+    ```
 
-1. Type the following command to create a data source for Cloudant:
+1.  Type the following command to create a data source for Cloudant:
 
-	```shell
-	apic create --type datasource
-	```
+    ```shell
+    apic create --type datasource
+    ```
 
-1. The terminal will bring up the configuration wizard for our new datasource. The configuration wizard will prompt you with a series of questions. Some questions require text input, others offer a selectable menu of pre-defined choices.
-		
-	Answer the questions with the following data:
+1.  The terminal will bring up the configuration wizard for our new datasource. The configuration wizard will prompt you with a series of questions. Some questions require text input, others offer a selectable menu of pre-defined choices.
+
+    Answer the questions with the following data:
 	
-	```shell
-	? Enter the data-source name: review-db-cloudant
-	? Select the connector for review-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
-	Connector-specific configuration:
-	? Connection String url to override other settings (eg: https://username:password@host): https://820923e0-be08-46f5-a34a-003f91f00f5c-bluemix:10d585c237c8d7b599b79cfcca39cb63356f2cea7d79abf27f284801b3c149d9@820923e0-be08-46f5-a34a-003f91f00f5c-bluemix.cloudant.com
-	? database: review
-	? username: (leave blank)
-	? password: (leave blank)
-	? modelIndex: (leave blank)
-	```
+    ```shell
+    ? Enter the data-source name: review-db-cloudant
+    ? Select the connector for review-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
+    Connector-specific configuration:
+    ? Connection String url to override other settings (eg: https://username:password@host): https://820923e0-be08-46f5-a34a-003f91f00f5c-bluemix:10d585c237c8d7b599b79cfcca39cb63356f2cea7d79abf27f284801b3c149d9@820923e0-be08-46f5-a34a-003f91f00f5c-bluemix.cloudant.com
+    ? database: review
+    ? username: (leave blank)
+    ? password: (leave blank)
+    ? modelIndex: (leave blank)
+    ```
 
-	> ![][info]
-	> 
-	> By typing Y (Yes) to the question Install loopback-connector-cloudant, the CloudantDB Connector will be downloaded and saved to your project automatically. 
-	> This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file.
-	>
-	> It is effectively the same as running the following to install the connector
-	>
-	> `npm install loopback-connector-cloudant --save`
-	>
-	> For more information on the LoopBack Connector for Cloudant, see:
-	> 
-	> <https://www.npmjs.com/package/loopback-connector-cloudant>
+    > ![][info]
+    > 
+    > By typing Y (Yes) to the question Install loopback-connector-cloudant, the CloudantDB Connector will be downloaded and saved to your project automatically. 
+    > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file.
+    >
+    > It is effectively the same as running the following to install the connector
+    >
+    > `npm install loopback-connector-cloudant --save`
+    >
+    > For more information on the LoopBack Connector for Cloudant, see:
+    > 
+    > <https://www.npmjs.com/package/loopback-connector-cloudant>
 
 ### 2.9 - Create Model for Reviews
 

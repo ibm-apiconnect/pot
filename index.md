@@ -13,7 +13,7 @@ This is the index page.
     This is a warning.
 "%}
 
-{% include important.html %} This is important
+{% include important.html title="Some Title" %}
 
 {% include important.html content="
     This is important.

@@ -54,9 +54,9 @@ LoopBack consists of:
 
 1. From the command line terminal, type the following command to create the `inventory` application:
 
-	```shell
-	apic loopback
-	```
+	 ```shell
+	 apic loopback
+	 ```
 
 1. You will be asked to name your application. Call it `inventory` and press the `Enter` or `Return` key.
 

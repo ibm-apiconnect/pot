@@ -10,21 +10,21 @@ summary: IBM API Connect is an end-to-end API management solution for creating, 
 This is the index page.
 
 {% include warning.html content="
-    This site is a warning.
+    This is a warning.
 "%}
 
 {% include important.html content="
-    This site is important.
+    This is important.
 "%}
 
 {% include note.html content="
-    This site is a note.
+    This is a note.
 "%}
 
 {% include callout.html content="
-    This site is a callout.
+    This is a callout.
 "%}
 
 {% include tip.html content="
-    This site is a tip.
+    This is a tip.
 "%}

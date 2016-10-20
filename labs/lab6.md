@@ -3,7 +3,7 @@ title: Lab 6 - Working with API Products
 toc: true
 sidebar: labs_sidebar
 permalink: /lab6.html
-summary: API's published by API Connect are bundled into an object called a **Product**. The Product combines one or more API's with one or more Plans.\nA **Plan** is effectively a contract between the API Provider and API Consumer which specifies the allowed rate of API calls over a given period of time.
+summary: API's published by API Connect are bundled into an object called a **Product**. The Product combines one or more API's with one or more Plans. A **Plan** is effectively a contract between the API Provider and API Consumer which specifies the allowed rate of API calls over a given period of time.
 ---
 
 ## Objective

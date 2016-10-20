@@ -52,27 +52,27 @@ LoopBack consists of:
 * A library of Node.js modules.
 * Yeoman generators for scaffolding applications.
 
-1. From the command line terminal, type the following command to create the `inventory` application:
+1.  From the command line terminal, type the following command to create the `inventory` application:
 
-	 ```shell
-	 apic loopback
-	 ```
+	  ```shell
+	  apic loopback
+	  ```
 
-1. You will be asked to name your application. Call it `inventory` and press the `Enter` or `Return` key.
+1.  You will be asked to name your application. Call it `inventory` and press the `Enter` or `Return` key.
 
-	```
-	     _-----_
-	    |       |    .--------------------------.
-	    |--(o)--|    |  Let's create a LoopBack |
-	   `---------´   |       application!       |
-	    ( _´U`_ )    '--------------------------'
-	    /___A___\    
-	     |  ~  |     
-	   __'.___.'__   
-	 ´   `  |° ´ Y `
-	 
-	? What's the name of your application? (ThinkIBM) inventory
-	```
+    ```
+         _-----_
+        |       |    .--------------------------.
+        |--(o)--|    |  Let's create a LoopBack |
+       `---------´   |       application!       |
+        ( _´U`_ )    '--------------------------'
+        /___A___\    
+         |  ~  |     
+       __'.___.'__   
+     ´   `  |° ´ Y `
+     
+    ? What's the name of your application? (ThinkIBM) inventory
+    ```
 
 1. Next you will be asked to supply the name of the directory where the application will be created.
 

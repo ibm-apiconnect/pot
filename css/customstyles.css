@@ -1164,6 +1164,9 @@ div.box.box1 {
 
 pre.highlight {
     margin-top: 0;
+}
+
+div.alert pre.highlight {
     margin-bottom: 0;
 }
 

@@ -58,7 +58,6 @@ For this lab, you will be starting with your local image and installing node.js 
     client  common  definitions  node_modules  package.json  server
     ```
 
-
     If you're familiar with LoopBack or Node.js applications, some of the directories may be familiar to you. If not, here is a description of some of what is created.
 
 |Directory or file|Description|

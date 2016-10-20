@@ -25,15 +25,15 @@ In the following lab, you will learn:
 
 ### 2.1 - Create a Working Directory
 
-1. Open up a new window for your Host Operating systems' command line interface (e.g. `cmd` for Windows or `terminal` for Linux).
+1.  Open up a new window for your Host Operating systems' command line interface (e.g. `cmd` for Windows or `terminal` for Linux).
 
-1. Create a project directory in the on your filesystem called ThinkIBM. 
+1.  Create a project directory in the on your filesystem called ThinkIBM. 
 
     ```shell
     mkdir ThinkIBM
     ```
 
-1. Change to the new `ThinkIBM` directory by typing:
+1.  Change to the new `ThinkIBM` directory by typing:
 
     ```shell
     cd ThinkIBM

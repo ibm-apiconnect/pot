@@ -8,6 +8,10 @@ summary: In this lab, you’ll gain a high level understanding of the architectu
 
 ## Lab 2 - Objective
 
+```shell
+mkdir ThinkIBM
+```
+
 In the following lab, you will learn:
 
 + How to create a multi-model Loopback application

@@ -322,16 +322,16 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
     ```json
     [
-    	{
-    		"name": "Dayton Meat Chopper",
-    		"description": "Punched-card tabulating machines and time clocks...",
-    		"img": "images/items/meat-chopper.jpg",
-    		"img_alt": "Dayton Meat Chopper",
-    		"price": 4599.99,
-    		"rating": 0,
-    		"id": 5
-    	},
-    	...
+      {
+        "name": "Dayton Meat Chopper",
+        "description": "Punched-card tabulating machines and time clocks...",
+        "img": "images/items/meat-chopper.jpg",
+        "img_alt": "Dayton Meat Chopper",
+        "price": 4599.99,
+        "rating": 0,
+        "id": 5
+      },
+      ...
     ]
     ```
 

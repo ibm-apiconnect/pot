@@ -138,15 +138,15 @@ For this lab, you will be starting with your local image and installing node.js 
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/POST-results.png)
 	
-    > ![][troubleshooting]
-    >
-    > You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
+	{% include troubleshooting.html content="
+        You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
+    "%}
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/CORS-support-error.png)
 	
-    > ![][troubleshooting]
-    >
-    > If you see a 500 error like the one below, make sure you press the `Generate` button before you press the `Call operation` button again. Otherwise, you're trying to create a duplicate note.
+	{% include troubleshooting.html content="
+        If you see a 500 error like the one below, make sure you press the `Generate` button before you press the `Call operation` button again. Otherwise, you're trying to create a duplicate note.
+    "%}
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/duplicateRecordError.png)
 
@@ -165,10 +165,10 @@ For this lab, you will be starting with your local image and installing node.js 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/GET-results.png)
 		
     You should see all the notes that you generated in the result set.
-        
-    > ![][important]
-    > 
-    > If you see an empty array, `[]`, as your result, then you've not successfully created any notes. This is also true if you stop the application and restart it. With the notes example, we're using an in-memory database which means that nothing is persisted to disk. So, it is lost when the server is stopped and restarted. Lab 2 will walk through how to connect to your application to a persistent data source.
+
+    {% include important.html content="
+        If you see an empty array, `[]`, as your result, then you've not successfully created any notes. This is also true if you stop the application and restart it. With the notes example, we're using an in-memory database which means that nothing is persisted to disk. So, it is lost when the server is stopped and restarted. Lab 2 will walk through how to connect to your application to a persistent data source.
+    "%}
 
 1.  At this point, we are done testing the app locally. Click on the `Run` button again to return to the application launch screen.
 
@@ -222,9 +222,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  This will bring you to your portal login page.  In order to view the API we have, we will need to register ourself as a developer on the portal. 
 
-    > ![][important]
-    > 
-    > When you first create your developer portal it will create an `admin` user that is used to administrate the site.  This admin user cannot be used as a user to register applications and subscribe to API Products. So the next few steps will be devoted to creating a new developer user.
+    {% include important.html content="
+        When you first create your developer portal it will create an `admin` user that is used to administrate the site.  This admin user cannot be used as a user to register applications and subscribe to API Products. So the next few steps will be devoted to creating a new developer user.
+    "%}
 
 1.  If you are still logged in as the `admin` user from the previous lab, Click on `Logout` at the top right to log out of the portal as the admin user. Otherwise, move on to the next step.
 
@@ -260,6 +260,3 @@ In this lab you learned:
 + How to publish an API to the Developer Portal
 
 Proceed to [Lab 2 - Create a LoopBack Application](lab2.html)
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

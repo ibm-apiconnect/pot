@@ -74,29 +74,29 @@ LoopBack consists of:
     ? What's the name of your application? (ThinkIBM) inventory
     ```
 
-1. Next you will be asked to supply the name of the directory where the application will be created.
+1.  Next you will be asked to supply the name of the directory where the application will be created.
 
-  LoopBack will default the project directory name to the name of the application.
-  
-  Press the `Enter` or `Return` key to accept the default value of `inventory`.
+    LoopBack will default the project directory name to the name of the application.
 
-1. Next you will be asked to select the type of application.
+    Press the `Enter` or `Return` key to accept the default value of `inventory`.
 
-	Use the arrow keys to select the `empty-server` option and press the `Enter` or `Return` key. 
+1.  Next you will be asked to select the type of application.
 
-	```shell
-	❯ empty-server (An empty LoopBack API, without any configured models or datasources) 
-	```
+    Use the arrow keys to select the `empty-server` option and press the `Enter` or `Return` key. 
 
-1. At this point, the project builder will install the core dependencies for our Node.js application.
+    ```shell
+    ❯ empty-server (An empty LoopBack API, without any configured models or datasources) 
+    ```
 
-  Please wait until you see the `Next steps:` section.
+1.  At this point, the project builder will install the core dependencies for our Node.js application.
 
-1. Change to the newly created `inventory` directory:
+    Please wait until you see the `Next steps:` section.
 
-	```shell
-	cd inventory
-	```
+1.  Change to the newly created `inventory` directory:
+
+	  ```shell
+	  cd inventory
+	  ```
 
 ### 2.3 - Create a Data Source Connector to Cloudant
 

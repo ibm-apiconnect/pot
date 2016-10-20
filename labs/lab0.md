@@ -185,10 +185,10 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
-1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."
+1. Follow the wizard to install. The installation is complete when you see a message stating that `The installation was successful.`
 
   ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
-
+  
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 
 	```bash
@@ -203,9 +203,10 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	> **Note:** You may want to update your .bash file so you do not have to source the shell script everytime. To do that, add the following to your .bash file located in your user home directory:
 	> 
-	> 	```
+	> ```
 	> export NVM_PATH=~/.nvm
-	source ~/.nvm/nvm.sh
+	> source ~/.nvm/nvm.sh
+	> ```
 
 1. Install API Connect by issuing this command `npm install -g apiconnect --no-optional --ignore-scripts` it will take several minutes to complete
 

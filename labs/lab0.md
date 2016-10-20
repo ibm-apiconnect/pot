@@ -61,7 +61,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	1. Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4.png)
+	  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4.png)
 
 	1. Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
 	
@@ -152,12 +152,15 @@ For this lab, you will be starting with your local image and installing node.js 
 1. This will open a dialog informing you that the comannd linde developer tools are required for install. Press the Install button.
 
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
+
 1. Agree to the license
 
 	![Xcode Tools Confirm License](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-license.png)
+	
 1. The software install will begin
 
 	![Xcode Tools Installing](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-progress.png)
+	
 1. The install is complete when you see the "The software was installed" message.
 
 	![Xcode Tools Install Complete](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-install-complete.png)
@@ -182,8 +185,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
-1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."		
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
+1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."
+
+  ![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
 
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 

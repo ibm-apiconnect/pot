@@ -4377,6 +4377,10 @@ a.thumbnail:focus {
 .alert-info .alert-link {
   color: #2d6987;
 }
+.alert-troubleshooting {
+  background-color: rgba(236, 159, 58, 0.38);
+  border-color: #fbeed5;
+}
 .alert-warning {
   background-color: #fcf8e3;
   border-color: #fbeed5;

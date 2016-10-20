@@ -191,7 +191,7 @@ The item table in the database has 6 columns that will need to mapped as well. T
     > Description: `item name`
     >
     > ---
-    
+    >
     > Required: `yes`
     >
     > Property Name: `description`

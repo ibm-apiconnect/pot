@@ -13,7 +13,9 @@ This is the index page.
     This is a warning.
 "%}
 
-{% include important.html title="Some Title" %}
+{% include troubleshooting.html content="
+    This is trouble.
+"%}
 
 {% include important.html content="
     This is important.

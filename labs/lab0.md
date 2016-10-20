@@ -6,14 +6,14 @@ permalink: /lab0.html
 summary: In this lab, you’ll start from scratch to install Node.js and the components of the API Connect Developer toolkit.  Once you have the toolkit installed, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
 ---
 
-## Lab 0 - Objective 
+## Objective 
 In the following lab, you will learn:
 
 + How to install Node.js on to your machine
 + How to enable API Connect on your Bluemix account
 + How to install the APIC Developer Toolkit
 
-## Lab 0 - Case Study used in this tutorial
+## Case Study used in this tutorial
 In this tutorial, you will be starting from scratch to set up your development environment on your local machine.
 
 ## Lab 0	- Before you begin
@@ -384,7 +384,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once the process is complete, click on the link of the portal URL as seen in the screenshot above in step #9.  It is highly suggested that you create a bookmark for your developer portal in your browser so you can get back to it easily later.
 
-## Lab 0 - Conclusion
+## Conclusion
 
 **Congratulations!** You have installed node.js, the API Connect developer toolkit!
 

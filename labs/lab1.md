@@ -6,7 +6,7 @@ permalink: /lab1.html
 summary: In this lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive Web-based user interface, and explore the various aspects associated with solution’s configuration of RESTful based services as well as their operation.
 ---
 
-## Lab 1 - Objective 
+## Objective 
 In the following lab, you will learn:
 
 + How to create a simple LoopBack application
@@ -14,13 +14,13 @@ In the following lab, you will learn:
 + How to test a REST API
 + How to publish an API to the Developer Portal
 
-## Lab 1 - Case Study used in this tutorial
+## Case Study used in this tutorial
 In this tutorial, you will be starting from scratch to set up your development environment on your local machine, and then you will test the components of the toolkit by creating the default Notes LoopBack application. We will look at the created artifacts to get a better understanding of what is created for you. The notes application is a simple RESTful service that holds a set of "notes" in memory. In this lab we may be creating a new RESTful service and API, but in future labs you'll be creating APIs with existing services.
 
-## Lab 1 - Before you begin
+## Before you begin
 For this lab, you will be starting with your local image and installing node.js and the developer toolkit.  After that, if you do not already have a Bluemix account, you will be creating one for you and enabling the API Connect Essentials service on your account. The instructions you will follow will vary by the host operating system you are using. The three host OS's supported by this are `Windows`, `Linux - Intel` and `Linux - Mac`.  Skip to the section for your appropriate operating system.
 
-## Lab 1 - Step by Step Lab Instructions
+## Step by Step Lab Instructions
 
 ### 1.1	- Creating a `notes` Application
 
@@ -248,7 +248,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  In the terminal, use the `control+c` keyboard command to quit the API Designer program.
 
-## Lab 1 - Conclusion
+## Conclusion
 
 **Congratulations!** You have developed and published your first API!
 

@@ -1,12 +1,12 @@
 ---
-title: Lab 2	- Create a Loopback Application
+title: Lab 2 - Create a Loopback Application
 toc: true
 sidebar: labs_sidebar
 permalink: /lab2.html
 summary: In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation. At the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
 ---
 
-## Lab 2 - Objective
+## Objective
 
 In the following lab, you will learn:
 
@@ -17,11 +17,11 @@ In the following lab, you will learn:
 + How to test a REST API
 + How to create relationships between models
 
-## Lab 2	- Case Study Used in this Tutorial
+## Case Study Used in this Tutorial
 
 **ThinkIBM** is a company which sells historical and rare IBM machinery. **ThinkIBM** wants to create easier acess to their inventory database through a collection of APIs. Additionally, the application should also support the ability for buyers to leave reviews. As an application developer, you will create the application that provides access to product inventory.
 
-## Lab 2 - Step by Step Lab Instructions
+## Step by Step Lab Instructions
 
 ### 2.1 - Create a Working Directory
 
@@ -555,7 +555,7 @@ To verify that the relationship has been created, you will open the API Connect 
 	
     This will return you to the command line prompt.
 
-## Lab 2 - Conclusion
+## Conclusion
 
 **Congratulations!** In this lab you learned:
 

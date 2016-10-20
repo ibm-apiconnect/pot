@@ -35,17 +35,17 @@ For this lab, you will be starting with your local image and installing node.js 
 	
         1.  version 2.7 is required. You can download it here:
         
-            [](https://www.python.org/download/releases/2.7/)
+            [https://www.python.org/download/releases/2.7/](https://www.python.org/download/releases/2.7/)
 		
         1.  Note the location where it is installed.  You will need to add this location to your path later on.
 		
     1.  Install .Net Frameworks SDK 2.0
     
-        [](https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988)
+        [https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988](https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988)
 	
     1.  Install Visual Studio Express
     
-        [](https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914)
+        [https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914](https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914)
 	
     1.  Add Python to the System Path in Windows 7 to the System Path.
 	
@@ -65,7 +65,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     1.  Go to this link to install Node:
     
-        [](https://nodejs.org/en/download/)
+        [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
     1.  Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 
@@ -83,13 +83,13 @@ For this lab, you will be starting with your local image and installing node.js 
 
     1.  Execute these commands in Powershell
 
-        1.  `Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`
+        ```bash
+        Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+        npm install -g npm-windows-upgrade
+        npm-windows-upgrade
+        ```
         
-        1.  `npm install -g npm-windows-upgrade`
-        
-        1.  `npm-windows-upgrade`
-        
-        1.  Select the `3.10.8` version of npm.  This is the recommended version to run with.  Close the Powershell.
+    1.  Select the `3.10.8` version of npm.  This is the recommended version to run with. Close the Powershell.
 
 1.  Install API Connect on to your machine by starting up a command line window as Administrator and issue this command - `npm install -g apiconnect --no-optional --ignore-scripts`.
 
@@ -99,7 +99,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 #### 0.1b - Linux
 
-1.  Install the essentials to run node.js `sudo apt-get install build-essential libssl-dev curl git-core`
+1.  Install the essentials to run node.js:
+
+    ```bash
+    sudo apt-get install build-essential libssl-dev curl git-core
+    ```
 
 1.  Install Node Version Manager aka "nvm" by issuing this command here:
 

@@ -8,17 +8,6 @@ summary: In this lab, you’ll gain a high level understanding of the architectu
 
 ## Lab 2 - Objective
 
-```shell
-? Enter the data-source name: item-db-cloudant
-? Select the connector for item-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
-Connector-specific configuration:
-? Connection String url to override other settings (eg: https://username:password@host): https://820923e0-be08-46f5-a34a-003f91f00f5c-bluemix:10d585c237c8d7b599b79cfcca39cb63356f2cea7d79abf27f284801b3c149d9@820923e0-be08-46f5-a34a-003f91f00f5c-bluemix.cloudant.com
-? database: item
-? username: (leave blank)
-? password: (leave blank)
-? modelIndex: (leave blank)
-```
-
 In the following lab, you will learn:
 
 + How to create a multi-model Loopback application
@@ -40,9 +29,9 @@ In the following lab, you will learn:
 
 1. Create a project directory in the on your filesystem called ThinkIBM. 
 
-	```shell
-	mkdir ThinkIBM
-	```
+	  ```shell
+	  mkdir ThinkIBM
+	  ```
 
 1. Change to the new `ThinkIBM` directory by typing:
 

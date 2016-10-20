@@ -151,43 +151,43 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. This will open a dialog informing you that the comannd linde developer tools are required for install. Press the Install button.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
 
 1. Agree to the license
 
-	![Xcode Tools Confirm License](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-license.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-license.png)
 	
 1. The software install will begin
 
-	![Xcode Tools Installing](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-progress.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-progress.png)
 	
 1. The install is complete when you see the "The software was installed" message.
 
-	![Xcode Tools Install Complete](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-install-complete.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-install-complete.png)
 
 1. Next install git. You may already have a version, but if you want to have the latest version you will need to download the install from https://git-scm.com/download/mac
 
 1. Once on the install page the download should start immediately. However if it does not start immediately, click the "click here to download manually" link.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-download.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-download.png)
 
 1. Once the download has completed, you should have a file named similar to git-2.8.1-intel-universal-mavericks.dmg. Double-click to unpack the disk image.
 
 1. Once the disk image is unpacked and open, double-click the git-2.8.1-intel-universal-mavericks.pkg file. Note that if you downloaded a different version the file name will be refelcted accordingly.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-package.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-package.png)
 
 1. You may get a dialog box with a message stating that the file can't be opened because it is from an unidentified developer. Click the OK button. Open your System Preferences and select the Security & Privacy component. In the section called "Allow apps downloaded from:" you will notice a message that states '"git-2.8.1-..ericks.pkg" was blocked from opening because it is not from an identified developer.', press the Open Anyway button. This will open the installer for git.
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-unsecure.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-unsecure.png)
 		
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-security.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-security.png)
 
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
 
 1. Follow the wizard to install. The installation is complete when you see a message stating that "The installation was successful."
 
-  ![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
+  ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-complete.png)
 
 1. Install Node Version Manager aka "nvm" by opening a terminal session and typing the following commands:
 
@@ -217,23 +217,23 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. Press the SIGN UP button
  	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup.png)
 
 1. Complete the form and press the CREATE ACCOUNT button
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-account-details.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-account-details.png)
 
 1. Check your email for your next steps.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email.png)
 
 1. Open the email and click the Confirm your account link.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
 
 1. Once confirmed, you will be taken to a page that says Success! To login, click the Log In link
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-success.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-success.png)
 
 1. Enter your email address and press the CONTINUE button
 
@@ -241,19 +241,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1. You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-org.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-org.png)
 
 1. Next you will be prompted to create a space such as dev, test, prod, etc. You can name it whatever you would like (again notice the recommendations). Then press the CREATE button.
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-space.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-space.png)
 
 1. Next you will see the Summary page where you can review your entries. Press the I'm Ready button
 	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
 
 2. You're account has been created and configured once you see the following screen.
  	
-	![Xcode Tools Install](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
 
 ### 0.3 - Enable the API Connect Service on your Bluemix Account
 

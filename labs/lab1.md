@@ -80,7 +80,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 {% include note.html content="
     `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
-"%}
+" %}
 
 ### 1.2	- Launching the `notes` Application
 
@@ -104,7 +104,7 @@ For this lab, you will be starting with your local image and installing node.js 
     
     {% include note.html content="
         We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
-    "%}
+    " %}
 
 ### 1.3	- Testing the `notes` Application
 
@@ -154,7 +154,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     {% include note.html content="
         It should be noted that you don't need to use the `Generate` link. You can type data directly into the `Parameters`. You can also use `Generate` to create a template for you to use and then change the generated parameters. You may also notice that not all the parameters are always generated. This is because only the `title` parameter is required. Try pressing `Generate` several times to get a feel for how it works.
-    "%}
+    " %}
 	
 1.  Finally, let's test the `GET /notes` service. We should have two, three, or more notes created at this point. In the left hand column click the `GET /notes` link.
 
@@ -224,7 +224,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     {% include important.html content="
         When you first create your developer portal it will create an `admin` user that is used to administrate the site.  This admin user cannot be used as a user to register applications and subscribe to API Products. So the next few steps will be devoted to creating a new developer user.
-    "%}
+    " %}
 
 1.  If you are still logged in as the `admin` user from the previous lab, Click on `Logout` at the top right to log out of the portal as the admin user. Otherwise, move on to the next step.
 

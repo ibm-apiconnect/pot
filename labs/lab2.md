@@ -411,149 +411,149 @@ The `review` data model will be used to store item reviews left by buyers. The r
 
 In the earlier steps, you used the API Designer User Experience to create a data model. This time you will use the command line to create the `review` model.
 
-1. Type the following command to create the `review` data model:
+1.  Type the following command to create the `review` data model:
 
-	```shell
-	apic create --type model
-	```
+    ```shell
+    apic create --type model
+    ```
 
-1. Enter the properties for the `review` model:
+1.  Enter the properties for the `review` model:
 
-	> ![][important]
-	> 
-	> You will **not** expose the review mode as a REST API. This is because you create a relationship between item and review later that will create the REST APIs you will use.
+    > ![][important]
+    > 
+    > You will **not** expose the review mode as a REST API. This is because you create a relationship between item and review later that will create the REST APIs you will use.
 
-	```shell
-	? Enter the model name:  review
-	? Select the data-source to attach review to:
-		> review-db-cloudant (cloudant)
-	? Select models base class:
-		> PersistedModel
-	? Expose review via the REST API? (Y/n):  N
-	? Common model or server only?
-		> common
-	```
+    ```text
+    ? Enter the model name:  review
+    ? Select the data-source to attach review to:
+    	> review-db-cloudant (cloudant)
+    ? Select models base class:
+    	> PersistedModel
+    ? Expose review via the REST API? (Y/n):  N
+    ? Common model or server only?
+    	> common
+    ```
 	
-1. Continue using the wizard to add properties for the `review` model:
+1.  Continue using the wizard to add properties for the `review` model:
 
-1. The first property is the `date` property:
+1.  The first property is the `date` property:
 
-	```text
-	Enter an empty property name when done.
-	? Property name: date
-	? Property type:
-		> date
-	?Required? Y
-	?Default value [leave blank for none]: <leave blank>"
-	```
+    ```text
+    Enter an empty property name when done.
+    ? Property name: date
+    ? Property type:
+    	> date
+    ?Required? Y
+    ?Default value [leave blank for none]: <leave blank>"
+    ```
 
-1. Next add the `reviewer_name` property:
+1.  Next add the `reviewer_name` property:
 
-	```text
-	Let's add another review property.
-	Enter an empty property name when done.
-	? Property name: reviewer_name
-	? Property type:
-		> string
-	? Required? N
-	? Default value [leave blank for none]: <leave blank>
-	```
+    ```text
+    Let's add another review property.
+    Enter an empty property name when done.
+    ? Property name: reviewer_name
+    ? Property type:
+    	> string
+    ? Required? N
+    ? Default value [leave blank for none]: <leave blank>
+    ```
 
-1. Next add the `reviewer_email` property:
+1.  Next add the `reviewer_email` property:
 
-	```text
-	Let's add another review property.
-	Enter an empty property name when done.
-	? Property name: reviewer_email
-	? Property type:
-		> string
-	? Required? N
-	? Default value [leave blank for none]: <leave blank>
-	```
+    ```text
+    Let's add another review property.
+    Enter an empty property name when done.
+    ? Property name: reviewer_email
+    ? Property type:
+    	> string
+    ? Required? N
+    ? Default value [leave blank for none]: <leave blank>
+    ```
 
-1. Next add the `comment` property:
+1.  Next add the `comment` property:
 
-	```text
-	Let's add another review property.
-	Enter an empty property name when done.
-	? Property name: comment
-	? Property type:
-		> string
-	? Required? N
-	? Default value [leave blank for none]: <leave blank>
-	```
+    ```text
+    Let's add another review property.
+    Enter an empty property name when done.
+    ? Property name: comment
+    ? Property type:
+    	> string
+    ? Required? N
+    ? Default value [leave blank for none]: <leave blank>
+    ```
 
-1. Finally add a property for the item `rating`:
+1.  Finally add a property for the item `rating`:
 
-	```text
-	Let's add another review property.
-	Enter an empty property name when done.
-	? Property name: rating
-	? Property type:
-		> number
-	? Required? Y
-	? Default value [leave blank for none]: <leave blank>
-	```
+    ```text
+    Let's add another review property.
+    Enter an empty property name when done.
+    ? Property name: rating
+    ? Property type:
+    	> number
+    ? Required? Y
+    ? Default value [leave blank for none]: <leave blank>
+    ```
 
-1. To close the wizard, the next time it asks you to add another review proporty, just press `Enter` or `Return` to exit.
+1.  To close the wizard, the next time it asks you to add another review proporty, just press `Enter` or `Return` to exit.
 
 ### 2.10 - Create a Relationship Between the `item` and `review` Data Models
 
 The next step in this lab is to create a relationship between the `item` model and the `review` model. Even though the models reference entities in entirely different databases, API Connect provides a way to create a logical relationship between them. This logical relationship is then exposed as additional operations for the item model.
 
-1. In the terminal session, type the following command:
+1.  In the terminal session, type the following command:
 
-	```shell
-	apic loopback:relation
-	```
+    ```shell
+    apic loopback:relation
+    ```
 
-1. Enter the details for the relationship as follows:
+1.  Enter the details for the relationship as follows:
 
-	```text
-	? Select the model to create the relationship from:
-		> item
-	? Relation type:
-		> has many
-	? Choose a model to create a relationship with:
-		> review
-	? Enter the property name for the relation:  reviews
-	? Optionally enter a custom foreign key: <leave blank>
-	? Require a through model? No
-	```
+    ```text
+    ? Select the model to create the relationship from:
+    	> item
+    ? Relation type:
+    	> has many
+    ? Choose a model to create a relationship with:
+    	> review
+    ? Enter the property name for the relation:  reviews
+    ? Optionally enter a custom foreign key: <leave blank>
+    ? Require a through model? No
+    ```
 	
 ### 2.11 - Verify the Relationship
 
 To verify that the relationship has been created, you will open the API Connect Designer and view the operations on the Explore page.
 
-1. In the terminal session, type the following command to launch the API Connect Designer window:
+1.  In the terminal session, type the following command to launch the API Connect Designer window:
 
-	```shell
-	apic edit
-	```
+    ```shell
+    apic edit
+    ```
 
-1. Click on the `inventory` link from the APIs tab.
+1.  Click on the `inventory` link from the APIs tab.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/inventory-link.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/inventory-link.png)
 
-1. Scroll down to the `Paths` section of the API definition.
+1.  Scroll down to the `Paths` section of the API definition.
 
-	Notice how three new API paths have been created which allow access to item revew data:
+    Notice how three new API paths have been created which allow access to item revew data:
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/new-paths.png)
+
+1.  Click the `x` button on the Firefox tab or window to close the browser.
+
+1.  Select the `Terminal Emulator` from the taskbar to open the command line.
+
+1.  Even though we closed the browser, the API Designer application itself is still running.
+
+    Hold the `control` key and press the `c` key to end the API Designer session:
 	
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/new-paths.png)
-
-1. Click the `x` button on the Firefox tab or window to close the browser.
-
-1. Select the `Terminal Emulator` from the taskbar to open the command line.
-
-1. Even though we closed the browser, the API Designer application itself is still running.
-
-	Hold the `control` key and press the `c` key to end the API Designer session:
+    ```shell
+    control+c
+    ```
 	
-	```shell
-	control+c
-	```
-	
-	This will return you to the command line prompt.
+    This will return you to the command line prompt.
 
 ## Lab 2 - Conclusion
 

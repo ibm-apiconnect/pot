@@ -117,16 +117,8 @@ For this lab, you will be starting with your local image and installing node.js 
     curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
     ```
 
-    > ![][info]
-    > 
-    > When you install `nvm` it will also install `npm` which is the node package manager.
-    > npm is used to install node.js based software packages including the API Connect
-    > Developer Toolkit
-    
     {% include note.html content="
-        When you install `nvm` it will also install `npm` which is the node package manager.
-        npm is used to install node.js based software packages including the API Connect
-        Developer Toolkit
+        When you install `nvm` it will also install `npm` which is the node package manager used to install node.js based software modules, including the API Connect Developer Toolkit.
     "%}
 
 1.  Close and restart your terminal as indicated in the terminal window or run this command `source ~/.profile`.
@@ -403,7 +395,3 @@ In this lab you learned:
 
 - Proceed to [Lab 1 - Quick Start](lab1.html) **or**
 - Proceed to [Lab 2 - Create a LoopBack Application](lab2.html)
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

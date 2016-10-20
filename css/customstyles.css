@@ -1162,7 +1162,10 @@ div.box.box1 {
   padding: 10px;
 }
 
-pre.highlight {margin-top: 0;}
+pre.highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 td pre {
   margin-top: 0;

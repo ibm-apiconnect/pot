@@ -78,9 +78,9 @@ For this lab, you will be starting with your local image and installing node.js 
 |server/model-config.json|This file binds models to data sources and specifies whether a model is exposed over REST, among other things.|
 |server/datasources.json|This file is the data source configuration file.|
 
-> ![][info]
->
-> `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
+{% include note.html content="
+    `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
+"%}
 
 ### 1.2	- Launching the `notes` Application
 
@@ -102,9 +102,9 @@ For this lab, you will be starting with your local image and installing node.js 
 	
     At this point we're ready to Explore and test our services.
     
-    > ![][info]
-    > 
-    > We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
+    {% include note.html content="
+        We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
+    "%}
 
 ### 1.3	- Testing the `notes` Application
 
@@ -152,9 +152,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once you have created one note, go ahead and create another one or two.
 
-    > ![][info]
-    > 
-    > It should be noted that you don't need to use the `Generate` link. You can type data directly into the `Parameters`. You can also use `Generate` to create a template for you to use and then change the generated parameters. You may also notice that not all the parameters are always generated. This is because only the `title` parameter is required. Try pressing `Generate` several times to get a feel for how it works.
+    {% include note.html content="
+        It should be noted that you don't need to use the `Generate` link. You can type data directly into the `Parameters`. You can also use `Generate` to create a template for you to use and then change the generated parameters. You may also notice that not all the parameters are always generated. This is because only the `title` parameter is required. Try pressing `Generate` several times to get a feel for how it works.
+    "%}
 	
 1.  Finally, let's test the `GET /notes` service. We should have two, three, or more notes created at this point. In the left hand column click the `GET /notes` link.
 
@@ -262,5 +262,4 @@ In this lab you learned:
 Proceed to [Lab 2 - Create a LoopBack Application](lab2.html)
 
 [important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
 [troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

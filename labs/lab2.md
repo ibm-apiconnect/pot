@@ -3,7 +3,7 @@ title: Lab 2	- Create a Loopback Application
 toc: true
 sidebar: labs_sidebar
 permalink: /lab2.html
-summary: In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation.\nAt the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
+summary: In this lab, you’ll gain a high level understanding of the architecture, features and development concepts related to the IBM API Connect (APIC) solution. Throughout the lab, you’ll get a chance to use the APIC command line interface for creating LoopBack applications, the intuitive web-based user interface, and explore the various aspects associated with the solution’s configuration of RESTful based services as well as their operation. At the end of this lab you will have created an new application which provides access to product inventory via a set of API resource operations.
 ---
 
 ## Lab 2 - Objective
@@ -29,13 +29,13 @@ In the following lab, you will learn:
 
 1. Create a project directory in the on your filesystem called ThinkIBM. 
 
-	```bash
+	```shell
 	mkdir ThinkIBM
 	```
 
 1. Change to the new `ThinkIBM` directory by typing:
 
-	```bash
+	```shell
 	cd ThinkIBM
 	```
 
@@ -54,7 +54,7 @@ LoopBack consists of:
 
 1. From the command line terminal, type the following command to create the `inventory` application:
 
-	```bash
+	```shell
 	apic loopback
 	```
 
@@ -84,7 +84,7 @@ LoopBack consists of:
 
 	Use the arrow keys to select the `empty-server` option and press the `Enter` or `Return` key. 
 
-	```bash
+	```shell
 	❯ empty-server (An empty LoopBack API, without any configured models or datasources) 
 	```
 
@@ -94,7 +94,7 @@ LoopBack consists of:
 
 1. Change to the newly created `inventory` directory:
 
-	```bash
+	```shell
 	cd inventory
 	```
 
@@ -108,7 +108,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 
 1. In your terminal, type: 
 
-	```bash
+	```shell
 	apic create --type datasource
 	```
 
@@ -116,7 +116,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	
 	Answer the questions with the following data:
 
-	```bash
+	```shell
 	? Enter the data-source name: item-db-cloudant
 	? Select the connector for item-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
 	Connector-specific configuration:
@@ -142,7 +142,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 
 1. Ensure you're in the `~/ThinkIBM/inventory` directory, then type the following command:
 
-	```bash
+	```shell
 	apic edit
 	```
 
@@ -360,7 +360,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 
 	Hold the `control` key and press the `c` key to end the API Designer session:
 	
-	```bash
+	```shell
 	control+c
 	```
 	
@@ -368,13 +368,13 @@ First you must create a data source entry for the Cloudant Reviews DB.
 	
 1. Also, our `inventory` LoopBack app is still running. In the terminal, type:
 
-	```bash
+	```shell
 	apic stop
 	```
 
 1. Type the following command to create a data source for Cloudant:
 
-	```bash
+	```shell
 	apic create --type datasource
 	```
 
@@ -382,7 +382,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 		
 	Answer the questions with the following data:
 	
-	```bash
+	```shell
 	? Enter the data-source name: review-db-cloudant
 	? Select the connector for review-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
 	Connector-specific configuration:
@@ -414,7 +414,7 @@ In the earlier steps, you used the API Designer User Experience to create a data
 
 1. Type the following command to create the `review` data model:
 
-	```bash
+	```shell
 	apic create --type model
 	```
 
@@ -424,7 +424,7 @@ In the earlier steps, you used the API Designer User Experience to create a data
 	> 
 	> You will **not** expose the review mode as a REST API. This is because you create a relationship between item and review later that will create the REST APIs you will use.
 
-	```bash
+	```shell
 	? Enter the model name:  review
 	? Select the data-source to attach review to:
 		> review-db-cloudant (cloudant)
@@ -504,7 +504,7 @@ The next step in this lab is to create a relationship between the `item` model a
 
 1. In the terminal session, type the following command:
 
-	```bash
+	```shell
 	apic loopback:relation
 	```
 
@@ -528,7 +528,7 @@ To verify that the relationship has been created, you will open the API Connect 
 
 1. In the terminal session, type the following command to launch the API Connect Designer window:
 
-	```bash
+	```shell
 	apic edit
 	```
 
@@ -550,7 +550,7 @@ To verify that the relationship has been created, you will open the API Connect 
 
 	Hold the `control` key and press the `c` key to end the API Designer session:
 	
-	```bash
+	```shell
 	control+c
 	```
 	

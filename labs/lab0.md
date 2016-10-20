@@ -215,7 +215,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     > **Note:** You may want to update your .bash file so you do not have to source the shell script everytime. To do that, add the following to your .bash file located in your user home directory:
     > 
-    > ```
+    > ```bash
     > export NVM_PATH=~/.nvm
     > source ~/.nvm/nvm.sh
     > ```
@@ -226,7 +226,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 ### 0.2 - Create your Bluemix account
 
-1.  Open a browser and visit http://www.bluemix.net
+1.  Open a browser and visit:
+
+    [](http://www.bluemix.net)
 
 1.  Press the SIGN UP button
  	

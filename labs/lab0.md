@@ -122,6 +122,12 @@ For this lab, you will be starting with your local image and installing node.js 
     > When you install `nvm` it will also install `npm` which is the node package manager.
     > npm is used to install node.js based software packages including the API Connect
     > Developer Toolkit
+    
+    {% include note.html content="
+        When you install `nvm` it will also install `npm` which is the node package manager.
+        npm is used to install node.js based software packages including the API Connect
+        Developer Toolkit
+    "%}
 
 1.  Close and restart your terminal as indicated in the terminal window or run this command `source ~/.profile`.
 

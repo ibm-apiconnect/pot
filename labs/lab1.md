@@ -140,13 +140,13 @@ For this lab, you will be starting with your local image and installing node.js 
 	
 	{% include troubleshooting.html content="
         You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
-    "%}
+    " %}
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/CORS-support-error.png)
 	
 	{% include troubleshooting.html content="
         If you see a 500 error like the one below, make sure you press the `Generate` button before you press the `Call operation` button again. Otherwise, you're trying to create a duplicate note.
-    "%}
+    " %}
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/duplicateRecordError.png)
 
@@ -168,7 +168,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     {% include important.html content="
         If you see an empty array, `[]`, as your result, then you've not successfully created any notes. This is also true if you stop the application and restart it. With the notes example, we're using an in-memory database which means that nothing is persisted to disk. So, it is lost when the server is stopped and restarted. Lab 2 will walk through how to connect to your application to a persistent data source.
-    "%}
+    " %}
 
 1.  At this point, we are done testing the app locally. Click on the `Run` button again to return to the application launch screen.
 

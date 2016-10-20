@@ -91,11 +91,17 @@ For this lab, you will be starting with your local image and installing node.js 
         
     1.  Select the `3.10.8` version of npm.  This is the recommended version to run with. Close the Powershell.
 
-1.  Install API Connect on to your machine by starting up a command line window as Administrator and issue this command - `npm install -g apiconnect --no-optional --ignore-scripts`.
+1.  Install API Connect on to your machine by starting up a command line window as Administrator and issue this command:
 
-1.  Once complete start up a new terminal window - enter in `apic -v`.  If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
+    ```bash
+    npm install -g apiconnect --no-optional --ignore-scripts
+    ```
 
-1.  You are now ready to move on to section 0.1 below.
+1.  Once complete start up a new terminal window and enter in `apic -v`.
+
+    If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
+
+1.  You are now ready to move on to section 0.2.
 
 #### 0.1b - Linux
 
@@ -133,9 +139,19 @@ For this lab, you will be starting with your local image and installing node.js 
     Now using node v4.5.0 (npm v2.15.9)
     ```
 
-1.  Install API Connect by issuing this command `npm install -g apiconnect` it will take several minutes to complete.
+1.  Install API Connect by issuing this command:
 
-1.  Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter. You are now ready to move on to section 1.1 below.
+    ```bash
+    npm install -g apiconnect
+    ```
+
+    It will take several minutes to complete.
+
+1.  Once complete start up a new terminal window and enter in `apic -v`.
+
+    If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
+
+1.  You are now ready to move on to section 0.2.
 
 #### 0.1c - Mac OS
 
@@ -224,9 +240,19 @@ For this lab, you will be starting with your local image and installing node.js 
     > source ~/.nvm/nvm.sh
     > ```
 
-1.  Install API Connect by issuing this command `npm install -g apiconnect --no-optional --ignore-scripts` it will take several minutes to complete
+1.  Install API Connect by issuing this command:
 
-1.  Run this command to ensure all is set up properly.  `apic -v` You might be asked to accept the license.  Select the default `yes` and hit enter.
+    ```bash
+    npm install -g apiconnect --no-optional --ignore-scripts
+    ```
+
+    It will take several minutes to complete.
+
+1.  Once complete start up a new terminal window and enter in `apic -v`.
+
+    If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
+
+1.  You are now ready to move on to section 0.2.
 
 ### 0.2 - Create your Bluemix account
 

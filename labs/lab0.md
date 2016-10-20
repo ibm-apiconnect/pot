@@ -33,13 +33,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
     1.  Install Python
 	
-        1.  version 2.7 is required.  You can download it here:  `https://www.python.org/download/releases/2.7/`
+        1.  version 2.7 is required. You can download it here:
+        
+            [](https://www.python.org/download/releases/2.7/)
 		
         1.  Note the location where it is installed.  You will need to add this location to your path later on.
 		
-    1.  Install .Net Frameworks SDK 2.0 (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988`)
+    1.  Install .Net Frameworks SDK 2.0
+    
+        [](https://www.microsoft.com/en-us/download/confirmation.aspx?id=19988)
 	
-    1.  Install Visual Studio Express (`https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914`)
+    1.  Install Visual Studio Express
+    
+        [](https://www.microsoft.com/en-us/download/confirmation.aspx?id=44914)
 	
     1.  Add Python to the System Path in Windows 7 to the System Path.
 	
@@ -57,7 +63,9 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Install Node.js
 
-    1.  Go to this link to install Node `https://nodejs.org/en/download/`
+    1.  Go to this link to install Node:
+    
+        [](https://nodejs.org/en/download/)
 
     1.  Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 

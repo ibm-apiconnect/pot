@@ -33,6 +33,11 @@ This is the index page.
     This is a tip.
 "%}
 
+{% include troubleshooting.html %}
+{% include callout.html content="
+    This is a trouble callout.
+"%}
+
 {% include troubleshooting.html content="
     {% include callout.html content="
         This is a trouble callout.

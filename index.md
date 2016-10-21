@@ -32,3 +32,9 @@ This is the index page.
 {% include tip.html content="
     This is a tip.
 "%}
+
+{% include troubleshooting.html content="
+    {% include callout.html content="
+        This is a trouble callout.
+    "%}
+"%}

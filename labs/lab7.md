@@ -178,9 +178,8 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/SubscribetoThinkSilverPlan.png)
     
-    > ![Alt text][info]
-    > 
-    > The Gold plan requires approval by the API provider for any subscription requests and allows unlimited requests for a given time period. The Silver plan is limited to 100 requests per hour and does not require approval by the API provider for subscription requests.    
+    {% include note.html content="The Gold plan requires approval by the API provider for any subscription requests and allows unlimited requests for a given time period. The Silver plan is limited to 100 requests per hour and does not require approval by the API provider for subscription requests.
+    " %}
 
 1.  Select the `Think IBM Web Consumer` toggle and click the `Subscribe` button.
 
@@ -230,11 +229,10 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/enter-oauth-creds.png)
 
-    > ![][info]
-    > 
-    > The consumer app will contact our OAuth Token URL and handle the token exchange using standard OAuth proceedures. If you're interested in seeing the token, you can open your browser's developer tools and view the Console logs and Network trace
-    >
-    > ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/consumer-app-console.png)
+    {% include tip.html content="The consumer app will contact our OAuth Token URL and handle the token exchange using standard OAuth proceedures. If you're interested in seeing the token, you can open your browser's developer tools and view the Console logs and Network trace:
+    " %}
+    
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/consumer-app-console.png)
 
 1.  Once you are logged in, the consumer application will redirect you to the item inventory page. The data displayed on the page is being powered by our `inventory` API! The consumer application is calling to our API, which is then being sent to our LoopBack application which handles the connection to the Cloudant data source where the inventory item data is persisted.
 
@@ -263,7 +261,3 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 **Congratulations!** You have completed Lab 7!
 
 Proceed to [Lab 8 - Analytics in API Connect](lab8.html)
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

@@ -86,7 +86,3 @@ In this tutorial, you will simulate a good amount of traffic passing through the
 ## Completion
 
 **Congratulations!** You have completed all of the labs!
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

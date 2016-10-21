@@ -90,8 +90,10 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/1.png)
 
+    <!--
     {% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all _lowercase_.
     " %}
+    -->
 
 1.  Switch to the `Assemble` tab.
 

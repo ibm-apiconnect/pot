@@ -352,9 +352,8 @@ This operation will end up invoking two separate back-end services to acquire sh
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokexyz2.png)
     
-    > ![][info]
-    >
-    > The `{zip}` parameter provided here is a reference to the `zip` parameter defined as input to the operation. The `{zip}` portion of the URL will get replaced by the actual zip code provided by then API consumers.
+    {% include note.html content="The `{zip}` parameter provided here is a reference to the `zip` parameter defined as input to the operation. The `{zip}` portion of the URL will get replaced by the actual zip code provided by then API consumers.
+    " %}
 
 1.  Hover over the `invoke_xyz` policy and click on the `clone` button to add another invoke action:
 
@@ -475,9 +474,8 @@ This operation will end up invoking two separate back-end services to acquire sh
       
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_shipping_calc_complete.png)
     
-    > ![][troubleshooting]
-    > 
-    > There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    {% include troubleshooting.html content="There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    " %}
 	
 1.  Save your changes.
 
@@ -528,9 +526,8 @@ This operation will call out to the Google Geocode API to obtain location inform
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-gws.png)
 	
-    > ![][info]
-    > 
-    > Take a quick look at line 5. Notice how our gateway script file is reading the body portion of the `google_geocode_response` variable which was assigned to the output of the `invoke` action.
+	{% include note.html content="Take a quick look at line 5. Notice how our gateway script file is reading the body portion of the `google_geocode_response` variable which was assigned to the output of the `invoke` action.
+    " %}
 
 1.  Click the `X` to close the gatewayscript editor.
 
@@ -538,9 +535,8 @@ This operation will call out to the Google Geocode API to obtain location inform
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_complete.png)
 
-    > ![][troubleshooting]
-    > 
-    > There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    {% include troubleshooting.html content="There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    " %}
 
 1.  Save your changes.
 
@@ -575,7 +571,3 @@ We will validate the financing and logistics APIs created above against with our
 **Congratulations!** You have successfully configured two new API's with advanced assemblies. In the next lab, you will bundle the API's into a Product and publish it to the consumer portal.
 
 Proceed to [Lab 6 - Working with API Products](lab6.html)
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"

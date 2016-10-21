@@ -128,26 +128,16 @@ There are two parts to this. First is the definition of how to connect to the ba
     ```
 	
 	{% include note.html content="
-    > By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
-    > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
-    > 
-    > `npm install loopback-connector-cloudant --save`
-    > 
-    > For more information on the LoopBack Connector for Cloudant, see:
-    > 
-    > [https://www.npmjs.com/package/loopback-connector-cloudant](https://www.npmjs.com/package/loopback-connector-cloudant)
+        By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
+        <br/><br/>
+        This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
+        <br/><br/> 
+        `npm install loopback-connector-cloudant --save`
+        <br/><br/>
+        For more information on the LoopBack Connector for Cloudant, see:
+        <br/><br/>
+        [https://www.npmjs.com/package/loopback-connector-cloudant](https://www.npmjs.com/package/loopback-connector-cloudant)
     " %}
-	
-    > ![][info]
-    > 
-    > By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
-    > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
-    >
-    > `npm install loopback-connector-cloudant --save`
-    >
-    > For more information on the LoopBack Connector for Cloudant, see:
-    >
-    > <https://www.npmjs.com/package/loopback-connector-cloudant>
 
 ### 2.4 - Launch the API Connect Designer
 
@@ -161,9 +151,8 @@ There are two parts to this. First is the definition of how to connect to the ba
 
 1.  Now that the API Designer is running, you should see the start page with your `inventory` API.
 
-    > ![][info]
-    > 
-    > This API was created as a result of the generation of our LoopBack application.
+    {% include note.html content="This API was created as a result of the generation of our LoopBack application.
+    " %}
 
 ### 2.5 - Create a Model for the Inventory Items
 
@@ -253,9 +242,8 @@ The item table in the database has 6 columns that will need to mapped as well. T
 
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
-    > ![][troubleshooting]
-    > 
-    > The host field will show a red line indicating that the field is required. You may ignore this message.
+    {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
+    " %}
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
 
@@ -299,9 +287,8 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1. Click the `Call operation` button to invoke the API.
 
-    > ![][troubleshooting]
-    > 
-    > The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
+    {% include troubleshooting.html content="The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
+    " %}
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/cert-error.png)
 
@@ -403,18 +390,19 @@ First you must create a data source entry for the Cloudant Reviews DB.
     ? modelIndex: (leave blank)
     ```
 
-    > ![][info]
-    > 
-    > By typing Y (Yes) to the question Install loopback-connector-cloudant, the CloudantDB Connector will be downloaded and saved to your project automatically. 
-    > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file.
-    >
-    > It is effectively the same as running the following to install the connector
-    >
-    > `npm install loopback-connector-cloudant --save`
-    >
-    > For more information on the LoopBack Connector for Cloudant, see:
-    > 
-    > <https://www.npmjs.com/package/loopback-connector-cloudant>
+    {% include note.html content="
+      By typing Y (Yes) to the question Install loopback-connector-cloudant, the CloudantDB Connector will be downloaded and saved to your project automatically.
+      <br/>
+      This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file.
+      <br/><br/>
+      It is effectively the same as running the following to install the connector
+      <br/><br/>
+      `npm install loopback-connector-cloudant --save`
+      <br/><br/>
+      For more information on the LoopBack Connector for Cloudant, see:
+      <br/><br/>
+      [https://www.npmjs.com/package/loopback-connector-cloudant](https://www.npmjs.com/package/loopback-connector-cloudant)
+    " %}
 
 ### 2.9 - Create Model for Reviews
 
@@ -430,9 +418,8 @@ In the earlier steps, you used the API Designer User Experience to create a data
 
 1.  Enter the properties for the `review` model:
 
-    > ![][important]
-    > 
-    > You will **not** expose the review mode as a REST API. This is because you create a relationship between item and review later that will create the REST APIs you will use.
+    {% include important.html content="You will **not** expose the review mode as a REST API. This is because you create a relationship between item and review later that will create the REST APIs you will use.
+    " %}
 
     ```text
     ? Enter the model name:  review
@@ -580,8 +567,4 @@ To verify that the relationship has been created, you will open the API Connect 
 Lab 3 will build on what you have already created to enable processing hooks and publish the APIs to the API Manager.
 
 Proceed to [Lab 3 - Customize and Deploy an Application](lab3.html)
-
-[important]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/common/troubleshooting.png "Troubleshooting"
 

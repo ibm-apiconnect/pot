@@ -170,8 +170,8 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     
     {% include important.html content="
         The Token URL will be based upon the location of your Org and Space running on Bluemix public.
-        <br/>You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`).
-        <br/>From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
+        <br/><br/>You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`).
+        <br/><br/>From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
     " %}
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/bmx-api-endpoint.png)

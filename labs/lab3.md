@@ -209,8 +209,10 @@ In this section, you will publish the `inventory` application to Bluemix
 1.  Paste the contents into a file on your system somewhere (e.g. Notepad, notes etc).  Be sure to save this and keep it handy for the next lab.
 
     {% include note.html content="
-        Note that your API Target URL will be different for your application and is unique to you. Note that you will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.
-        <br/>
+        Note that your API Target URL will be different for your application and is unique to you.
+        <br/><br/>
+        You will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.
+        <br/><br/>
         This will be used in the next lab.
     " %}
 

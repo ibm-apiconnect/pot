@@ -1,3 +1,12 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
 title: Labs
 url: index.html
 children:

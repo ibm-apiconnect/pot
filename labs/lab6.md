@@ -38,7 +38,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1.  Click the link for the `inventory` product.
 	
-	{% include note.html content="This product was automatically created during creation of the Inventory LoopBack application.
+	{% include note.html content=" This product was automatically created during creation of the Inventory LoopBack application.
     " %}
 
 1.  Edit the Product Info & Contact details:

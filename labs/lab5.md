@@ -57,15 +57,10 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
-    > ![][troubleshooting]
-    > 
-    > The host field will show a red line indicating that the field is required. You may ignore this message.
+    {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
+    " %}
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
-    
-    ```text
-    NOTES: LETS SEE IF THIS IS NECESSARY
-    ```
 
 1.  Click on `Base Path` menu option and set the base path to `/financing`.
 

@@ -38,8 +38,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1.  Click the link for the `inventory` product.
 	
-	{% include note.html content="
-        This product was automatically created during creation of the Inventory LoopBack application.
+	{% include note.html content="This product was automatically created during creation of the Inventory LoopBack application.
     " %}
 
 1.  Edit the Product Info & Contact details:
@@ -125,8 +124,8 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-product.png)
 
     {% include note.html content="
-        Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could chose specific ones to publish.
-        Also, the option exists to only Stage the product. A Stage-only action implies that we'll push the configuration to the Management server, but not actually make it available for consumption yet. The reason for doing this may be because your user permissions only allow staging, or that a different group is in charge of publishing Products.
+    Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could chose specific ones to publish.
+    Also, the option exists to only Stage the product. A Stage-only action implies that we'll push the configuration to the Management server, but not actually make it available for consumption yet. The reason for doing this may be because your user permissions only allow staging, or that a different group is in charge of publishing Products.
     " %}
 
 1.  Click the `Publish` button to make the API available in the Developer Portal and enforced on our API Gateway.

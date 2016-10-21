@@ -128,14 +128,14 @@ There are two parts to this. First is the definition of how to connect to the ba
     ```
 	
 	{% include note.html content="
-        By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
-        This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
-
-        `npm install loopback-connector-cloudant --save`
-
-        For more information on the LoopBack Connector for Cloudant, see:
-
-        [https://www.npmjs.com/package/loopback-connector-cloudant](https://www.npmjs.com/package/loopback-connector-cloudant)
+        > By typing Y (Yes) to the question `Install loopback-connector-cloudant`, the Cloudant Connector will be downloaded and saved to your project automatically. 
+        > This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file. It is effectively the same as running the following to install the connector:
+        > 
+        > `npm install loopback-connector-cloudant --save`
+        > 
+        > For more information on the LoopBack Connector for Cloudant, see:
+        > 
+        > [https://www.npmjs.com/package/loopback-connector-cloudant](https://www.npmjs.com/package/loopback-connector-cloudant)
     " %}
 	
     > ![][info]

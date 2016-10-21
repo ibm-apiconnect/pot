@@ -126,7 +126,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
     {% include note.html content="
         Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could chose specific ones to publish.
-        <br>
+        <br/><br/>
         Also, the option exists to only Stage the product. A Stage-only action implies that we'll push the configuration to the Management server, but not actually make it available for consumption yet. The reason for doing this may be because your user permissions only allow staging, or that a different group is in charge of publishing Products.
     " %}
 

@@ -90,10 +90,8 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/1.png)
 
-    <!--
-    {% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all _lowercase_.
+    {% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all **lowercase**.
     " %}
-    -->
 
 1.  Switch to the `Assemble` tab.
 
@@ -170,17 +168,16 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     > 
     > Token URL: `https://<BluemixHost>/<BluemixOrgName>-<BluemixSpaceName>/sb/oauth2/token`
     
-    <!--
-    {% include important.html content="The Token URL will be based upon the location of your Org and Space running on Bluemix public. You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`). From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
+    {% include important.html content="
+        The Token URL will be based upon the location of your Org and Space running on Bluemix public.
+        <br/>You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`).
+        <br/>From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
     " %}
-    -->
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/bmx-api-endpoint.png)
 
-    <!--
     {% include tip.html content="We are going to need the Token URL later. Go ahead and save the Token URL value to a text editor for easy access.
     " %}
-    -->
 
 1.  Click the `+` icon in the **Scopes** section to create a new scope. Set the following properties. Note the organization portion of the token URL will be different for each student.
 
@@ -285,13 +282,11 @@ We will validate the inventory application by using an Oauth test app we have ru
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/oauth-test-success.png)
 
-    <!--
     {% include troubleshooting.html content="
         The OAuth Tester client is an Angular-based web client. Logs for the tool can be found in your browser's developer tool set.
         <br/><br/>
         You can use the Console, Network and Application Session storage features to trace the calls and logs.
     " %}
-    -->
 
 ## Conclusion
 

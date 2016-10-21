@@ -1,0 +1,69 @@
+title: Labs
+url: index.html
+children:
+
+- title: 'Lab 0 - Setup IBM API Connect'
+  url: lab0.html
+  output: 'web'
+  children:
+
+  - title: Install Node.js
+    url: lab0.html#install-nodejs
+    output: 'web'
+    children:
+
+    - title: Windows
+      url: lab0.html#a---windows
+      output: 'web'
+
+    - title: Linux
+      url: lab0.html#b---linux
+      output: 'web'
+
+    - title: Mac OS
+      url: lab0.html#c---mac-os
+      output: 'web'
+
+  - title: Create Your Bluemix Account
+    url: lab0.html#create-your-bluemix-account
+    output: 'web'
+
+  - title: Enable the API Connect Service on your Bluemix Account
+    url: lab0.html#enable-the-api-connect-service-on-your-bluemix-account
+    output: 'web'
+
+  - title: Create your Developer Portal Instance for your API Connect Catalog
+    url: lab0.html#create-your-developer-portal-instance-for-your-api-connect-catalog
+    output: 'web'
+
+- title: 'Lab 1 - Introduction to IBM API Connect'
+  url: lab1.html
+  output: 'web'
+
+- title: 'Lab 2 - Create a Loopback Application'
+  url: lab2.html
+  output: 'web'
+
+- title: 'Lab 3 - Customize and Deploy the Inventory Application'
+  url: lab3.html
+  output: 'web'
+
+- title: 'Lab 4 - Configure and Secure an API'
+  url: lab4.html
+  output: 'web'
+
+- title: 'Lab 5 - Advanced API Assembly'
+  url: lab5.html
+  output: 'web'
+
+- title: 'Lab 6 - Working with API Products'
+  url: lab6.html
+  output: 'web'
+
+- title: 'Lab 7 - Consumer Experience'
+  url: lab7.html
+  output: 'web'
+
+- title: 'Lab 8 - Analytics in API Connect'
+  url: lab8.html
+  output: 'web'

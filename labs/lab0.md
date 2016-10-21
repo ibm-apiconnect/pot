@@ -256,7 +256,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Open a browser and visit:
 
-    [](http://www.bluemix.net)
+    [http://www.bluemix.net](http://www.bluemix.net)
 
 1.  Press the SIGN UP button
  	

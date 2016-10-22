@@ -59,10 +59,12 @@ function setupSidebarTreeNav(){
     });
 
     //add active class to parents of active nav elems
-    $("li.active").parentsUntil('#mysidebar', '.tree-parent')
-      .addClass('expanded')
-      .children('ul.nav-list').show();
+    // $("li.active").parentsUntil('#mysidebar', '.tree-parent')
+    //   .addClass('expanded')
+    //   .children('ul.nav-list').show();
 
+    $("li.active").find("ul.nav-list").parent().addClass('expanded');
+    $("li.active").find("ul.nav-list").show();
 
     //add expanded class to active tree parents
     $('.tree-parent.active').addClass('expanded');

@@ -16,32 +16,32 @@ children:
   output: 'web'
   children:
 
-  - title: Install Node.js
+  - title: 'Install Node.js'
     url: lab0.html#install-nodejs
     output: 'web'
     children:
 
-    - title: Windows
+    - title: 'Windows'
       url: lab0.html#a---windows
       output: 'web'
 
-    - title: Linux
+    - title: 'Linux'
       url: lab0.html#b---linux
       output: 'web'
 
-    - title: Mac OS
+    - title: 'Mac OS'
       url: lab0.html#c---mac-os
       output: 'web'
 
-  - title: Create Your Bluemix Account
+  - title: 'Create Your Bluemix Account'
     url: lab0.html#create-your-bluemix-account
     output: 'web'
 
-  - title: Enable the API Connect Service on your Bluemix Account
+  - title: 'Enable the API Connect Service on your Bluemix Account'
     url: lab0.html#enable-the-api-connect-service-on-your-bluemix-account
     output: 'web'
 
-  - title: Create your Developer Portal Instance for your API Connect Catalog
+  - title: 'Create your Developer Portal Instance for your API Connect Catalog'
     url: lab0.html#create-your-developer-portal-instance-for-your-api-connect-catalog
     output: 'web'
 
@@ -50,23 +50,23 @@ children:
   output: 'web'
   children:
 
-  - title: Creating a notes Application
+  - title: 'Creating a notes Application'
     url: lab1.html#creating-a-notes-application
     output: 'web'
 
-  - title: Launcing the notes Application
+  - title: 'Launcing the notes Application'
     url: lab1.html#launching-the-notes-application
     output: 'web'
 
-  - title: Testing the notes Application
+  - title: 'Testing the notes Application'
     url: lab1.html#testing-the-notes-application
     output: 'web'
 
-  - title: Publishing the API to the Developer Portal
+  - title: 'Publishing the API to the Developer Portal'
     url: lab1.html#publishing-the-api-to-the-developer-portal
     output: 'web'
 
-  - title: Browsing the API in the Developer Portal
+  - title: 'Browsing the API in the Developer Portal'
     url: lab1.html#browsing-the-api-in-the-developer-portal
     output: 'web'
 
@@ -75,47 +75,47 @@ children:
   output: 'web'
   children:
 
-  - title: Create a Working Directory
+  - title: 'Create a Working Directory'
     url: lab2.html#create-a-working-directory
     output: 'web'
 
-  - title: Create the Inventory App
+  - title: 'Create the Inventory App'
     url: lab2.html#create-the-inventory-app
     output: 'web'
 
-  - title: Create a Data Source Connector to Cloudant
+  - title: 'Create a Data Source Connector to Cloudant'
     url: lab2.html#create-a-data-source-connector-to-cloudant
     output: 'web'
 
-  - title: Launch the API Connect Designer
+  - title: 'Launch the API Connect Designer'
     url: lab2.html#launch-the-api-connect-designer
     output: 'web'
 
-  - title: Create a Model for the Inventory Items
+  - title: 'Create a Model for the Inventory Items'
     url: lab2.html#create-a-model-for-the-inventory-items
     output: 'web'
 
-  - title: Create Properties for the item Model
+  - title: 'Create Properties for the item Model'
     url: lab2.html#create-properties-for-the-item-model
     output: 'web'
 
-  - title: Verify API
+  - title: 'Verify API'
     url: lab2.html#verify-api
     output: 'web'
 
-  - title: Create the second Cloudant Data Source for Item Reviews
+  - title: 'Create the second Cloudant Data Source for Item Reviews'
     url: lab2.html#create-the-second-cloudant-data-source-for-item-reviews
     output: 'web'
 
-  - title: Create Model for Reviews
+  - title: 'Create Model for Reviews'
     url: lab2.html#create-model-for-reviews
     output: 'web'
 
-  - title: Create a Relationship Between the item and review Data Models
+  - title: 'Create a Relationship Between the item and review Data Models'
     url: lab2.html#create-a-relationship-between-the-item-and-review-data-models
     output: 'web'
 
-  - title: Verify the Relationship
+  - title: 'Verify the Relationship'
     url: lab2.html#verify-the-relationship
     output: 'web'
 
@@ -124,24 +124,24 @@ children:
   output: 'web'
   children:
 
-  - title: Edit the Application Configuration
+  - title: 'Edit the Application Configuration'
     url: lab3.html#edit-the-application-configuration
     output: 'web'
 
-  - title: Create a Remote Hook
+  - title: 'Create a Remote Hook'
     url: lab3.html#create-a-remote-hook
     output: 'web'
 
-  - title: Publish App to Bluemix
+  - title: 'Publish App to Bluemix'
     url: lab3.html#publish-app-to-bluemix
     output: 'web'
     children:
 
-    - title: Configure Developer Toolkit to Communicate with API Connect
+    - title: 'Configure Developer Toolkit to Communicate with API Connect'
       url: lab3.html#configure-the-developer-toolkit-to-communicate-with-api-connect
       output: 'web'
 
-    - title: Publish the Application
+    - title: 'Publish the Application'
       url: lab3.html#publish-the-application
       output: 'web'
 
@@ -150,34 +150,109 @@ children:
   output: 'web'
   children:
 
-  - title: Working with the Inventory API in API Designer
+  - title: 'Working with the Inventory API in API Designer'
     url: lab4.html#working-with-the-inventory-api-in-api-designer
     output: 'web'
 
-  - title: Adding a New OAuth 2.0 Provider API
+  - title: 'Adding a New OAuth 2.0 Provider API'
     url: lab4.html#adding-a-new-oauth-20-provider-api
     output: 'web'
 
-  - title: Configuring and Securing the Inventory API
+  - title: 'Configuring and Securing the Inventory API'
     url: lab4.html#configuring-and-securing-the-inventory-api
     output: 'web'
 
-  - title: Defining API Processing Behavior
-    url: https://ibm-apiconnect.github.io/pot/lab4.html#defining-api-processing-behavior
+  - title: 'Defining API Processing Behavior'
+    url: lab4.html#defining-api-processing-behavior
     output: 'web'
 
 - title: 'Lab 5 - Advanced API Assembly'
   url: lab5.html
   output: 'web'
+  children:
+
+  - title: 'Create the Financing API (REST to SOAP)'
+    url: lab5.html#create-the-api-definition
+    output: 'web'
+    children:
+
+    - title: 'Create the API Definition'
+      url: lab5.html#create-the-api-definition
+      output: 'web'
+
+    - title: 'Build the Financing API Assembly'
+      url: lab5.html#build-the-financing-api-assembly
+      output: 'web'
+
+  - title: 'Add Logistics API (Advanced Assembly)'
+    url: lab5.html#add-logistics-api-advanced-assembly
+    output: 'web'
+    children:
+
+    - title: 'Import Predefined API Definition'
+      url: lab5.html#import-predefined-api-definition
+      output: 'web'
+
+    - title: 'Create the Logistics API Assembly'
+      url: lab5.html#create-the-logistics-api-assembly
+      output: 'web'
 
 - title: 'Lab 6 - Working with API Products'
   url: lab6.html
   output: 'web'
+  children:
+
+  - title: 'Creating an API Product'
+    url: lab6.html#creating-an-api-product
+    output: 'web'
+
+  - title: 'Publishing the API Product'
+    url: lab6.html#publishing-the-api-product
+    output: 'web'
 
 - title: 'Lab 7 - Consumer Experience'
   url: lab7.html
   output: 'web'
+  children:
+
+  - title: 'Customize the Developer Portal'
+    url: lab7.html#customize-the-developer-portal
+    output: 'web'
+    children:
+
+    - title: 'Install and Configure a Custom Theme'
+      url: https://ibm-apiconnect.github.io/pot/lab7.html#install-and-configure-a-custom-theme
+      output: 'web'
+
+    - title: 'Customize the Welcome Banner'
+      url: lab7.html#customize-the-welcome-banner
+      output: 'web'
+
+    - title: 'Change the Region Settings for the Content Blocks'
+      url: lab7.html#change-the-region-settings-for-the-content-blocks
+      output: 'web'
+
+  - title: 'Register an Application as a Developer'
+    url: lab7.html#register-an-application-as-a-developer
+    output: 'web'
+
+  - title: 'Subscribe to a Plan for the ThinkIBM APIs'
+    url: lab7.html#subscribe-to-a-plan-for-the-thinkibm-apis
+    output: 'web'
+
+  - title: 'Test think Product APIs from the Developer Portal'
+    url: lab7.html#test-think-product-apis-from-the-developer-portal
+    output: 'web'
+
+  - title: 'Test the APIs from the Think IBM Web Consumer Application'
+    url: lab7.html#test-the-apis-from-the-think-ibm-web-consumer-application
+    output: 'web'
 
 - title: 'Lab 8 - Analytics in API Connect'
   url: lab8.html
   output: 'web'
+  children:
+
+  - title: ''
+    url:
+    output: 'web'

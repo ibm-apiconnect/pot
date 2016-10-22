@@ -12,247 +12,247 @@ url: index.html
 children:
 
 - title: 'Lab 0 - Setup IBM API Connect'
-  url: '/lab0.html'
+  url: '/pot/lab0.html'
   output: 'web'
   children:
 
   - title: 'Install Node.js'
-    url: '/lab0.html#install-nodejs'
+    url: '/pot/lab0.html#install-nodejs'
     output: 'web'
     children:
 
     - title: 'Windows'
-      url: '/lab0.html#a---windows'
+      url: '/pot/lab0.html#a---windows'
       output: 'web'
 
     - title: 'Linux'
-      url: '/lab0.html#b---linux'
+      url: '/pot/lab0.html#b---linux'
       output: 'web'
 
     - title: 'Mac OS'
-      url: '/lab0.html#c---mac-os'
+      url: '/pot/lab0.html#c---mac-os'
       output: 'web'
 
   - title: 'Create Your Bluemix Account'
-    url: '/lab0.html#create-your-bluemix-account'
+    url: '/pot/lab0.html#create-your-bluemix-account'
     output: 'web'
 
   - title: 'Enable the API Connect Service on your Bluemix Account'
-    url: '/lab0.html#enable-the-api-connect-service-on-your-bluemix-account'
+    url: '/pot/lab0.html#enable-the-api-connect-service-on-your-bluemix-account'
     output: 'web'
 
   - title: 'Create your Developer Portal Instance for your API Connect Catalog'
-    url: '/lab0.html#create-your-developer-portal-instance-for-your-api-connect-catalog'
+    url: '/pot/lab0.html#create-your-developer-portal-instance-for-your-api-connect-catalog'
     output: 'web'
 
 - title: 'Lab 1 - Introduction to IBM API Connect'
-  url: '/lab1.html'
+  url: '/pot/lab1.html'
   output: 'web'
   children:
 
   - title: 'Creating a notes Application'
-    url: '/lab1.html#creating-a-notes-application'
+    url: '/pot/lab1.html#creating-a-notes-application'
     output: 'web'
 
   - title: 'Launcing the notes Application'
-    url: '/lab1.html#launching-the-notes-application'
+    url: '/pot/lab1.html#launching-the-notes-application'
     output: 'web'
 
   - title: 'Testing the notes Application'
-    url: '/lab1.html#testing-the-notes-application'
+    url: '/pot/lab1.html#testing-the-notes-application'
     output: 'web'
 
   - title: 'Publishing the API to the Developer Portal'
-    url: '/lab1.html#publishing-the-api-to-the-developer-portal'
+    url: '/pot/lab1.html#publishing-the-api-to-the-developer-portal'
     output: 'web'
 
   - title: 'Browsing the API in the Developer Portal'
-    url: '/lab1.html#browsing-the-api-in-the-developer-portal'
+    url: '/pot/lab1.html#browsing-the-api-in-the-developer-portal'
     output: 'web'
 
 - title: 'Lab 2 - Create a Loopback Application'
-  url: '/lab2.html'
+  url: '/pot/lab2.html'
   output: 'web'
   children:
 
   - title: 'Create a Working Directory'
-    url: '/lab2.html#create-a-working-directory'
+    url: '/pot/lab2.html#create-a-working-directory'
     output: 'web'
 
   - title: 'Create the Inventory App'
-    url: '/lab2.html#create-the-inventory-app'
+    url: '/pot/lab2.html#create-the-inventory-app'
     output: 'web'
 
   - title: 'Create a Data Source Connector to Cloudant'
-    url: '/lab2.html#create-a-data-source-connector-to-cloudant'
+    url: '/pot/lab2.html#create-a-data-source-connector-to-cloudant'
     output: 'web'
 
   - title: 'Launch the API Connect Designer'
-    url: '/lab2.html#launch-the-api-connect-designer'
+    url: '/pot/lab2.html#launch-the-api-connect-designer'
     output: 'web'
 
   - title: 'Create a Model for the Inventory Items'
-    url: '/lab2.html#create-a-model-for-the-inventory-items'
+    url: '/pot/lab2.html#create-a-model-for-the-inventory-items'
     output: 'web'
 
   - title: 'Create Properties for the item Model'
-    url: '/lab2.html#create-properties-for-the-item-model'
+    url: '/pot/lab2.html#create-properties-for-the-item-model'
     output: 'web'
 
   - title: 'Verify API'
-    url: '/lab2.html#verify-api'
+    url: '/pot/lab2.html#verify-api'
     output: 'web'
 
   - title: 'Create the second Cloudant Data Source for Item Reviews'
-    url: '/lab2.html#create-the-second-cloudant-data-source-for-item-reviews'
+    url: '/pot/lab2.html#create-the-second-cloudant-data-source-for-item-reviews'
     output: 'web'
 
   - title: 'Create Model for Reviews'
-    url: '/lab2.html#create-model-for-reviews'
+    url: '/pot/lab2.html#create-model-for-reviews'
     output: 'web'
 
   - title: 'Create a Relationship Between the item and review Data Models'
-    url: '/lab2.html#create-a-relationship-between-the-item-and-review-data-models'
+    url: '/pot/lab2.html#create-a-relationship-between-the-item-and-review-data-models'
     output: 'web'
 
   - title: 'Verify the Relationship'
-    url: '/lab2.html#verify-the-relationship'
+    url: '/pot/lab2.html#verify-the-relationship'
     output: 'web'
 
 - title: 'Lab 3 - Customize and Deploy the Inventory Application'
-  url: '/lab3.html'
+  url: '/pot/lab3.html'
   output: 'web'
   children:
 
   - title: 'Edit the Application Configuration'
-    url: '/lab3.html#edit-the-application-configuration'
+    url: '/pot/lab3.html#edit-the-application-configuration'
     output: 'web'
 
   - title: 'Create a Remote Hook'
-    url: '/lab3.html#create-a-remote-hook'
+    url: '/pot/lab3.html#create-a-remote-hook'
     output: 'web'
 
   - title: 'Publish App to Bluemix'
-    url: '/lab3.html#publish-app-to-bluemix'
+    url: '/pot/lab3.html#publish-app-to-bluemix'
     output: 'web'
     children:
 
     - title: 'Configure Developer Toolkit to Communicate with API Connect'
-      url: '/lab3.html#configure-the-developer-toolkit-to-communicate-with-api-connect'
+      url: '/pot/lab3.html#configure-the-developer-toolkit-to-communicate-with-api-connect'
       output: 'web'
 
     - title: 'Publish the Application'
-      url: '/lab3.html#publish-the-application'
+      url: '/pot/lab3.html#publish-the-application'
       output: 'web'
 
 - title: 'Lab 4 - Configure and Secure an API'
-  url: '/lab4.html'
+  url: '/pot/lab4.html'
   output: 'web'
   children:
 
   - title: 'Working with the Inventory API in API Designer'
-    url: '/lab4.html#working-with-the-inventory-api-in-api-designer'
+    url: '/pot/lab4.html#working-with-the-inventory-api-in-api-designer'
     output: 'web'
 
   - title: 'Adding a New OAuth 2.0 Provider API'
-    url: '/lab4.html#adding-a-new-oauth-20-provider-api'
+    url: '/pot/lab4.html#adding-a-new-oauth-20-provider-api'
     output: 'web'
 
   - title: 'Configuring and Securing the Inventory API'
-    url: '/lab4.html#configuring-and-securing-the-inventory-api'
+    url: '/pot/lab4.html#configuring-and-securing-the-inventory-api'
     output: 'web'
 
   - title: 'Defining API Processing Behavior'
-    url: '/lab4.html#defining-api-processing-behavior'
+    url: '/pot/lab4.html#defining-api-processing-behavior'
     output: 'web'
 
 - title: 'Lab 5 - Advanced API Assembly'
-  url: '/lab5.html'
+  url: '/pot/lab5.html'
   output: 'web'
   children:
 
   - title: 'Create the Financing API (REST to SOAP)'
-    url: '/lab5.html#create-the-financing-api-rest-to-soap'
+    url: '/pot/lab5.html#create-the-financing-api-rest-to-soap'
     output: 'web'
     children:
 
     - title: 'Create the API Definition'
-      url: '/lab5.html#create-the-api-definition'
+      url: '/pot/lab5.html#create-the-api-definition'
       output: 'web'
 
     - title: 'Build the Financing API Assembly'
-      url: '/lab5.html#build-the-financing-api-assembly'
+      url: '/pot/lab5.html#build-the-financing-api-assembly'
       output: 'web'
 
   - title: 'Add Logistics API (Advanced Assembly)'
-    url: '/lab5.html#add-logistics-api-advanced-assembly'
+    url: '/pot/lab5.html#add-logistics-api-advanced-assembly'
     output: 'web'
     children:
 
     - title: 'Import Predefined API Definition'
-      url: '/lab5.html#import-predefined-api-definition'
+      url: '/pot/lab5.html#import-predefined-api-definition'
       output: 'web'
 
     - title: 'Create the Logistics API Assembly'
-      url: '/lab5.html#create-the-logistics-api-assembly'
+      url: '/pot/lab5.html#create-the-logistics-api-assembly'
       output: 'web'
 
 - title: 'Lab 6 - Working with API Products'
-  url: '/lab6.html'
+  url: '/pot/lab6.html'
   output: 'web'
   children:
 
   - title: 'Creating an API Product'
-    url: '/lab6.html#creating-an-api-product'
+    url: '/pot/lab6.html#creating-an-api-product'
     output: 'web'
 
   - title: 'Publishing the API Product'
-    url: '/lab6.html#publishing-the-api-product'
+    url: '/pot/lab6.html#publishing-the-api-product'
     output: 'web'
 
 - title: 'Lab 7 - Consumer Experience'
-  url: '/lab7.html'
+  url: '/pot/lab7.html'
   output: 'web'
   children:
 
   - title: 'Customize the Developer Portal'
-    url: '/lab7.html#customize-the-developer-portal'
+    url: '/pot/lab7.html#customize-the-developer-portal'
     output: 'web'
     children:
 
     - title: 'Install and Configure a Custom Theme'
-      url: https://ibm-apiconnect.github.io/pot/lab7.html#install-and-configure-a-custom-theme'
+      url: https://ibm-apiconnect.github.io/pot/pot/lab7.html#install-and-configure-a-custom-theme'
       output: 'web'
 
     - title: 'Customize the Welcome Banner'
-      url: '/lab7.html#customize-the-welcome-banner'
+      url: '/pot/lab7.html#customize-the-welcome-banner'
       output: 'web'
 
     - title: 'Change the Region Settings for the Content Blocks'
-      url: '/lab7.html#change-the-region-settings-for-the-content-blocks'
+      url: '/pot/lab7.html#change-the-region-settings-for-the-content-blocks'
       output: 'web'
 
   - title: 'Register an Application as a Developer'
-    url: '/lab7.html#register-an-application-as-a-developer'
+    url: '/pot/lab7.html#register-an-application-as-a-developer'
     output: 'web'
 
   - title: 'Subscribe to a Plan for the ThinkIBM APIs'
-    url: '/lab7.html#subscribe-to-a-plan-for-the-thinkibm-apis'
+    url: '/pot/lab7.html#subscribe-to-a-plan-for-the-thinkibm-apis'
     output: 'web'
 
   - title: 'Test think Product APIs from the Developer Portal'
-    url: '/lab7.html#test-think-product-apis-from-the-developer-portal'
+    url: '/pot/lab7.html#test-think-product-apis-from-the-developer-portal'
     output: 'web'
 
   - title: 'Test the APIs from the Think IBM Web Consumer Application'
-    url: '/lab7.html#test-the-apis-from-the-think-ibm-web-consumer-application'
+    url: '/pot/lab7.html#test-the-apis-from-the-think-ibm-web-consumer-application'
     output: 'web'
 
 - title: 'Lab 8 - Analytics in API Connect'
-  url: '/lab8.html'
+  url: '/pot/lab8.html'
   output: 'web'
   children:
 
   - title: 'Browse the Analytics Data in API Connect'
-    url: '/lab8.html#browse-the-analytics-data-in-api-connect'
+    url: '/pot/lab8.html#browse-the-analytics-data-in-api-connect'
     output: 'web'

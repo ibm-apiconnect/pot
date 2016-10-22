@@ -48,18 +48,123 @@ children:
 - title: 'Lab 1 - Introduction to IBM API Connect'
   url: lab1.html
   output: 'web'
+  children:
+
+  - title: Creating a notes Application
+    url: lab1.html#creating-a-notes-application
+    output: 'web'
+
+  - title: Launcing the notes Application
+    url: lab1.html#launching-the-notes-application
+    output: 'web'
+
+  - title: Testing the notes Application
+    url: lab1.html#testing-the-notes-application
+    output: 'web'
+
+  - title: Publishing the API to the Developer Portal
+    url: lab1.html#publishing-the-api-to-the-developer-portal
+    output: 'web'
+
+  - title: Browsing the API in the Developer Portal
+    url: lab1.html#browsing-the-api-in-the-developer-portal
+    output: 'web'
 
 - title: 'Lab 2 - Create a Loopback Application'
   url: lab2.html
   output: 'web'
+  children:
+
+  - title: Create a Working Directory
+    url: lab2.html#create-a-working-directory
+    output: 'web'
+
+  - title: Create the Inventory App
+    url: lab2.html#create-the-inventory-app
+    output: 'web'
+
+  - title: Create a Data Source Connector to Cloudant
+    url: lab2.html#create-a-data-source-connector-to-cloudant
+    output: 'web'
+
+  - title: Launch the API Connect Designer
+    url: lab2.html#launch-the-api-connect-designer
+    output: 'web'
+
+  - title: Create a Model for the Inventory Items
+    url: lab2.html#create-a-model-for-the-inventory-items
+    output: 'web'
+
+  - title: Create Properties for the item Model
+    url: lab2.html#create-properties-for-the-item-model
+    output: 'web'
+
+  - title: Verify API
+    url: lab2.html#verify-api
+    output: 'web'
+
+  - title: Create the second Cloudant Data Source for Item Reviews
+    url: lab2.html#create-the-second-cloudant-data-source-for-item-reviews
+    output: 'web'
+
+  - title: Create Model for Reviews
+    url: lab2.html#create-model-for-reviews
+    output: 'web'
+
+  - title: Create a Relationship Between the item and review Data Models
+    url: lab2.html#create-a-relationship-between-the-item-and-review-data-models
+    output: 'web'
+
+  - title: Verify the Relationship
+    url: lab2.html#verify-the-relationship
+    output: 'web'
 
 - title: 'Lab 3 - Customize and Deploy the Inventory Application'
   url: lab3.html
   output: 'web'
+  children:
+
+  - title: Edit the Application Configuration
+    url: lab3.html#edit-the-application-configuration
+    output: 'web'
+
+  - title: Create a Remote Hook
+    url: lab3.html#create-a-remote-hook
+    output: 'web'
+
+  - title: Publish App to Bluemix
+    url: lab3.html#publish-app-to-bluemix
+    output: 'web'
+    children:
+
+    - title: Configure Developer Toolkit to Communicate with API Connect
+      url: lab3.html#configure-the-developer-toolkit-to-communicate-with-api-connect
+      output: 'web'
+
+    - title: Publish the Application
+      url: lab3.html#publish-the-application
+      output: 'web'
 
 - title: 'Lab 4 - Configure and Secure an API'
   url: lab4.html
   output: 'web'
+  children:
+
+  - title: Working with the Inventory API in API Designer
+    url: lab4.html#working-with-the-inventory-api-in-api-designer
+    output: 'web'
+
+  - title: Adding a New OAuth 2.0 Provider API
+    url: lab4.html#adding-a-new-oauth-20-provider-api
+    output: 'web'
+
+  - title: Configuring and Securing the Inventory API
+    url: lab4.html#configuring-and-securing-the-inventory-api
+    output: 'web'
+
+  - title: Defining API Processing Behavior
+    url: https://ibm-apiconnect.github.io/pot/lab4.html#defining-api-processing-behavior
+    output: 'web'
 
 - title: 'Lab 5 - Advanced API Assembly'
   url: lab5.html

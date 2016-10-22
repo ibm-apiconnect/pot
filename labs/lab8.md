@@ -21,7 +21,7 @@ In this tutorial, you will simulate a good amount of traffic passing through the
 
 ## Step by Step Lab Instructions
 
-## 8.1 - Browse the Analytics Data in API Connect
+### 8.1 - Browse the Analytics Data in API Connect
 
 1.  If not already open, launch the `Firefox Web Browser` from the favorites menu.
 

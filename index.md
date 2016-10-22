@@ -21,8 +21,8 @@ This is the index page.
 {% include note.html content="This is a note.
 " %}
 
-{% include callout.html content="This is a callout.
+{% include tip.html content="This is a tip.
 " %}
 
-{% include tip.html content="This is a tip.
+{% include callout.html content="This is a callout.
 " %}

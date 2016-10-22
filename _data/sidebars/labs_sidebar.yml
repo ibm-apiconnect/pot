@@ -172,7 +172,7 @@ children:
   children:
 
   - title: 'Create the Financing API (REST to SOAP)'
-    url: lab5.html#create-the-api-definition
+    url: lab5.html#create-the-financing-api-rest-to-soap
     output: 'web'
     children:
 

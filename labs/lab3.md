@@ -170,7 +170,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-inventory-app.png)
 
-#### 3.3.3 - Publish the Application
+#### 3.3.2 - Publish the Application
 
 1.  Click `Publish` button once more and select our target catalog, indicated by the grey highlighting.
 

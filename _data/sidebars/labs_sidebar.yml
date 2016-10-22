@@ -253,6 +253,6 @@ children:
   output: 'web'
   children:
 
-  - title: ''
-    url:
+  - title: 'Browse the Analytics Data in API Connect'
+    url: lab8.html#browse-the-analytics-data-in-api-connect
     output: 'web'

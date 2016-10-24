@@ -549,7 +549,7 @@ blockquote {
   border-left: 5px solid #bac9c2;
 }
 blockquote p {
-  font-size: 17.5px;
+  /*font-size: 17.5px;*/
   font-weight: 300;
   line-height: 1.25;
 }
@@ -599,8 +599,9 @@ pre {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #444;
-  background-color: #f0f0f0;
+  color: #c25;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
   white-space: nowrap;
   border-radius: 4px;
 }

@@ -116,7 +116,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	
     Answer the questions with the following data:
 
-    ```shell
+    ```text
     ? Enter the data-source name: item-db-cloudant
     ? Select the connector for item-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
     Connector-specific configuration:
@@ -361,7 +361,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
     control+c
     ```
 	
-    	This will return you to the command line prompt.
+    This will return you to the command line prompt.
 	
 1.  Also, our `inventory` LoopBack app is still running. In the terminal, type:
 
@@ -379,7 +379,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 
     Answer the questions with the following data:
 	
-    ```shell
+    ```text
     ? Enter the data-source name: review-db-cloudant
     ? Select the connector for review-db-cloudant: IBM Cloudant DB (supported by StrongLoop)
     Connector-specific configuration:

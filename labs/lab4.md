@@ -46,6 +46,8 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     > 
     > Name: `oauth`
     > 
+    > Base Path: `/`
+    > 
     > Add to an existing product: `inventory 1.0.0`
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/newoauthprops.png)

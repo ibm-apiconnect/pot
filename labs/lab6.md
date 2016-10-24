@@ -81,13 +81,15 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1.  Click the `Apply` button.
 
-1.  Navigate to the Plans section. Modify the default plan by selecting it and specifying the following properties:
+1.  Navigate to the Plans section. Click the `+` button to add a new plan and specifying the following properties:
 
     > Title: `Silver`
     >
     > Name: `silver`
     >
     > Description: `Limited access to these APIs`
+    >
+    > Add rate limit of 100 with an interval of 1 hour
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-silverplan.png)
 

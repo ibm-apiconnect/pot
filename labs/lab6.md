@@ -61,7 +61,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
     > License Name: `The MIT License (MIT)`
     >
-    > License URL: `https://opensource.org/licenses/MIT`
+    > License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
     >
     > Terms of Service: paste the contents of the file linked below
     > >

@@ -33,12 +33,12 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     API Designer will open in your browser. You may see an informational message about Draft APIs. (This message appears the very first time you launch the API Designer.) If so, click the `Got it!` button, when you are ready to proceed to creating an API.
     
     You should see the APIs view, and a single API listed. The `inventory` API was automatically created during loopback app generation. We will edit this API at a later step.
-	
-	![alt text](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/startapidesigner.png)
+    
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/startapidesigner.png)
 
 ### 4.2 - Adding a New OAuth 2.0 Provider API
 
-1.  Click the `+ Add` button and select `OAuth 2.0 Provider API` from the menu.
+1.  Click the `+ Add` button and select `New OAuth 2.0 Provider API` from the menu.
 
 1.  Specify the following properties and click the `Add` button to continue.
 
@@ -48,7 +48,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     > 
     > Base Path: `/`
     > 
-    > Add to an existing product: `inventory 1.0.0`
+    > Version: `1.0.0`
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/newoauthprops.png)
 
@@ -69,7 +69,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 1.  Modify the values for `scope1`, set the following fields:
 
     > Name: `inventory`
-    >
+    > 
     > Description: `Access to Inventory API`
 
 1.  Delete `scope2` and `scope3` by clicking the trashcan icons to the right of the scope definitions.
@@ -81,18 +81,18 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 1.  Set the remaining OAuth 2 settings as follows:
 
     > Collect credentials using: `basic`
-    >
+    > 
     > Authenticate application users using: `Authentication URL`
-    >
+    > 
     > Authentication URL: `https://thinkibm-services.mybluemix.net/auth`
-    >
+    > 
     > Turn off the `Enable revocation` option
     
     When complete, your settings should look like this:
-	
+    
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/1.png)
 
-    {% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all **lowercase**.
+	{% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all **lowercase**.
     " %}
 
 1.  Switch to the `Assemble` tab.
@@ -117,7 +117,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1.  In the gatewayscript editor, type the following lines of code:
 
-    ```js
+    ```javascript
     var hm = require('header-metadata');
     hm.response.set('Access-Control-Allow-Origin','*');
     ```
@@ -134,15 +134,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1.  Click the `inventory` link.
 
-    The inventory API will open in the API Editor, where we can make the necessary configuration changes. Over the next several steps you will set this API up to use the OAuth provider you just created.  
-
-1.  Notice the warning icon at the top-right of the screen. Click on the icon and read the warning description. Click on the `Show me` link to navigate to the portion of the configuration which is causing the warning.
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/x-any-warning.png)
-
-1.  Click on the `trashcan` icon for the `x-any` Definition to remove it. Confirm the removal by clicking the `OK` button in the prompt.
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/delete-x-any.png)
+    The inventory API will open in the API Editor, where we can make the necessary configuration changes. Over the next several steps you will set this API up to use the OAuth provider you just created.
 
 1.  Navigate to the `Base Path` section.
 
@@ -169,8 +161,10 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     > Flow: `Password`
     > 
     > Token URL: `https://<BluemixHost>/<BluemixOrgName>-<BluemixSpaceName>/sb/oauth2/token`
-    
-    {% include important.html content="
+
+    **IMPORTANT**:
+
+	{% include important.html content="
         The Token URL will be based upon the location of your Org and Space running on Bluemix public.
         <br/><br/>You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`).
         <br/><br/>From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
@@ -178,13 +172,13 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/bmx-api-endpoint.png)
 
-    {% include tip.html content="We are going to need the Token URL later. Go ahead and save the Token URL value to a text editor for easy access.
+	{% include tip.html content="We are going to need the Token URL later. Go ahead and save the Token URL value to a text editor for easy access.
     " %}
 
 1.  Click the `+` icon in the **Scopes** section to create a new scope. Set the following properties. Note the organization portion of the token URL will be different for each student.
 
     > Scope Name: `inventory`
-    >
+    > 
     > Description: `Access to all inventory resources`
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/3.png)
@@ -238,9 +232,27 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 We will validate the inventory application by using an Oauth test app we have running in Bluemix.
 
+1.  First, you need to attach the OAuth API to our `inventory` product.
+
+    Click on the `<- All APIs` link, then click on the `Products` link to view the product list.
+
+1.  Click on the `inventory 1.0.0` product to open it for editing.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/open-inv-product.png)
+
+1.  Scroll down to the **APIs** section and click the `+` button.
+
+1.  Select the `oauth` API to add it to the product and click the `Apply` button.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/add-oauth-api-to-product.png)
+
+1.  Save the Product.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/save-product.png)
+
 1.  Publish your API to Bluemix clicking on the `Publish` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/5.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/publish.png)
 
 1.  Click on your Bluemix instance. **Note:** Each instance name is unique and will be different than the screenshot below.
 
@@ -264,7 +276,7 @@ We will validate the inventory application by using an Oauth test app we have ru
 
 1.  To test the API, we need to use a Web App to simulate the Oauth handshake. To do this, open a new browser tab and navigate to the following URL:
 
-    [https://thinkibm-services.mybluemix.net/oauthtester](https://thinkibm-services.mybluemix.net/oauthtester)
+	[https://thinkibm-services.mybluemix.net/oauthtester](https://thinkibm-services.mybluemix.net/oauthtester)
 
 1.  Enter in the following values into the Form
 	
@@ -281,7 +293,7 @@ We will validate the inventory application by using an Oauth test app we have ru
 1.  Click the `Submit` button.
 
 1.  The OAuth Tester will attempt to call your Token URL and obtain an OAuth token. Once it receives a token, the tool will also call the `/inventory/items` API with a query filter to return back the first two data sets. If everything worked properly, you will see the token and the API response, similar to this:
-
+    
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/oauth-test-success.png)
 
     {% include troubleshooting.html content="
@@ -289,7 +301,7 @@ We will validate the inventory application by using an Oauth test app we have ru
         <br/><br/>
         You can use the Console, Network and Application Session storage features to trace the calls and logs.
     " %}
-
+    
 ## Conclusion
 
 **Congratulations!** You have successfully configured and secured the inventory API. You will consume this API in a later step.

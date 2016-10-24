@@ -61,12 +61,11 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
     > License Name: `The MIT License (MIT)`
     >
-    > License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+    > License URL: `https://opensource.org/licenses/MIT`
     >
-    > Terms of Service: paste the contents of the file linked below
-    > >
-    > > [http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/lab-files/lab6/license.txt](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/lab-files/lab6/license.txt)
-	  
+    > Terms of Service: _paste the contents of the file linked below:_
+    > 
+    > * [http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/lab-files/lab6/license.txt](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/lab-files/lab6/license.txt)
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-licensetos.png)
 	
 1.  Modify the Visibility so that the `think` product is only visible to `Authenticated users`:

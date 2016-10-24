@@ -75,7 +75,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 1.  Navigate to the APIs section. Click the `+` button to add all of our new APIs to this product.
 
-1.  Check the checkboxes next to `financing`, `logistics` and `oauth`, ensuring that `inventory` is left selected.
+1.  Ensure the checkboxes next to `financing`, `logistics` `oauth` and `inventory` are selected.
 	 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-apis.png)
 

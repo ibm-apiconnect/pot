@@ -284,7 +284,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once you are logged in, you can start your 30 day trial by clicking on the launch button.
 
-![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-launch-trial.png)
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-launch-trial.png)
 
 2. You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
 	
@@ -298,7 +298,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
 
-1.  You're account has been created and configured once you see the following screen.
+1.  You will see a screen then that shows the following: `You don't have any applications yet. Get started with one of the options that follow, or go to the catalog to create an application.` Click the `Catalog` button to go to your catalog and create your API Connect instance in section 0.3 below.
  	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
 

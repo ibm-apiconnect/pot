@@ -304,17 +304,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 ### 0.3 - Enable the API Connect Service on your Bluemix Account
 
-1.  The next step is to enable the API Connect service on your Bluemix account.  To start the process, click on the `CATALOG` tab in the upper right hand side of the screen
-
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/27.png)
-
-1.  Type `Api connect` in the search box next to the magnifying glass icon
-
-1.  Click on the `API Connect` Icon to install a new instance of API Connect into your Bluemix space.
+1.  Once in the catalog, you can search for the API Connect service by entering in `API Connect` in the search box next to the magnifying glass icon.  Click on the `API Connect` Icon to install a new instance of API Connect into your Bluemix space.
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/28.png)
 
-1.  Click on the `APIs` tile.
+1.  You can read through some of the details about the service.  Once you are ready to continue, .
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/29.png)
 

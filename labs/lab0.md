@@ -316,13 +316,17 @@ For this lab, you will be starting with your local image and installing node.js 
 
     ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/29.png)
  
-1.  The API Connect service is now deployed.  To confirm the instance is properly created, click on `Launch API Manager`
+1.  The API Connect service is now deployed.  Return to your Dashboard and you will see that your API Connect service is there.  Click on it open.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/33.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/33.png)
 
-1.  If you are able to see your `Sandbox` catalog as shown below, this means the process of creating and setting up your Bluemix account to use API Connect is now complete.  Close your browser window and proceed to section 1.2 below
+1.  It will log into your instance for you automatically.  Once finished, it should drop you in your Drafts window.  
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/34.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/34.png)
+
+1.  Click on the Navigate button in the upper left corner and select `Dashboard`.  If you see your `Sandbox` catalog there, then the process to create your instance is complete.
+
+	![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/34a.png)
 
 ### 0.4 Create your Developer Portal Instance for your API Connect Catalog
 

@@ -282,7 +282,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Then enter your password on the next page and press the LOG IN button
 
-1.  You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
+1.  Once you are logged in, you can start your 30 day trial by clicking on the launch button.
+
+![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-launch-trial.png)
+
+2. You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-org.png)
 

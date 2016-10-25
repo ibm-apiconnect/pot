@@ -308,7 +308,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/28.png)
 
-1.  You can read through some of the details about the service.  Once you are ready to continue, .
+1.  You can read through some of the details about the service.  Once you are ready to continue, Click the `Create` button.
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/29.png)
 

@@ -275,8 +275,6 @@ For this lab, you will be starting with your local image and installing node.js 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
 
 1.  Once confirmed, you will be taken to a page that says Success! To login, click the Log In link
-	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-success.png)
 
 1.  Enter your email address and press the CONTINUE button
 
@@ -336,19 +334,11 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Log into your Bluemix Account using this url: `https://new-console.ng.bluemix.net/`
 
-1.  Via the dashboard, click on the `APIs` Icon.
+1.  Via the dashboard, click on your API Connect instance.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/16.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/33.png)
 
-1.  Click on your `API Connect` instance
-
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/17.png)
-
-1.  Click on `Launch API Manager` to launch your API Manager
-
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/18.png)
-
-1.  Click on your `Sandbox` Catalog
+1.  From the top left, go to the `Dashboard` to bring your list of catalogs.  Click on your `Sandbox` Catalog
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/19.png)
 

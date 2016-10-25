@@ -306,7 +306,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once in the catalog, you can search for the API Connect service by entering in `API Connect` in the search box next to the magnifying glass icon.  Click on the `API Connect` Icon to install a new instance of API Connect into your Bluemix space.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/28.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/28.png)
 
 1.  You can read through some of the details about the service.  You can fill in the information based on your needs.
 	- SPACE – The name of your Bluemix Space to deploy the API Connect Service
@@ -314,7 +314,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	- Service Name – The name you want to give to your API Connect implementation if required
 	- Selected Plan – Keep the default  Once you are ready to continue, Click the `Create` button.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/29.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/29.png)
  
 1.  The API Connect service is now deployed.  To confirm the instance is properly created, click on `Launch API Manager`
 

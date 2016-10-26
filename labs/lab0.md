@@ -238,10 +238,10 @@ For this lab, you will be starting with your local image and installing node.js 
     > source ~/.nvm/nvm.sh
     > ```
 
-1.  Install API Connect by issuing this command:
+1.  Install API Connect by issuing the following command:
 
     ```bash
-    npm install -g apiconnect --no-optional --ignore-scripts
+    npm install -g apiconnect
     ```
 
     It will take several minutes to complete.
@@ -296,7 +296,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
 
-1.  You will see a screen then that shows the following: `You don't have any applications yet. Get started with one of the options that follow, or go to the catalog to create an application.` Click the `Catalog` button to go to your catalog and create your API Connect instance in section 0.3 below.
+1.  You will see a screen then that  Click the `Catalog` button to go to your catalog and create your API Connect instance in section 0.3 below.
  	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
 
@@ -332,8 +332,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/new-tab.png)
 
-1.  Log into your Bluemix Account using this url: `https://new-console.ng.bluemix.net/`
-
+1.  Log into your Bluemix Account using this url: [https://new-console.ng.bluemix.net/]()
 1.  Via the dashboard, click on your API Connect instance.
 
     ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/33.png)

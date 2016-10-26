@@ -242,7 +242,7 @@ The item table in the database has 6 columns that will need to mapped as well. T
     >
     > Description: `item rating`
 
-1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
+1.  From the top menu, click on `APIs` then `Inventory`.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
     {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
     " %}
@@ -279,7 +279,7 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1.  By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
 
-    On the right side you will see sample code for executing the API in various programming languages and tools such as cURL, Ruby, Python, PHP, Java, Node, Go, and Swift.
+    On the right side you will see sample code for executing the API in various programming languages and tools such as cURL.
 
     In addition to the sample code, if you look further down the page you will see an example response, URL, API identification information, and API parameters.
 
@@ -335,7 +335,7 @@ To confirm that the API has been correctly mapped and can interface with the dat
     ]
     ```
 
-1.  Test the `GET /items/count` operation by following the same process above. You should receive a count of 12 inventory items.
+1.  Test the `GET /items/count` operation by following the same process above. You should receive a count of inventory items.
 
     ```json
     {

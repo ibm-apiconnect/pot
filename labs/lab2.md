@@ -180,6 +180,8 @@ The item table in the database has 6 columns that will need to mapped as well. T
 
 1.  Click the `+` button in the **Properties** section.
 
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/properties26.png)
+	
 1.  The `item` data model consists of six properties. Use the data below to add each of the properties:
 
     > Required: `yes`

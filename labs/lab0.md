@@ -25,7 +25,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 #### 0.1a - Windows
 
-1.  If you don't have node already installed on your machine, then please proceed.  Otherwise, move on to section 1.1  
+1.  If you don't have node already installed on your machine, then please proceed.  Otherwise, move on to section 0.2 (Setup your Bluemix account).  
 
 1.  Installing Node on Windows based machines (Tested on Windows 7 and Windows 10):
 	

@@ -376,7 +376,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1.  Add a `map` policy after the last invoke, then click it to open the editor.
 
-1.  Click the `gear` icon next to Map and specify the following map properties:
+1.  Click the `gear` icon next to Map and specify the following map properties.  Click `done` when finished:
   
     > Title: `map_responses`
     >
@@ -386,7 +386,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-propertiesa.png)
 
-1.  Click the `+ input` button to add an input. Specify the following input configuration:
+1.  Click the pencil button to add an input. Specify the following input configuration:
   
     > Context variable: `xyz_response.body`
     >
@@ -437,7 +437,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-xyz-schema.png)
 
-1.  Click the `+input` button again to add another input. Specify the following input configuration:
+1.  Click the pencil button again to add another input. Specify the following input configuration:
   
     > Context variable: `cek_response.body`
     >
@@ -540,7 +540,7 @@ This operation will call out to the Google Geocode API to obtain location inform
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_complete.png)
 
-    {% include troubleshooting.html content="There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    {% include troubleshooting.html content="There may be an `exclamation mark` badge in `invoke_xyz` or `invoke_google`.  You may ignore this message.
     " %}
 
 1.  Save your changes.

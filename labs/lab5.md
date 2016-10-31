@@ -59,24 +59,25 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct2.png)
     
-1.  API Connect will generate a new swagger definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
+1.  API Connect will generate a new OpenAPI definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
+1.  Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_schemes.png)
+    
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
     {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
     " %}
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
-
-1.  Click on `Base Path` menu option and set the base path to `/financing`.
+    
+1.  Click on `Base Path` menu option and ensure the base path is properly set to `/financing`.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_basepath.png)
 
-1.  Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_schemes.png)
-
-1.  Click on the the `Consumes` menu option. For both "Consumes" and "Produces", choose `application/json`.
+1.  Click on the the `Consumes` menu option. Notice that `application/json` is pre-selected for "Consumes and Produces".  No changes are necessary.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_consumes_produces.png)
 
@@ -262,7 +263,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  After we invoke the SOAP service, we need to map the SOAP response into a custom object `paymentAmount`, which is created previously in API definition, as API response.  To do so, click on the `financing: output` map policy on our pipeline to open the map editor.
 
-1.  Click on the `+ output` icon to create a new output object.
+1.  Click on the pencil icon to create a new output object.
 
 1.  Fill in the values for the output object:
 

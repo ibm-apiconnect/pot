@@ -315,10 +315,6 @@ Rather than require you to build the entire API from scratch again, you will see
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_import.png)
 
-1.  Click the `refresh` button on your browser then you will see `logistics 1.0.0` API showing in API Designer's API list.
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_after_import_refresh_on_browser.png)
-
 #### 5.2.2 - Create the Logistics API Assembly
 
 1.  Switch to the `Assemble` tab and click the `Create assembly` button.
@@ -380,13 +376,15 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1.  Add a `map` policy after the last invoke, then click it to open the editor.
 
-1.  Click the `pencil` icon next to `Input` and specify the following map properties:
+1.  Click the `gear` icon next to Map and specify the following map properties:
   
     > Title: `map_responses`
     >
     > Description: `Map responses from invoke_xyz and invoke_cek to output`
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-properties.png)
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-propertiesa.png)
 
 1.  Click the `+ input` button to add an input. Specify the following input configuration:
   

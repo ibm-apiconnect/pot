@@ -166,7 +166,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/10.png)
 	
-1.  Select the `inventory` application, then click `Save`.
+1.  Select the `inventory` application, then click `Save`.  If the `inventory` app doesn't exist, you can create it here.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-inventory-app.png)
 

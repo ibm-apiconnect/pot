@@ -51,10 +51,14 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_info.png)
     
-1.  Add the new financing API to an existing product.  Click on the "more" elipse (...) at the right of the screen.  Choose Add to existing products from the menu.
+1.  Add the new financing API to an existing product.  Click on the "more" elipse (...) at the right of the screen.  Choose `Add to existing products` from the menu.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct.png)
+ 
+1.  Select the `inventory` app checkbox and then select `add`
 
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct2.png)
+    
 1.  API Connect will generate a new swagger definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.

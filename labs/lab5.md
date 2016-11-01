@@ -559,7 +559,7 @@ We will validate the financing and logistics APIs created above against with our
 
 1.  `Copy` the API source from the link below, and then `Paste`  into right panel.
 
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml)
+    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml)
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/api_validate_diffchecker.png)
 
@@ -569,7 +569,7 @@ We will validate the financing and logistics APIs created above against with our
 	
 1.  Repeat above step for logistics API comparing with the finished goods from:
 
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml)	
+    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml)	
 
 ## Conclusion
 

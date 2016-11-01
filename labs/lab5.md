@@ -305,11 +305,11 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1.  Click on the `All APIs` link to return to the main API Designer screen.
 
-1.  Click on the `+ Add` button to import a new `OpenAPI (Swagger 2.0)`.
+1.  Click on the `+ Add` button to `Import an existing OpenAPI`.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/import-logistics-api.png)
 
-1.  Click on the `import from URL` link, enter the `logistics` API definition template URL **https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0.yaml** and click `Import` button.
+1.  Click on the `import from URL` link, enter the `logistics` API definition template URL [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/logistics_1.0.0.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/logistics_1.0.0.yaml) and click `Import` button.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_import_from_url.png)
 
@@ -400,7 +400,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 	
     Copy the following predefined schema from the link below into the schema editor window.
     
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/schema_shippingSvc.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/schema_shippingSvc.yaml)
+    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/schema_shippingSvc.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/schema_shippingSvc.yaml)
     
     ```yaml
     $schema: 'http://json-schema.org/draft-04/schema#'  

@@ -37,7 +37,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 #### 5.1.1 - Create the API Definition
 
-1.  Click on the `+ Add` button and select `API`.
+1.  Click on the `+ Add` button and select `New OpenAPI from scratch`.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_add_new.png)
 
@@ -264,6 +264,8 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 1.  After we invoke the SOAP service, we need to map the SOAP response into a custom object `paymentAmount`, which is created previously in API definition, as API response.  To do so, click on the `financing: output` map policy on our pipeline to open the map editor.
 
 1.  Click on the pencil icon to create a new output object.
+
+1.  Click on the `+ output` button.
 
 1.  Fill in the values for the output object:
 
@@ -546,30 +548,6 @@ This operation will call out to the Google Geocode API to obtain location inform
 1.  Save your changes.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
-
-## Validation
-
-We will validate the financing and logistics APIs created above against with our lab 5 finished goods by instructor.  As each created API is saved as an Open API definition (a.k.a Swagger document), we can use Diffchecker online tool `https://www.diffchecker.com/` to compare any mistake or missing piece in APIs.
-
-1.  Select the `financing 1.0.0` API, and then click `Source` button to view API source file.  Mouse right-click `Select All` and `Copy`.
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/api_validate_view_source.png)
-
-1.  Open Diffchecker online tool [https://www.diffchecker.com](https://www.diffchecker.com), and then `Paste` the API source into left panel.
-
-1.  `Copy` the API source from the link below, and then `Paste`  into right panel.
-
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/financing_1.0.0_after_finish_lab5.yaml)
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/api_validate_diffchecker.png)
-
-1.  Click `Find Difference` button to see any mistake or missing piece in financing API.
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/api_validate_dffchecker_result.png)
-	
-1.  Repeat above step for logistics API comparing with the finished goods from:
-
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/logistics_1.0.0_after_finish_lab5.yaml)	
 
 ## Conclusion
 

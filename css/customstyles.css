@@ -555,7 +555,7 @@ li.activeSeries {
 }
 
 div.alert code, h2 code {
-    background-color: transparent !important;
+    /*background-color: transparent !important;*/
 }
 /* without this, the links in these notes aren't visible.*/
 .alert a {
@@ -795,8 +795,8 @@ dd {margin-left:20px;}
 }
 
 .note code, .alert code, .warning code, div#toc code, h2 code, h3 code, h4 code {
-    color: inherit;
-    padding: 0px;
+    /*color: inherit;*/
+    /*padding: 0px;*/
 }
 
 .alert {

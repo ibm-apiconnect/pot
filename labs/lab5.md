@@ -165,7 +165,9 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_service.png)
 
-1.  Click the `Load from URL` icon and enter the WSDL URL **https://thinkibm-services.mybluemix.net/financing/calculate?wsdl** and then click `Next`.
+1.  Click the `Load from URL` icon and enter the WSDL URL below and then click `Next`:
+
+    [https://thinkibm-services.mybluemix.net/financing/calculate?wsdl](https://thinkibm-services.mybluemix.net/financing/calculate?wsdl)
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_service_wsdl.png)
 
@@ -311,9 +313,9 @@ Rather than require you to build the entire API from scratch again, you will see
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/import-logistics-api.png)
 
-1.  Click on the `import from URL` link, enter the `logistics` API definition template URL [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/logistics_1.0.0.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/logistics_1.0.0.yaml) and click `Import` button.
+1.  Click on the `Or import from URL...` link, enter the `logistics` API definition template URL below and click the `Import` button:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_import_from_url.png)
+    [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml)
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_import.png)
 
@@ -402,36 +404,36 @@ This operation will end up invoking two separate back-end services to acquire sh
 	
     Copy the following predefined schema from the link below into the schema editor window.
     
-    [https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/schema_shippingSvc.yaml](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5040/lab-files/lab5/schema_shippingSvc.yaml)
+    [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/schema_shippingSvc.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/schema_shippingSvc.yaml)
     
     ```yaml
-    $schema: 'http://json-schema.org/draft-04/schema#'  
-    id: 'http://jsonschema.net'  
-    type: object  
-    properties:  
+    $schema: 'http://json-schema.org/draft-04/schema#'
+    id: 'http://jsonschema.net'
+    type: object
+    properties:
       company:
-        id: 'http://jsonschema.net/company'  
+        id: 'http://jsonschema.net/company'
         type: string
-        name: company  
+        name: company
       rates:
-        id: 'http://jsonschema.net/rates'  
-        type: object  
-        properties:  
+        id: 'http://jsonschema.net/rates'
+        type: object
+        properties:
           next_day:
-            id: 'http://jsonschema.net/rates/next_day'  
-            type: string 
-            name: next_day  
-          two_day:
-            id: 'http://jsonschema.net/rates/two_day'  
-            type: string  
-            name: two_day  
-          ground:
-            id: 'http://jsonschema.net/rates/ground'  
+            id: 'http://jsonschema.net/rates/next_day'
             type: string
-            name: ground  
-        name: rates  
-    required: 
-      - company  
+            name: next_day
+          two_day:
+            id: 'http://jsonschema.net/rates/two_day'
+            type: string
+            name: two_day
+          ground:
+            id: 'http://jsonschema.net/rates/ground'
+            type: string
+            name: ground
+        name: rates
+    required:
+      - company
       - rates
     ```
 
@@ -510,7 +512,7 @@ This operation will call out to the Google Geocode API to obtain location inform
     >
     > Paste the following predefined script from the link below into the code section of the policy.  
 	
-	[https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/gws_formatMapsLink.js](https://github.com/ibm-apiconnect/pot-bluemix-core/raw/5030/lab-files/lab5/gws_formatMapsLink.js)
+	[https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/gws_formatMapsLink.js](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/gws_formatMapsLink.js)
 	
     ```javascript
     // Require API Connect Functions

@@ -1,0 +1,302 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: financing
+  x-ibm-name: financing
+host: $(catalog.host)
+basePath: /financing
+paths:
+  /calculate:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+          schema:
+            $ref: '#/definitions/paymentAmount'
+      tags:
+        - financing
+      parameters:
+        - name: amount
+          type: number
+          required: false
+          in: query
+          format: float
+        - name: duration
+          type: integer
+          required: false
+          in: query
+          format: int32
+        - name: rate
+          type: number
+          required: false
+          in: query
+          format: float
+securityDefinitions:
+  clientID:
+    description: ''
+    in: header
+    name: X-IBM-Client-Id
+    type: apiKey
+security:
+  - clientID: []
+x-ibm-configuration:
+  assembly:
+    execute:
+      - map:
+          title: 'financing: input'
+          inputs:
+            amount:
+              schema:
+                type: float
+                title: amount
+              variable: request.parameters.amount
+            duration:
+              schema:
+                type: integer
+                title: duration
+              variable: request.parameters.duration
+            rate:
+              schema:
+                type: float
+                title: rate
+              variable: request.parameters.rate
+          outputs:
+            body:
+              schema:
+                $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingInput'
+              variable: message.body
+              content: application/xml
+            content-type:
+              schema:
+                type: string
+                title: content-type
+              variable: message.headers.content-type
+            SOAPAction:
+              schema:
+                type: string
+                title: SOAPAction
+              variable: message.headers.SOAPAction
+          actions:
+            - set: content-type
+              default: text/xml
+            - set: SOAPAction
+              default: 'http://services.think.ibm/financing'
+            - set: body.Envelope.Body.financingRequest.amount
+              from: amount
+            - set: body.Envelope.Body.financingRequest.duration
+              from: duration
+            - set: body.Envelope.Body.financingRequest.rate
+              from: rate
+      - invoke:
+          title: 'financing: invoke'
+          target-url: 'https://thinkibm-services.mybluemix.net/financing/calculate'
+          timeout: 60
+          verb: POST
+          cache-response: protocol
+          cache-ttl: 900
+          output: financingOut
+      - map:
+          title: 'financing: output'
+          inputs:
+            input:
+              schema:
+                $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingOutput'
+              variable: financingOut.body
+              content: application/xml
+          outputs:
+            output:
+              schema:
+                $ref: '#/definitions/paymentAmount'
+              variable: message.body
+              content: application/json
+          actions:
+            - set: output.paymentAmount
+              from: input.Envelope.Body.financingResult.paymentAmount
+  targets:
+    financingService:
+      swagger: '2.0'
+      info:
+        title: financingService
+        description: ''
+        x-ibm-name: financingservice
+        version: 1.0.0
+      schemes:
+        - https
+      basePath: /financingService
+      produces:
+        - application/xml
+      consumes:
+        - text/xml
+      securityDefinitions:
+        clientID:
+          type: apiKey
+          name: X-IBM-Client-Id
+          in: header
+          description: ''
+      security:
+        - clientID: []
+      x-ibm-configuration:
+        type: wsdl
+        wsdl-definition:
+          wsdl: financing.wsdl
+          service: financingService
+          port: financingPort
+          soap-version: '1.1'
+        assembly:
+          execute:
+            - proxy:
+                title: proxy
+                target-url: 'http://services.think.ibm/financing'
+        gateway: datapower-gateway
+        enforced: true
+        testable: true
+        phase: realized
+        cors:
+          enabled: true
+      paths:
+        /financing:
+          post:
+            summary: Operation financing
+            description: ''
+            operationId: financing
+            parameters:
+              - in: body
+                name: body
+                required: true
+                schema:
+                  $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingInput'
+            responses:
+              default:
+                description: ''
+                schema:
+                  $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingOutput'
+            x-ibm-soap:
+              soap-action: 'http://services.think.ibm/financing'
+              soap-operation: '{http://services.think.ibm}financing'
+      definitions:
+        wsSecurityHeader:
+          xml:
+            namespace: 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
+            prefix: wsse
+          type: object
+          properties:
+            UsernameToken:
+              type: object
+              properties:
+                Username:
+                  type: string
+                Password:
+                  type: string
+        financingInput:
+          type: object
+          properties:
+            Envelope:
+              xml:
+                prefix: soap-env
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+              type: object
+              properties:
+                Header:
+                  $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingHeader'
+                Body:
+                  type: object
+                  properties:
+                    financingRequest:
+                      $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingRequest'
+          example: |-
+
+            <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+             <soap-env:Header>
+              <wsse:wsSecurityHeader xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+               <UsernameToken>
+                <Username>string</Username>
+                <Password>string</Password>
+               </UsernameToken>
+              </wsse:wsSecurityHeader>
+             </soap-env:Header>
+             <soap-env:Body>
+              <ser:financing xmlns:ser="http://services.think.ibm">
+               <ser:amount>string</ser:amount>
+               <ser:duration>string</ser:duration>
+               <ser:rate>string</ser:rate>
+              </ser:financing>
+             </soap-env:Body>
+            </soap-env:Envelope>
+        financingOutput:
+          type: object
+          properties:
+            Envelope:
+              xml:
+                prefix: soap-env
+                namespace: 'http://schemas.xmlsoap.org/soap/envelope/'
+              type: object
+              properties:
+                Body:
+                  type: object
+                  properties:
+                    financingResult:
+                      $ref: '#/x-ibm-configuration/targets/financingService/definitions/financingResult'
+          example: |-
+
+            <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+             <soap-env:Body>
+              <ser:financingResult xmlns:ser="http://services.think.ibm">
+               <ser:paymentAmount>string</ser:paymentAmount>
+              </ser:financingResult>
+             </soap-env:Body>
+            </soap-env:Envelope>
+        financingHeader:
+          type: object
+          properties:
+            wsSecurityHeader:
+              $ref: '#/x-ibm-configuration/targets/financingService/definitions/wsSecurityHeader'
+        financingRequest:
+          xml:
+            namespace: 'http://services.think.ibm'
+            prefix: ser
+          type: object
+          properties:
+            amount:
+              type: string
+            duration:
+              type: string
+            rate:
+              type: string
+          example: |-
+
+            <ser:financing xmlns:ser="http://services.think.ibm">
+             <ser:amount>string</ser:amount>
+             <ser:duration>string</ser:duration>
+             <ser:rate>string</ser:rate>
+            </ser:financing>
+        financingResult:
+          xml:
+            namespace: 'http://services.think.ibm'
+            prefix: ser
+          type: object
+          properties:
+            paymentAmount:
+              type: string
+          example: |-
+
+            <ser:financingResult xmlns:ser="http://services.think.ibm">
+             <ser:paymentAmount>string</ser:paymentAmount>
+            </ser:financingResult>
+  gateway: datapower-gateway
+  properties:
+    financing_svc:
+      value: 'https://thinkibm-services.mybluemix.net/financing/calculate'
+      description: ''
+      encoded: false
+consumes:
+  - application/json
+produces:
+  - application/json
+definitions:
+  paymentAmount:
+    properties:
+      paymentAmount:
+        type: number
+        description: Monthly payment amount
+        format: float
+        example: 199.99

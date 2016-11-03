@@ -32,7 +32,7 @@ Before publishing the API for our application, the configuration file that was g
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/list-folder.png)
 
-    {% include note.html content="LoopBack applications use a series of configuration files which drive the application runtime. For more information about these files, review the table in Lab 1.
+    {% include note.html content="LoopBack applications use a series of configuration files which drive the application runtime. For more information about these files, review the table in [Lab 1](lab1.html#loopback-files).
     " %}
 
 1.  From the folder tree menu, expand the `server` folder and click on the `config.json` file to view the source.
@@ -61,7 +61,7 @@ For more information on Remote Hooks please see:
 
 1.  Open up a new tab on your browser, and open the following file via github:
 
-    [https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js](https://github.com/ibm-apiconnect/pot-onprem-core/blob/master/lab-files/lab3/item.js)
+    [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab3/item.js](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab3/item.js)
 	
 1.  You have two choices in how to implement this change. You can either copy and paste in the code from github by simply copying the contents from the github to the clipboard and pasting it to your local `item.js` file.
 

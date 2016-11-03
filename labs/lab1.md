@@ -51,7 +51,9 @@ For this lab, you will be starting with your local image and installing node.js 
     cd notes
     ```
 
-1.  List the directory:
+1.  List the directory: <a class="anchorjs-link " href="#loopback-files" aria-label="Anchor link for: loopback files" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a>
+
+    <div id="loopback-files"></div>
 
     ```bash
     $ ls
@@ -60,27 +62,27 @@ For this lab, you will be starting with your local image and installing node.js 
 
     If you're familiar with LoopBack or Node.js applications, some of the directories may be familiar to you. If not, here is a description of some of what is created.
 
-|Directory or file|Description|
-|-----------------|-----------|
-|client|If the application has a front end, this is where the HTML, CSS, JavaScript, etc would be located. For our sample application there is only a stubbed out README.md.|
-|common|Files common to both the server and the client application.|
-|common/models|This sub-directory contains all the model JSON and JavaScript files. By model we're referring to a data model.|
-|common/models/note.js|Custom script for the note data model. This file contains the implementation of the methods defined by the model definition file.|
-|common/models/note.json|The note model definition file. This file contains the definition of the properties and methods for this model.|
-|definitions|This directory contains the definitions for the APIs and the product contained in this application.|
-|definitions/notes-product.yaml|YAML file for the the notes product. Which includes default plans for testing locally.|
-|definitions/notes.yaml|Swagger definition file for the notes API. Includes information about the REST paths and operations, schemas for data models, security requirements, etc.|
-|node_modules|Directory containing all the required node modules for the default application.|
-|package.json|Standard Node.js package specification. Most importantly it contains the application package dependencies.|
-|server|This directory contains the Node.js application and configuration files. We'll not look at them all in this tutorial, but here are a few.|
-|server/server.js|The main appication script for this application. **Note:** this is defined in the package.json file.|
-|server/config.json|This file contains the global application settings, such as REST API root, hostname and port.|
-|server/model-config.json|This file binds models to data sources and specifies whether a model is exposed over REST, among other things.|
-|server/datasources.json|This file is the data source configuration file.|
-
-{% include note.html content="
-    `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
-" %}
+    |Directory or file|Description|
+    |-----------------|-----------|
+    |client|If the application has a front end, this is where the HTML, CSS, JavaScript, etc would be located. For our sample application there is only a stubbed out README.md.|
+    |common|Files common to both the server and the client application.|
+    |common/models|This sub-directory contains all the model JSON and JavaScript files. By model we're referring to a data model.|
+    |common/models/note.js|Custom script for the note data model. This file contains the implementation of the methods defined by the model definition file.|
+    |common/models/note.json|The note model definition file. This file contains the definition of the properties and methods for this model.|
+    |definitions|This directory contains the definitions for the APIs and the product contained in this application.|
+    |definitions/notes-product.yaml|YAML file for the the notes product. Which includes default plans for testing locally.|
+    |definitions/notes.yaml|Swagger definition file for the notes API. Includes information about the REST paths and operations, schemas for data models, security requirements, etc.|
+    |node_modules|Directory containing all the required node modules for the default application.|
+    |package.json|Standard Node.js package specification. Most importantly it contains the application package dependencies.|
+    |server|This directory contains the Node.js application and configuration files. We'll not look at them all in this tutorial, but here are a few.|
+    |server/server.js|The main appication script for this application. **Note:** this is defined in the package.json file.|
+    |server/config.json|This file contains the global application settings, such as REST API root, hostname and port.|
+    |server/model-config.json|This file binds models to data sources and specifies whether a model is exposed over REST, among other things.|
+    |server/datasources.json|This file is the data source configuration file.|
+    
+    {% include note.html content="
+        `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
+    " %}
 
 ### 1.2	- Launching the `notes` Application
 

@@ -61,7 +61,7 @@ Now that we have explained the contents of a custom theme file, it is time to lo
 
 1.  In the `Install from a URL` field, enter the following URL then click the `Install` button:
 
-    [https://thinkibm-services.mybluemix.net/portal/theme.zip](https://thinkibm-services.mybluemix.net/portal/theme.zip)
+    [https://github.com/ibm-apiconnect/pot/raw/gh-pages/assets/lab7/portal-theme.zip](https://github.com/ibm-apiconnect/pot/raw/gh-pages/assets/lab7/portal-theme.zip)
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab7/install-theme.png)
     

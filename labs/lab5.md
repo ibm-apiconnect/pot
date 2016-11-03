@@ -197,7 +197,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Scroll down to the bottom of the policy menu, drag and drop the `financing` web service operations to processing pipeline.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_drag_n_drop_financing.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/add-financing-assembly.gif)
 
 1.  Now we are going to modify the input and output `map` policy for mapping our REST API into SOAP.
 

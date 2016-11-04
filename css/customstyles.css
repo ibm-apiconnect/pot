@@ -149,7 +149,8 @@ table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd;
     text-transform: none;
-    background-color: #777;
+    /*background-color: #777;*/
+    background-color: #248ec2;
     color: white;
     text-align: left;
 }
@@ -164,8 +165,9 @@ table > thead:first-child > tr:first-child > td {
 table > tbody + tbody {
     b
 }
-table > tbody > tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
+table > tbody > tr:nth-of-type(even) {
+    /*background-color: #f9f9f9;*/
+    background-color: lightgray;
 }
 
 table col[class*="col-"] {
@@ -182,7 +184,7 @@ table th[class*="col-"] {
 
 
 table td:first-child {
-    width: 150px;
+    /*width: 150px;*/
     /*font-weight:bold;*/
 }
 
@@ -756,11 +758,11 @@ table p {
 }
 
 pre, table code {
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    /*white-space: pre-wrap;       !* css-3 *!*/
+    /*white-space: -moz-pre-wrap;  !* Mozilla, since 1999 *!*/
+    /*white-space: -pre-wrap;      !* Opera 4-6 *!*/
+    /*white-space: -o-pre-wrap;    !* Opera 7 *!*/
+    /*word-wrap: break-word;       !* Internet Explorer 5.5+ *!*/
 }
 
 pre {

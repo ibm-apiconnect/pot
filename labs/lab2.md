@@ -184,63 +184,14 @@ The item table in the database has 6 columns that will need to mapped as well. T
 	
 1.  The `item` data model consists of six properties. Use the data below to add each of the properties:
 
-    > Required: `yes`
-    >
-    > Property Name: `name`
-    >
-    > Type: `string`
-    >
-    > Description: `item name`
-    >
-    > ---
-    >
-    > Required: `yes`
-    >
-    > Property Name: `description`
-    >
-    > Type: `string`
-    >
-    > Description: `item description`
-    >
-    > ---
-    >
-    > Required: `yes`
-    >
-    > Property Name: `img`
-    >
-    > Type: `string`
-    >
-    > Description: `location of item image`
-    >
-    > ---
-    >
-    > Required: `yes`
-    >
-    > Property Name: `img_alt`
-    >
-    > Type: `string`
-    >
-    > Description: `item image title`
-    >
-    > ---
-    >
-    > Required: `yes`
-    >
-    > Property Name: `price`
-    >
-    > Type: `number`
-    >
-    > Description: `item price`
-    >
-    > ---
-    >
-    > Required: `no`
-    >
-    > Property Name: `rating`
-    >
-    > Type: `number`
-    >
-    > Description: `item rating`
+    |Required|Property Name|Is Array|Type  |ID |Index|Description           |
+    |--------|-------------|--------|------|---|-----|----------------------|
+    |yes     |name         |no      |string|no |no   |item name             |
+    |yes     |description  |no      |string|no |no   |item description      |
+    |yes     |img          |no      |string|no |no   |location of item image|
+    |yes     |img_alt      |no      |string|no |no   |item image title      |
+    |yes     |price        |no      |number|no |no   |item price            |
+    |no      |rating       |no      |number|no |no   |item rating           |
 
 1.  From the top menu, click on `APIs` then `Inventory`.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
@@ -275,7 +226,7 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1.  Click the `GET /items` operation.
 
-	 ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-get-items-api.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-get-items-api.png)
 
 1.  By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
 
@@ -394,7 +345,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 
     {% include note.html content="
       By typing Y (Yes) to the question Install loopback-connector-cloudant, the CloudantDB Connector will be downloaded and saved to your project automatically.
-      <br/>
+      <br/><br/>
       This will create a connection profile in the `~/ThinkIBM/inventory/server/datasources.json` file.
       <br/><br/>
       It is effectively the same as running the following to install the connector

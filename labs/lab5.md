@@ -119,39 +119,11 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Edit the parameters to set the values:
 
-    > Name: `amount`
-    >
-    > Located In: `Query`
-    >
-    > Description: `amount to finance`
-    >
-    > Required: *selected*
-    >
-    > Type: `float`
-    >
-    > ---
-    >
-    > Name: `duration`
-    >
-    > Located In: `Query`
-    >
-    > Description: `length of term in months`
-    >
-    > Required: *selected*
-    >
-    > Type: `integer`
-    >
-    > ---
-    >
-    > Name: `rate`
-    >
-    > Located In: `Query`
-    >
-    > Description: `interest rate`
-    >
-    > Required: *selected*
-    >
-    > Type: `float`
+    |Name    |Located In|Description             |Required|Type   |
+    |--------|----------|------------------------|--------|-------|
+    |amount  |Query     |amount to finance       |yes     |float  |
+    |duration|Query     |length of term in months|yes     |integer|
+    |rate    |Query     |interest rate           |yes     |float  |
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_parameter_complete.png)
 
@@ -215,33 +187,11 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Fill in the values for each of the input parameters:
 
-    > Context variable: `request.parameters.amount`
-    >
-    > Name: `amount`
-    >
-    > Content type: `none`
-    >
-    > Definition: `float`
-    >
-    > ---
-    >
-    > Context variable: `request.parameters.duration`
-    >
-    > Name: `duration`
-    >
-    > Content type: `none`
-    >
-    > Definition: `integer`
-    >
-    > ---
-    >
-    > Context variable: `request.parameters.rate`
-    >
-    > Name: `rate`
-    >
-    > Content type: `none`
-    >
-    > Definition: `float`
+    |Context variable           |Name    |Content type|Definition|
+    |---------------------------|--------|------------|----------|
+    |request.parameters.amount  |amount  |none        |float     |
+    |request.parameters.duration|duration|none        |integer   | 
+    |request.parameters.rate    |rate    |none        |float     |
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_map_input.png)
 

@@ -102,7 +102,7 @@ LoopBack consists of:
 
 The datasource is what allows the API to communicate with the backend data repository. In this case we will be using Cloudant to store the inventory item information.
 
-There are two parts to this. First is the definition of how to connect to the backend system. They second is downloading the actual loopback connector for Cloudant. The connector is akin to an ODBC or JDBC connector.
+There are two parts to this. First is the definition of how to connect to the backend system. The second is downloading the actual loopback connector for Cloudant. The connector is akin to an ODBC or JDBC connector.
 
 1.  In your terminal ensure that you are in the `ThinkIBM/inventory` directory. 
 

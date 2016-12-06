@@ -359,7 +359,7 @@ First you must create a data source entry for the Cloudant Reviews DB.
 
 ### 2.9 - Create Model for Reviews
 
-The `review` data model will be used to store item reviews left by buyers. The reviews will be stored in a MongoDB.
+The `review` data model will be used to store item reviews left by buyers. The reviews will be stored in a Cloudant.
 
 In the earlier steps, you used the API Designer User Experience to create a data model. This time you will use the command line to create the `review` model.
 

@@ -166,13 +166,19 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/10.png)
 	
-1.  Select the `inventory` application, then click `Save`.  If the `inventory` app doesn't exist, you can create it here.
+1.  Provide the name of your application. The name you provide here will be the name of the app inside of Bluemix once it's published.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-inventory-app.png)
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-your-inventory-app.png)
+
+1.  Make sure your app name is selected and click the `Save` button.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-your-inventory-app.png)
 
 #### 3.3.2 - Publish the Application
 
 1.  Click `Publish` button once more and select our target catalog, indicated by the grey highlighting.
+
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/select-publish-target.png)
 
 1.  Click the check box to select `Publish application`, then click the `Publish` button.
 
@@ -188,7 +194,7 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/publish-app-success.png)
 
-1.  Close the Firefox browser by clicking the `x` on the tab or browser window.
+1.  Click the `x` button on your browser tab to close the API Designer.
 
 1.  Return to the terminal editor. Stop the API Designer process:
 

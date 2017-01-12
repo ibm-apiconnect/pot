@@ -221,7 +221,7 @@ children:
     children:
 
     - title: 'Install and Configure a Custom Theme'
-      url: https://ibm-apiconnect.github.io/pot/pot/lab7.html#install-and-configure-a-custom-theme'
+      url: 'https://ibm-apiconnect.github.io/pot/pot/lab7.html#install-and-configure-a-custom-theme'
       output: 'web'
 
     - title: 'Customize the Welcome Banner'

@@ -38,7 +38,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 ### 4.2 - Adding a New OAuth 2.0 Provider API
 
-1.  Click the `+ Add` button and select `New OAuth 2.0 Provider API` from the menu.
+1.  Click the `+ Add` button and select `OAuth 2.0 Provider API` from the menu.
 
 1.  Specify the following properties and click the `Add` button to continue.
 
@@ -62,7 +62,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
     Over the next several steps, we will set up OAuth-specific options, such as client type (public vs confidential), valid access token scopes, supported authorization grant types, etc. The [OAuth 2.0 Specification](http://tools.ietf.org/html/rfc6749) has detailed descriptions of each of the properties we are configuring here.
 
-1.  For the Client type field, click the drop down twisty and select `Confidential`.
+1.  For the `Client type` field, click the drop down menu and select `Confidential`.
 
 1.  Three scopes were generated for you when the OAuth API Provider was generated: `scope1`, `scope2`, `scope3`.
 
@@ -94,7 +94,8 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	{% include important.html content="The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all **lowercase**.
     " %}
-
+    
+{% comment %}
 1.  Switch to the `Assemble` tab.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/assemble-tab.png)
@@ -123,6 +124,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
     ```
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/gws-set-cors.png)
+{% endcomment %}
 
 1.  Click the `Save` icon in the top right corner of the editor to save your changes.
 

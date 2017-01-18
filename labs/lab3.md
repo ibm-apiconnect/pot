@@ -206,22 +206,19 @@ In this section, you will publish the `inventory` application to Bluemix
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/2.png)
 
-1.  You will need the `API Target URL`that is returned in the next lab.
-
-3. **Highlight** the contents of the `API target urls:` value and then copy to the clipboard
+3. **Note** the contents of the `API target urls:` this value will be automatically propagated into a property called `runtime-url`  and placed into your `invoke` policy within the API Assembly.  This is what will tell the runtime which back-end service to call.  No further action on your part is required to configure this step.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab3/3.png)
 	
-1.  Paste the contents into a file on your system somewhere (e.g. Notepad, notes etc).  Be sure to save this and keep it handy for the next lab.
 
     {% include note.html content="
         Note that your API Target URL will be different for your application and is unique to you.
         <br/><br/>
-        You will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.
+        You will not be able to test your application until you actually expose it as an API as it creates a specific TLS-Profile that only your specific API Connect instance can use.  You can confirm these changes by going into the API Assembly and clicking on the Assemble button.  Open up the Invoke step and you will be able to see what was created.
         <br/><br/>
-        This will be used in the next lab.
     " %}
 
+    
 ## Conclusion
 
 In this lab you learned:

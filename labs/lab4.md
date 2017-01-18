@@ -218,13 +218,8 @@ An API Assembly provides collection of policies which are enforced and executed 
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/inv-assembly-logpayload.png)
 
-1.  Click on the `X` to close the activity-log editor menu.
+1.  Click on the `X` to close the activity-log editor menu
 
-1.  Click on the `invoke` policy action to open it's editor.
-
-1.  Locate the `TLS Profile` section and delete the contents. Ensure that this section is blank:
-
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/remove-tls-profile.png)
 
 1.  Save your changes.
 

@@ -161,7 +161,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Check the version, if it is version 4.5.0 then you can move on to section 1.1 - Create your Bluemix account. However if you would prefer to uninstall and reinstall node using Node Version Manager or if node was not found then please continue.
 
-1.  Remove any existing versions of node. You will only need to complete these steps if node current exists. To remove node completely from your Mac OSX environment run each of the following commands indvidually via terminal. Open a terminal session and type each of the commands below individually. 
+1.  Remove any existing versions of node. You will only need to complete these steps if node currently exists. To remove node completely from your Mac OSX environment run each of the following commands. Open a terminal session and type each of the commands below individually. 
  
     ```bash
     sudo rm /usr/local/bin/npm
@@ -181,7 +181,7 @@ For this lab, you will be starting with your local image and installing node.js 
     xcode-select --install
     ```
 
-1.  This will open a dialog informing you that the comannd linde developer tools are required for install. Press the Install button.
+1.  This will open a dialog informing you that the command line developer tools are required for install. Press the Install button.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
 
@@ -205,7 +205,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once the download has completed, you should have a file named similar to git-2.8.1-intel-universal-mavericks.dmg. Double-click to unpack the disk image.
 
-1.  Once the disk image is unpacked and open, double-click the git-2.8.1-intel-universal-mavericks.pkg file. Note that if you downloaded a different version the file name will be refelcted accordingly.
+1.  Once the disk image is unpacked and open, double-click the git-2.8.1-intel-universal-mavericks.pkg file. Note that if you downloaded a different version the file name will be reflected accordingly.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-package.png)
 
@@ -231,7 +231,7 @@ For this lab, you will be starting with your local image and installing node.js 
     nvm use node
     ```
 
-    > **Note:** You may want to update your .bash file so you do not have to source the shell script everytime. To do that, add the following to your .bash file located in your user home directory:
+    > **Note:** You may want to update your .bash file so you do not have to source the shell script every time. To do that, add the following to your .profile located in your user home directory:
     > 
     > ```bash
     > export NVM_PATH=~/.nvm

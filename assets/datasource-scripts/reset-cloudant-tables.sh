@@ -15,4 +15,4 @@ for filename in ./data/*.json; do
   curl -H "Content-Type: application/json" -d @"$filename" $CLOUDANT/item
 done
 
-echo "\nCloudant table refresh is complete. Restart your Inventory application in Bluemix to re-connect."
+echo "Cloudant table refresh is complete. Restart your Inventory application in Bluemix to re-connect."

@@ -51,6 +51,8 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_info.png)
 
+1.  API Connect will generate a new OpenAPI definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
+
 {% comment %}
 1.  Add the new financing API to an existing product.  Click on the "more" elipse (...) at the right of the screen.  Choose `Add to existing products` from the menu.
 
@@ -59,14 +61,11 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 1.  Select the `inventory` app checkbox and then select `add`
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct2.png)
-{% endcomment %}
-    
-1.  API Connect will generate a new OpenAPI definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
 1.  Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_schemes.png)
-    
+
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
     {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
@@ -78,10 +77,10 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_basepath.png)
 
-
 1.  Click on the the `Consumes` menu option. Notice that `application/json` is pre-selected for "Consumes and Produces".  No changes are necessary.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_consumes_produces.png)
+{% endcomment %}
 
 1.  Next, we need to create the model definition for our new API. These definitions are used in a few places. Their primary role is to serve as documentation in the developer portal on expected input and output parameters; however, they can also be used for data mapping actions. Click on `Definitions` from the API Designer menu.
 
@@ -305,9 +304,13 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > URL: `$(shipping_svc_url)?company=xyz&from_zip=90210&to_zip={zip}`
     >
+    > Stop on error: `unchecked`
+    >
     > Response object variable (scroll to the bottom): `xyz_response`
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokexyz1.png)
+    
+    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/uncheck-stop-on-error.png)
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokexyz2.png)
     

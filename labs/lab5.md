@@ -50,7 +50,8 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     > Version: `1.0.0`
     
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_info.png)
-    
+
+{% comment %}
 1.  Add the new financing API to an existing product.  Click on the "more" elipse (...) at the right of the screen.  Choose `Add to existing products` from the menu.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct.png)
@@ -58,6 +59,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 1.  Select the `inventory` app checkbox and then select `add`
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct2.png)
+{% endcomment %}
     
 1.  API Connect will generate a new OpenAPI definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 

@@ -201,6 +201,10 @@ children:
       url: '/pot/lab5.html#create-the-logistics-api-assembly'
       output: 'web'
 
+    - title: 'Move the Logistics Definition File'
+      url: '/pot/lab5.html#move-the-logistics-definition-file'
+      output: 'web'
+
 - title: 'Lab 6 - Working with API Products'
   url: '/pot/lab6.html'
   output: 'web'

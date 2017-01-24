@@ -438,7 +438,7 @@ This operation will end up invoking two separate back-end services to acquire sh
       
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_shipping_calc_complete.png)
     
-    {% include troubleshooting.html content="There is an `exclamation mark` badge in `invoke_xyz`.  You may ignore this message.
+    {% include troubleshooting.html content="If there is an `exclamation mark` badge in `invoke_xyz`,  you may ignore this message.
     " %}
 	
 1.  Save your changes.
@@ -455,9 +455,13 @@ This operation will call out to the Google Geocode API to obtain location inform
     >
     > URL: `https://maps.googleapis.com/maps/api/geocode/json?&address={zip}`
     >
+    > Stop on error: `unchecked`
+    >
     > Response object variable (scroll to the bottom): `google_geocode_response`  
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokegeolocate1.png)
+	
+	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/uncheck-stop-on-error.png)
 	
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokegeolocate2.png)
 
@@ -505,6 +509,50 @@ This operation will call out to the Google Geocode API to obtain location inform
 1.  Save your changes.
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
+
+#### 5.2.3 - Move the Logistics Definition File
+
+In this version of the APIC toolkit, our new Logistics API file is placed in a location apart from our other API definitions. We'll need to move it to ensure things are consistent.
+
+1.  Return to the terminal editor. Stop the API Designer process:
+
+    ```bash
+    control+c
+    ```
+
+1.  Navigate to the `~/ThinkIBM/inventory` directory.
+
+    {% include note.html content="In the following steps, the example commands are shown from a Linux terminal. You are free to move the file using the method of your choice.
+    " %}
+
+    ```bash
+    student@ubuntu:~/ThinkIBM/inventory$ ls -l
+    total 32
+    drwxrwxr-x  3 student student 4096 Jan 24 13:09 common
+    drwxrwxr-x  2 student student 4096 Jan 24 15:02 definitions
+    -rw-rw-r--  1 student student 8873 Jan 24 14:51 logistics_1.0.0.yaml
+    drwxrwxr-x 15 student student 4096 Jan 24 13:08 node_modules
+    -rw-rw-r--  1 student student  729 Jan 24 13:12 package.json
+    drwxrwxr-x  3 student student 4096 Jan 24 13:13 server
+    ```
+
+1.  Locate the `logistics_1.0.0.yaml` file and move it into the `~/ThinkIBM/inventory/definitions` directory.
+
+    ```bash
+    student@ubuntu:~/ThinkIBM/inventory$ mv logistics_1.0.0.yaml definitions/
+    ```
+
+1.  The `~/ThinkIBM/inventory/definitions` directory will now contain the configuration files for all our APIs:
+    
+    ```bash
+    student@ubuntu:~/ThinkIBM/inventory$ ls -l definitions/
+    total 60
+    -rw-rw-r-- 1 student student  9475 Jan 24 14:35 financing_1.0.0.yaml
+    -rw-rw-r-- 1 student student  1871 Jan 24 14:55 inventory-product.yaml
+    -rw-rw-r-- 1 student student 17182 Jan 24 13:21 inventory.yaml
+    -rw-rw-r-- 1 student student  8873 Jan 24 14:51 logistics_1.0.0.yaml
+    -rw-rw-r-- 1 student student  8868 Jan 24 13:20 oauth_1.0.0.yaml
+    ```
 
 ## Conclusion
 

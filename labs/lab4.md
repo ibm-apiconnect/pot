@@ -225,7 +225,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 
     ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab4/save-icon.png)
 
-## Validation
+### 4.5 - Validation
 
 We will validate the inventory application by using an Oauth test app we have running in Bluemix.
 

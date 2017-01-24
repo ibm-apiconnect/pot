@@ -166,6 +166,10 @@ children:
     url: '/pot/lab4.html#defining-api-processing-behavior'
     output: 'web'
 
+  - title: 'Validate OAuth Configuration'
+    url: '/pot/lab4.html#validation'
+    output: 'web'
+
 - title: 'Lab 5 - Advanced API Assembly'
   url: '/pot/lab5.html'
   output: 'web'

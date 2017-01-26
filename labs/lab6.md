@@ -34,7 +34,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1.  Switch to the `Products` tab
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/products.png)
+    ![](./images/lab6/products.png)
 
 1.  Click the link for the `inventory` product.
 	
@@ -55,7 +55,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
     >
     > Contact URL: `http://www.ibm.com`  
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-infocontact.png)
+    ![](./images/lab6/think-infocontact.png)
 
 1.  Specify a License and Terms of Service:
 
@@ -67,17 +67,17 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
     > 
     > * [http://github.com/ibm-apiconnect/pot/raw/gh-pages/assets/lab6/license.txt](http://github.com/ibm-apiconnect/pot/raw/gh-pages/assets/lab6/license.txt)
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-licensetos.png)
+    ![](./images/lab6/think-licensetos.png)
 	
 1.  Modify the Visibility so that the `think` product is only visible to `Authenticated users`:
   
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-visibility.png)
+    ![](./images/lab6/think-visibility.png)
 	
 1.  Navigate to the APIs section. Click the `+` button to add all of our new APIs to this product.
 
 1.  Ensure the checkboxes next to `financing`, `logistics` `oauth` and `inventory` are selected.
 	 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-apis.png)
+    ![](./images/lab6/think-apis.png)
 
 1.  Click the `Apply` button.
 
@@ -91,7 +91,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
     >
     > Add rate limit of 100 with an interval of 1 hour
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-silverplan.png)
+    ![](./images/lab6/think-silverplan.png)
 
 1.  Click the `+` button to create a new plan. Give it the following properties:
 
@@ -105,25 +105,25 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
     >
     > Approval: check `Require subscription approval`  
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-goldplan.png)
+    ![](./images/lab6/think-goldplan.png)
 
 1.  Save your changes.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/save-icon.png)
+    ![](./images/lab6/save-icon.png)
 
 ### 6.2 - Publishing the API Product
 
 1.  Click the `Publish` icon.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/think-publish.png)
+    ![](./images/lab6/think-publish.png)
 
 1.  Select our target:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-target.png)
+    ![](./images/lab6/publish-target.png)
 
 1.  Check the box to `Stage or Publish products`:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-product.png)
+    ![](./images/lab6/publish-product.png)
 
     {% include note.html content="
         Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could chose specific ones to publish.
@@ -135,7 +135,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1.  Wait a moment while the Product is published, a `Success` message will appear letting you know the step is complete:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab6/publish-success.png)
+    ![](./images/lab6/publish-success.png)
 
 1.  Close the Firefox web browser.
 

@@ -39,7 +39,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Click on the `+ Add` button and select `New OpenAPI from scratch`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_add_new.png)
+    ![](./images/lab5/fin_add_new.png)
 
 1.  Fill in the form values for the API, then click the `Create API` button to continue.
 
@@ -49,37 +49,37 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     >
     > Version: `1.0.0`
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_info.png)
+    ![](./images/lab5/fin_api_info.png)
 
 1.  API Connect will generate a new OpenAPI definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
 {% comment %}
 1.  Add the new financing API to an existing product.  Click on the "more" elipse (...) at the right of the screen.  Choose `Add to existing products` from the menu.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct.png)
+    ![](./images/lab5/addtoproduct.png)
  
 1.  Select the `inventory` app checkbox and then select `add`
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/addtoproduct2.png)
+    ![](./images/lab5/addtoproduct2.png)
 
 1.  Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_schemes.png)
+    ![](./images/lab5/fin_schemes.png)
 
 1.  Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
 
     {% include troubleshooting.html content="The host field will show a red line indicating that the field is required. You may ignore this message.
     " %}
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_no_host.png)
+    ![](./images/lab5/fin_no_host.png)
     
 1.  Click on `Base Path` menu option and ensure the base path is properly set to `/financing`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_api_basepath.png)
+    ![](./images/lab5/fin_api_basepath.png)
 
 1.  Click on the the `Consumes` menu option. Notice that `application/json` is pre-selected for "Consumes and Produces".  No changes are necessary.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_consumes_produces.png)
+    ![](./images/lab5/fin_consumes_produces.png)
 {% endcomment %}
 
 1.  Next, we need to create the model definition for our new API. These definitions are used in a few places. Their primary role is to serve as documentation in the developer portal on expected input and output parameters; however, they can also be used for data mapping actions. Click on `Definitions` from the API Designer menu.
@@ -98,7 +98,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     >
     > Example: `199.99`
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_definition_complete.png)
+    ![](./images/lab5/fin_definition_complete.png)
 
 1.  Now that we have a definition, we'll create a path. Click on `Paths` from the API Designer menu.
 
@@ -116,7 +116,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  We're actually going to need three total parameters for this operation, so go ahead and click on the `Add Parameter` link two more times to add the parameter templates.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_parameter_template.png)
+    ![](./images/lab5/fin_parameter_template.png)
 
 1.  Edit the parameters to set the values:
 
@@ -126,31 +126,31 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     |duration|Query     |length of term in months|yes     |integer|
     |rate    |Query     |interest rate           |yes     |float  |
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_parameter_complete.png)
+    ![](./images/lab5/fin_parameter_complete.png)
 
 1.  Next we'll set the schema for the response. Since we already defined the `paymentAmount` definition, we will select it from the drop down list. You will find the `paymentAmount` definition at the top of the list.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_resp_schema.png)
+    ![](./images/lab5/fin_resp_schema.png)
 
 1.  Next, click on `Services` from API Designer menu to load a service as policy that will be used in the assembly view later on.
 
 1.  Click the `+` icon in the **Services** section to import web service from WSDL.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_service.png)
+    ![](./images/lab5/fin_service.png)
 
 1.  Click the `Load from URL` icon and enter the WSDL URL below and then click `Next`:
 
     [https://thinkibm-services.mybluemix.net/financing/calculate?wsdl](https://thinkibm-services.mybluemix.net/financing/calculate?wsdl)
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_service_wsdl.png)
+    ![](./images/lab5/fin_service_wsdl.png)
 
 1.  Click the `Show operations` to see the available operations in the WSDL end point. Select `financingService` then click `Done`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_service_wsdl_operation.png)
+    ![](./images/lab5/fin_service_wsdl_operation.png)
 
 1.  Save the API definition.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
+    ![](./images/lab5/save-icon.png)
 
 1.  You have completed the creation of the new API definition. The path and model data will be presented to our consumers on the developer portal once it's published.
 
@@ -158,19 +158,19 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Click on the `Assemble` tab to access the assembly editor.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assemble_tab.png)
+    ![](./images/lab5/fin_assemble_tab.png)
 
 1.  Select the `DataPower Gateway policies` filter.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_gateway_policies.png)
+    ![](./images/lab5/fin_gateway_policies.png)
 
 1.  In the processing pipeline, mouse over the `invoke` policy and click the trash icon to delete it.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_delete_invoke.png)
+    ![](./images/lab5/fin_assembly_delete_invoke.png)
 
 1.  Scroll down to the bottom of the policy menu, drag and drop the `financing` web service operations to processing pipeline.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/add-financing-assembly.gif)
+    ![](./images/lab5/add-financing-assembly.gif)
 
 1.  Now we are going to modify the input and output `map` policy for mapping our REST API into SOAP.
 
@@ -178,11 +178,11 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Click on the `+` icon to make the editor window fill the screen.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_map_fullscreen.png)
+    ![](./images/lab5/fin_map_fullscreen.png)
 
 1.  On the **Input** column, click on the `pencil` icon to bring up the input editor.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/input-pencil-icon.png)
+    ![](./images/lab5/input-pencil-icon.png)
 
 1.  Recall that our GET operation has three required query parameters: `amount`, `duration` and `rate`. Click on the `+ input` button three times to add the entries to the input table.
 
@@ -194,7 +194,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     |request.parameters.duration|duration|none        |integer   | 
     |request.parameters.rate    |rate    |none        |float     |
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_map_input.png)
+    ![](./images/lab5/fin_assembly_map_input.png)
 
 1.  Click on the `Done` button to return to the map editor.
 
@@ -202,7 +202,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 	To map from an input field to an output field, click the circle next to the *source* element once, then click the circle next to the *target* element. A line will be drawn between the two, indicating a mapping from the source to the target.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_map_input_to_output.png)
+    ![](./images/lab5/fin_assembly_map_input_to_output.png)
 
 1.  Click the `X` button in the map editor to return to the policy pipeline.
 
@@ -210,7 +210,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  The SOAP service `URL` has already been set for you during the service import when we create the API.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_invoke.png)
+    ![](./images/lab5/fin_assembly_invoke.png)
 
 1.  Click the `X` button to return to the policy pipeline.
 
@@ -230,13 +230,13 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
     >
     > Definition: `#/definitions/paymentAmount`
 		
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_map_output.png)
+    ![](./images/lab5/fin_assembly_map_output.png)
 
 1.  Click on the `Done` button to return to the map editor.
 
 1.  To map SOAP response to custom object `paymentAmount`, click the circle next to the *source* element once, then click the circle next to the *target* element. A line will be drawn between the two, indicating a mapping from the source to the target.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/fin_assembly_map_output_link.png)
+    ![](./images/lab5/fin_assembly_map_output_link.png)
 
 1.  Click the `X` button in the map editor to return to the policy pipeline.
 
@@ -248,7 +248,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1.  Save the API definition.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
+    ![](./images/lab5/save-icon.png)
 
 ### 5.2 - Add Logistics API (Advanced Assembly)
 
@@ -262,13 +262,13 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1.  Click on the `+ Add` button to `Import an existing OpenAPI`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/import-logistics-api.png)
+    ![](./images/lab5/import-logistics-api.png)
 
 1.  Click on the `Or import from URL...` link, enter the `logistics` API definition template URL below and click the `Import` button:
 
     [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml)
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_api_import.png)
+    ![](./images/lab5/logistics_api_import.png)
 
 #### 5.2.2 - Create the Logistics API Assembly
 
@@ -292,7 +292,7 @@ Rather than require you to build the entire API from scratch again, you will see
 
     You should see two new processing pipelines created on your `operation-switch` step - one for each case:  
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-twopipelines.png)
+    ![](./images/lab5/logistics-twopipelines.png)
 
 ##### 5.2.2.1 - Configure the `shipping.calc` Case:
 
@@ -308,18 +308,18 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Response object variable (scroll to the bottom): `xyz_response`
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokexyz1.png)
+    ![](./images/lab5/logistics_invokexyz1.png)
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/uncheck-stop-on-error.png)
+    ![](./images/lab5/uncheck-stop-on-error.png)
     
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokexyz2.png)
+    ![](./images/lab5/logistics_invokexyz2.png)
     
     {% include note.html content="The `{zip}` parameter provided here is a reference to the `zip` parameter defined as input to the operation. The `{zip}` portion of the URL will get replaced by the actual zip code provided by then API consumers.
     " %}
 
 1.  Hover over the `invoke_xyz` policy and click on the `clone` button to add another invoke action:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/clone-invoke-action.png)
+    ![](./images/lab5/clone-invoke-action.png)
 
 1.  Edit the new invoke policy with the following properties:
 
@@ -329,9 +329,9 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Response object variable: `cek_response`
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokecek1.png)
+    ![](./images/lab5/logistics_invokecek1.png)
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokecek2.png)
+    ![](./images/lab5/logistics_invokecek2.png)
 
 1.  Add a `map` policy after the last invoke, then click it to open the editor.
 
@@ -341,9 +341,9 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Description: `Map responses from invoke_xyz and invoke_cek to output`
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-properties.png)
+    ![](./images/lab5/logistics-map-properties.png)
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-propertiesa.png)
+    ![](./images/lab5/logistics-map-propertiesa.png)
 
 1.  Click the pencil button to add an input. Specify the following input configuration:
   
@@ -394,7 +394,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1.  Click `Done` to close the Schema window  
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-xyz-schema.png)
+    ![](./images/lab5/logistics-map-xyz-schema.png)
 
 1.  Click the pencil button again to add another input. Specify the following input configuration:
   
@@ -410,7 +410,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1.  You now have two inputs assigned to the `map` policy:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-responses-inputs.png)
+    ![](./images/lab5/logistics-map-responses-inputs.png)
 
 1.  Click the `Done` button to return to the editor.
 
@@ -424,26 +424,26 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Definition: `#/definitions/shipping`  
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-responses-output.png)
+    ![](./images/lab5/logistics-map-responses-output.png)
 
 1.  Click the `Done` button to return to the editor.
 
 1.  Complete the mapping. To map from an input field to an output field, click the circle next to the *source* element once, then click the circle next to the *target* element. A line will be drawn between the two, indicating a mapping from the source to the target.  
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-map-complete.png)
+    ![](./images/lab5/logistics-map-complete.png)
 
 1.  Click the `X` to close the map editor.
 
     Your assembly policy for the `shipping.calc` operation is now complete.
       
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_shipping_calc_complete.png)
+    ![](./images/lab5/logistics_assembly_shipping_calc_complete.png)
     
     {% include troubleshooting.html content="If there is an `exclamation mark` badge in `invoke_xyz`,  you may ignore this message.
     " %}
 	
 1.  Save your changes.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
+    ![](./images/lab5/save-icon.png)
 
 ##### 5.2.2.2 - Configure the `get.stores` Case:
 
@@ -459,11 +459,11 @@ This operation will call out to the Google Geocode API to obtain location inform
     >
     > Response object variable (scroll to the bottom): `google_geocode_response`  
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokegeolocate1.png)
+    ![](./images/lab5/logistics_invokegeolocate1.png)
 	
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/uncheck-stop-on-error.png)
+	![](./images/lab5/uncheck-stop-on-error.png)
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_invokegeolocate2.png)
+    ![](./images/lab5/logistics_invokegeolocate2.png)
 
 1.  Add a `gatewayscript` policy with the following properties:  
   
@@ -492,7 +492,7 @@ This operation will call out to the Google Geocode API to obtain location inform
     apic.setvariable('message.body', rspObj);
     ```
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics-gws.png)
+    ![](./images/lab5/logistics-gws.png)
 	
 	{% include note.html content="Take a quick look at line 5. Notice how our gateway script file is reading the body portion of the `google_geocode_response` variable which was assigned to the output of the `invoke` action.
     " %}
@@ -501,14 +501,14 @@ This operation will call out to the Google Geocode API to obtain location inform
 
 1.  Your assembly for the `logistics` API will now include two separate operation policies:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/logistics_assembly_complete.png)
+    ![](./images/lab5/logistics_assembly_complete.png)
 
     {% include troubleshooting.html content="There may be an `exclamation mark` badge in `invoke_xyz` or `invoke_google`.  You may ignore this message.
     " %}
 
 1.  Save your changes.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab5/save-icon.png)
+    ![](./images/lab5/save-icon.png)
 
 #### 5.2.3 - Move the Logistics Definition File
 

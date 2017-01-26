@@ -51,15 +51,15 @@ For this lab, you will be starting with your local image and installing node.js 
 	
         1.  Go to `Control Panel` -> `System` -> `Advanced System Settings`
 
-            ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/1.png)
+            ![](./images/lab1/1.png)
 
         1.  Click `Environment Variables`.
 
-            ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/2.png)
+            ![](./images/lab1/2.png)
 
         1.  Click `Edit` and append `;C:\python27` (or wherever you installed python) to the Path variable.
 
-            ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/3.png)
+            ![](./images/lab1/3.png)
 
 1.  Install Node.js
 
@@ -69,7 +69,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     1.  Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
 
-        ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4.png)
+        ![](./images/lab1/4.png)
 
     1.  Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
 	
@@ -79,7 +79,7 @@ For this lab, you will be starting with your local image and installing node.js 
 	
     1.  Click on `Start` and then in the search window type in `Powershell`.  Right click on `Windows PowerShell` and then select `Run as Administrator`
 
-        ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/4a.png)
+        ![](./images/lab1/4a.png)
 
     1.  Execute these commands in Powershell
 
@@ -183,39 +183,39 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  This will open a dialog informing you that the command line developer tools are required for install. Press the Install button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-install.png)
+    ![](./images/lab1/mac-xcode-tools-confirm-install.png)
 
 1.  Agree to the license
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-confirm-license.png)
+    ![](./images/lab1/mac-xcode-tools-confirm-license.png)
 	
 1.  The software install will begin
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-progress.png)
+    ![](./images/lab1/mac-xcode-tools-progress.png)
 	
 1.  The install is complete when you see the "The software was installed" message.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-xcode-tools-install-complete.png)
+    ![](./images/lab1/mac-xcode-tools-install-complete.png)
 
 1.  Next install git. You may already have a version, but if you want to have the latest version you will need to download the install from https://git-scm.com/download/mac
 
 1.  Once on the install page the download should start immediately. However if it does not start immediately, click the "click here to download manually" link.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-download.png)
+    ![](./images/lab1/mac-git-install-download.png)
 
 1.  Once the download has completed, you should have a file named similar to git-2.8.1-intel-universal-mavericks.dmg. Double-click to unpack the disk image.
 
 1.  Once the disk image is unpacked and open, double-click the git-2.8.1-intel-universal-mavericks.pkg file. Note that if you downloaded a different version the file name will be reflected accordingly.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-package.png)
+    ![](./images/lab1/mac-git-install-package.png)
 
 1.  You may get a dialog box with a message stating that the file can't be opened because it is from an unidentified developer. Click the OK button. Open your System Preferences and select the Security & Privacy component. In the section called "Allow apps downloaded from:" you will notice a message that states '"git-2.8.1-..ericks.pkg" was blocked from opening because it is not from an identified developer.', press the Open Anyway button. This will open the installer for git.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-unsecure.png)
+    ![](./images/lab1/mac-git-install-unsecure.png)
 		
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-security.png)
+    ![](./images/lab1/mac-git-install-security.png)
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-git-install-start.png)
+    ![](./images/lab1/mac-git-install-start.png)
 
 1.  Follow the wizard to install. The installation is complete when you see a message stating that the installation was successful.
   
@@ -260,19 +260,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Press the SIGN UP button
  	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup.png)
+    ![](./images/lab1/mac-bluemix-setup.png)
 
 1.  Complete the form and press the CREATE ACCOUNT button
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-account-details.png)
+    ![](./images/lab1/mac-bluemix-setup-account-details.png)
 
 1.  Check your email for your next steps.
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email.png)
+    ![](./images/lab1/mac-bluemix-setup-confirmation-email.png)
 
 1.  Open the email and click the Confirm your account link.
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
+    ![](./images/lab1/mac-bluemix-setup-confirmation-email-detail.png)
 
 1.  Once confirmed, you will be taken to a page that says Success! To login, click the Log In link
 
@@ -282,29 +282,29 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Once you are logged in, you can start your 30 day trial by clicking on the launch button.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-launch-trial.png)
+	![](./images/lab1/mac-bluemix-launch-trial.png)
 
 2. You will be prompted to create an organization. Enter an organization name (notice that there are suggestions for you). Also select an appropriate region. Then press the CREATE button.
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-org.png)
+    ![](./images/lab1/mac-bluemix-setup-create-org.png)
 
 1.  Next you will be prompted to create a space such as dev, test, prod, etc. You can name it whatever you would like (again notice the recommendations). Then press the CREATE button.
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-create-space.png)
+    ![](./images/lab1/mac-bluemix-setup-create-space.png)
 
 1.  Next you will see the Summary page where you can review your entries. Press the I'm Ready button
 	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-summary.png)
+    ![](./images/lab1/mac-bluemix-setup-summary.png)
 
 1.  You will see a screen then that  Click the `Catalog` button to go to your catalog and create your API Connect instance in section 0.3 below.
  	
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/mac-bluemix-setup-complete.png)
+    ![](./images/lab1/mac-bluemix-setup-complete.png)
 
 ### 0.3 - Enable the API Connect Service on your Bluemix Account
 
 1.  Once in the catalog, you can search for the API Connect service by entering in `API Connect` in the search box next to the magnifying glass icon.  Click on the `API Connect` Icon to install a new instance of API Connect into your Bluemix space.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/28.png)
+    ![](./images/lab1/28.png)
 
 1.  You can read through some of the details about the service.  You can fill in the information based on your needs.
 	- SPACE – The name of your Bluemix Space to deploy the API Connect Service
@@ -312,15 +312,15 @@ For this lab, you will be starting with your local image and installing node.js 
 	- Service Name – The name you want to give to your API Connect implementation if required
 	- Selected Plan – Keep the default  Once you are ready to continue, Click the `Create` button.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/29.png)
+    ![](./images/lab1/29.png)
  
 1.  The API Connect service is now deployed.  Return to your Dashboard and you will see that your API Connect service is there.  Click on it open.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/33.png)
+    ![](./images/lab1/33.png)
 
 1.  It will log into your instance for you automatically.  Once finished, it should drop you in your Drafts window.  
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/34.png)
+    ![](./images/lab1/34.png)
 
 1.  Click on the Navigate button in the upper left corner and select `Dashboard`.
 
@@ -332,19 +332,19 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Click on `Settings`
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/20.png)
+    ![](./images/lab1/20.png)
 
 1.  Click on the 'Portal' option in the left-hand menu.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/21.png)
+    ![](./images/lab1/21.png)
 
 1.  Select the `IBM Developer Portal` option from the drop down menu to create your own custom portal that is tied to your catalog.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/22.png)
+    ![](./images/lab1/22.png)
 
 1.  Click the `Save` icon at the top-right corner of the screen.
 
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/save.png)
+    ![](./images/lab1/save.png)
 
 1.  A pop up screen will let you know that the process to create your portal has started.
 

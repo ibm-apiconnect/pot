@@ -322,36 +322,29 @@ For this lab, you will be starting with your local image and installing node.js 
 
     ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/34.png)
 
-1.  Click on the Navigate button in the upper left corner and select `Dashboard`.  If you see your `Sandbox` catalog there, then the process to create your instance is complete.
+1.  Click on the Navigate button in the upper left corner and select `Dashboard`.
 
-	![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/34a.png)
+	![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/switch-apic-dashboard.gif)
 
 ### 0.4 Create your Developer Portal Instance for your API Connect Catalog
 
-1.  Open a new tab in your web browser by clicking on the new tab `+` button.
-
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/new-tab.png)
-
-1.  Log into your Bluemix Account using this url: [https://new-console.ng.bluemix.net/]()
-1.  Via the dashboard, click on your API Connect instance.
-
-    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/33.png)
-
-1.  From the top left, go to the `Dashboard` to bring your list of catalogs.  Click on your `Sandbox` Catalog
-
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/19.png)
+1.  Click on your `Sandbox` Catalog
 
 1.  Click on `Settings`
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/20.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/20.png)
 
-1.  Here you will see that you have no developer portal set up.
+1.  Click on the 'Portal' option in the left-hand menu.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/21.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/21.png)
 
-1.  Select the `IBM Developer Portal` Radio Button to create your own custom portal that is tied to your catalog and then click `Save`. It will automatically generate the portal URL and the portal as well.
+1.  Select the `IBM Developer Portal` option from the drop down menu to create your own custom portal that is tied to your catalog.
 
-    ![](http://github.com/ibm-apiconnect/pot-bluemix-docs/raw/master/img/lab1/22.png)
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/22.png)
+
+1.  Click the `Save` icon at the top-right corner of the screen.
+
+    ![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/save.png)
 
 1.  A pop up screen will let you know that the process to create your portal has started.
 

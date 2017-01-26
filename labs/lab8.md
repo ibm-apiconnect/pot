@@ -35,49 +35,49 @@ In this tutorial, you will simulate a good amount of traffic passing through the
 
 1.  Click on the `Sandbox` catalog tile:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/api-mgr-dashboard-sandbox-tile.png)
+    ![](./images/lab8/api-mgr-dashboard-sandbox-tile.png)
 
 1.  From the `Sandbox` catalog configuration screen, click on the `Analytics` tab:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-tab.png)
+    ![](./images/lab8/analytics-tab.png)
 
 1.  The default dashboard gives some general information like the 5 most active Products and 5 most active APIs.  This information is interesting, but we can see much more information by customizing the dashboard. Add a new visualization by clicking on the `+ Add Visualization` icon:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-add-visualization.png)
+    ![](./images/lab8/analytics-add-visualization.png)
 
 1.  This will bring a list of some of the standard visualizations. You can then type in a string to filter through visualizations or use the arrows to page through the list.
 
 1.  Add the `API Calls` visualization to the dashboard by simply clicking on it. The new visualization will be added to the bottom of our dashboard.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/image21.png)
+    ![](./images/lab8/image21.png)
 
 1.  Scroll down to find the new visualization. You can adjust the size by clicking and dragging the border from the lower right. Additionally, you can adjust its position by clicking and dragging the box to where you want it.
 
     Move the `API Calls` box in between the 5 Most Active Products and 5 Most Active API windows.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/image22.png)
+    ![](./images/lab8/image22.png)
 	
 1.  Feel free to play around with the other visualizations by adding them to the Dashboard. You can also save the dashboard by clicking on the `Save Dashboard` button:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-save-dashboard.png)
+    ![](./images/lab8/analytics-save-dashboard.png)
 
 1.  There are also several out of the box Dashboards that you can play with by clicking on the `Load Saved Dashboard` icon. Go ahead and open the `api default` Dashboard.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-load-dashboard.png)
+    ![](./images/lab8/analytics-load-dashboard.png)
 
 1.  Here you will see some interesting visualizations that show graphs and charts with information about the API Traffic that was processed.
 
 1.  Analytics data can be filtered over different time periods, and the widgets can even be automatically refreshed. Click on the calendar icon which specifies the default time period of `Last 7 days`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-calendar.png)
+    ![](./images/lab8/analytics-calendar.png)
 	
 1.  Click on `Auto Refresh`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-auto-refresh.png)
+    ![](./images/lab8/analytics-auto-refresh.png)
 
 1.  Set the refresh period to `5 seconds`.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab8/analytics-refresh-5sec.png)
+    ![](./images/lab8/analytics-refresh-5sec.png)
 
 1.  Return to the consumer application in the Chrome web browser. Navigate around the site and test out some of the features in order to generate some additional API calls.
 

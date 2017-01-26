@@ -160,19 +160,19 @@ In this section, you will define the `item` data model for our `inventory` API a
 
 1.  Click the `Models` tab.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page.png)
+    ![](./images/lab2/api-designer-model-design-page.png)
 	
 1.  Click the `+ Add` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-add-button.png)
+    ![](./images/lab2/api-designer-model-design-page-add-button.png)
 	
 1.  In the New LoopBack Model dialog, enter `item` as the model name, then click the `New` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-new-model.png)
+    ![](./images/lab2/api-designer-model-design-page-new-model.png)
 
 1.  When the Model edit page for the item model displays, select the `item-db-cloudant` Data Source:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/1.png)
+    ![](./images/lab2/1.png)
 
 ### 2.6 - Create Properties for the `item` Model
 
@@ -180,7 +180,7 @@ The item table in the database has 6 columns that will need to mapped as well. T
 
 1.  Click the `+` button in the **Properties** section.
 
-	![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/properties26.png)
+	![](./images/lab2/properties26.png)
 	
 1.  The `item` data model consists of six properties. Use the data below to add each of the properties:
 
@@ -195,7 +195,7 @@ The item table in the database has 6 columns that will need to mapped as well. T
 
 1.  Scroll to the top of the page and click the `Save` button to save the data model.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-model-design-page-model-properties-save.png)
+    ![](./images/lab2/api-designer-model-design-page-model-properties-save.png)
 
 1.  Click the `All Models` link to return to the main API Designer page.
 
@@ -205,21 +205,21 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1.  Click the `Run` button to start the `inventory` LoopBack application
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/run.png)
+    ![](./images/lab2/run.png)
 
 1.  Wait a moment while the servers are started. Proceed to the next step when you see the following:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/app-running.png)
+    ![](./images/lab2/app-running.png)
 
 1.  Click the `Explore` button to review your APIs. 
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/explore.png)
+    ![](./images/lab2/explore.png)
 
 1.  On the left side of the page, notice the list of paths for the `inventory` API. These are the paths and operations that were automatically created for you by the LoopBack framework simply by adding the `item` data model. The operations allow users the ability to create, update, delete and query the data model from the connected data source.
 
 1.  Click the `GET /items` operation.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-get-items-api.png)
+    ![](./images/lab2/api-designer-explore-page-get-items-api.png)
 
 1.  By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
 
@@ -229,14 +229,14 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1.  Scroll down slowly to locate the `Call operation` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/api-designer-explore-page-call-operation.png)
+    ![](./images/lab2/api-designer-explore-page-call-operation.png)
 
 1. Click the `Call operation` button to invoke the API.
 
     {% include troubleshooting.html content="The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
     " %}
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/cert-error.png)
+    ![](./images/lab2/cert-error.png)
 
 1.  Once complete, return to the API explorer and click on the `Call operation` button again.
 
@@ -289,11 +289,11 @@ To confirm that the API has been correctly mapped and can interface with the dat
 
 1.  Click on the `Stop` button to shut down the running application.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/stop-application.png)
+    ![](./images/lab2/stop-application.png)
 
 1.  Click on the `X` in the top-right portion of the screen to leave the API Explorer view.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/leave-explorer.png)
+    ![](./images/lab2/leave-explorer.png)
 
 ### 2.8 - Create the second Cloudant Data Source for Item Reviews
 
@@ -307,15 +307,17 @@ In the earlier steps, you used the command line to create a data source connecti
 
 1.  From the top navigation menu, select the `Data Sources` link to switch views.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/data-sources.png)
+    ![](./images/lab2/data-sources.png)
 
 1.  Click on the `Add +` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/add-new-datasource.png)
+    ![](./images/lab2/add-new-datasource.png)
 
 1.  Name the new datasource `review-db-cloudant` and click the `New` button.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/add-new-datasource-name.png)
+    ![](./images/lab2/add-new-datasource-name.png)
+
+1.  In the `Connector` drop-down list, select the connector for `IBM Cloudant DB`.
 
 1.  Complete the new datasource configuration using the values in the table below.
 
@@ -329,7 +331,7 @@ In the earlier steps, you used the command line to create a data source connecti
 
 1.  Click on the `Save` icon to save the new data source connection. The toolkit will test the connection and report back. 
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/add-new-datasource-success.png)
+    ![](./images/lab2/add-new-datasource-success.png)
 
 ### 2.9 - Create Model for Reviews
 
@@ -472,13 +474,13 @@ To verify that the relationship has been created, you will open the API Connect 
 
 1.  Click on the `inventory` link from the APIs tab.
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/inventory-link.png)
+    ![](./images/lab2/inventory-link.png)
 
 1.  Scroll down to the `Paths` section of the API definition.
 
     Notice how three new API paths have been created which allow access to item revew data:
 
-    ![](https://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab2/new-paths.png)
+    ![](./images/lab2/new-paths.png)
 
 1.  Click the `x` button on your browser tab to close the API Designer.
 

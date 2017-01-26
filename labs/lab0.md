@@ -324,7 +324,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Click on the Navigate button in the upper left corner and select `Dashboard`.
 
-	![](http://github.com/ibm-apiconnect/pot/raw/gh-pages/images/lab1/switch-apic-dashboard.gif)
+	![](./images/lab1/switch-apic-dashboard.gif)
 
 ### 0.4 Create your Developer Portal Instance for your API Connect Catalog
 

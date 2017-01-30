@@ -166,7 +166,7 @@ For this lab, you will be starting with your local image and installing node.js 
         If you see an empty array, `[]`, as your result, then you've not successfully created any notes. This is also true if you stop the application and restart it. With the notes example, we're using an in-memory database which means that nothing is persisted to disk. So, it is lost when the server is stopped and restarted. Lab 2 will walk through how to connect to your application to a persistent data source.
     " %}
 
-1.  At this point, we are done testing the app locally. Click on the `Run` button again to return to the application launch screen.
+1.  At this point, we are done testing the app locally. Click on the `X` button at the top-right corner of the screen to close the Explorer view.
 
 1.  Click on the `Stop` button to stop the application.
 

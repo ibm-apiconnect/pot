@@ -63,15 +63,13 @@ For this lab, you will be starting with your local image and installing node.js 
 
 1.  Install Node.js
 
-    1.  Go to this link to install Node:
+    1.  The API Connect developer toolkit requires Node.js version 4.5.0. Use the links below to download the installation file for your operating system.
     
-        [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+        [32-bit Windows](https://nodejs.org/download/release/v4.5.0/node-v4.5.0-x86.msi)
+        
+        [64-bit Windows](https://nodejs.org/download/release/v4.5.0/node-v4.5.0-x64.msi)
 
-    1.  Select the "LTS version - Recommended for most users".  Version at the top should depict v4.5 - includes npm 2.15.9.
-
-        ![](./images/lab1/4.png)
-
-    1.  Select the Windows Installer .msi binary and then follow the prompts to install on your machine.
+    1.  Launch the Windows Installer .msi binary and then follow the prompts to install on your machine.
 	
     1.  Before moving on, You will need to update your version of `npm` to version `3.8.10`
 	
@@ -101,7 +99,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
 
-1.  You are now ready to move on to section 0.2.
+1.  You are now ready to move on to section [0.2](lab0.html#create-your-bluemix-account).
 
 #### 0.1b - Linux
 
@@ -149,7 +147,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
 
-1.  You are now ready to move on to section 0.2.
+1.  You are now ready to move on to section [0.2](lab0.html#create-your-bluemix-account).
 
 #### 0.1c - Mac OS
 
@@ -250,7 +248,7 @@ For this lab, you will be starting with your local image and installing node.js 
 
     If it returns the version of the platform, and not an error message, then the toolkit should then be properly installed.
 
-1.  You are now ready to move on to section 0.2.
+1.  You are now ready to move on to section [0.2](lab0.html#create-your-bluemix-account).
 
 ### 0.2 - Create your Bluemix account
 

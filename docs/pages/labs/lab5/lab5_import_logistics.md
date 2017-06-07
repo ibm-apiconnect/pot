@@ -20,14 +20,14 @@ applies_to: [developer]
 
 1.  Click on the `Or import from URL...` link, enter the `logistics` API definition template URL below and click the `Import` button:
 
-    [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml)
+    [https://raw.githubusercontent.com/ibm-apiconnect/pot/master/docs/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/master/docs/assets/lab5/logistics_1.0.0.yaml)
 {% endcomment %}
 
 ## Download the OpenAPI Definition
 
 1.  An existing OpenAPI definition is available to download here:
 
-    [https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/gh-pages/assets/lab5/logistics_1.0.0.yaml){:target="_blank"}
+    [https://raw.githubusercontent.com/ibm-apiconnect/pot/master/docs/assets/lab5/logistics_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/pot/master/docs/assets/lab5/logistics_1.0.0.yaml){:target="_blank"}
 
 1.  Save the `logistics_1.0.0.yaml` file to your `~/apis/accessories/` project folder.
 

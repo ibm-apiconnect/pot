@@ -1,0 +1,36 @@
+<div class="container">
+
+    <form class="form-basic" name="configForm" novalidate ng-submit="setConfig(config)">
+
+        <div class="form-title-row">
+            <h1>Consumer App Configuration</h1>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <span>Client ID</span>
+                <input type="text" autocomplete="off" ng-model="config.clientId">
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <span>Client Secret</span>
+                <input type="text" autocomplete="off" ng-model="config.clientSecret">
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <span>API Connect Endpoint</span>
+                <input type="text" autocomplete="off" ng-model="config.apiEndpoint">
+            </label>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</div>

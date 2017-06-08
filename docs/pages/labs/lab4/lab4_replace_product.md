@@ -22,9 +22,15 @@ The link below documents these states and how API Products flow from one state t
 
 1.  Locate and click on the API Connect service on your Bluemix dashboard to launch your SaaS instance of the API Manager.
 
+    ![](./images/labs/lab4/apic-bluemix-svc.png)
+
 ## Replace the Old Product
 
-1.  Click on the Sandbox catalog tile to open the catalog configuration screen.
+1.  Switch to the **Dashboard** view:
+
+    ![](./images/labs/lab4/switch-apic-dashboard.gif)
+
+1.  Click on the **Sandbox** catalog tile to open the catalog configuration screen.
 
 1.  The `Products` tab will list all of the API Products that this Catalog is currently managing.
 

@@ -28,22 +28,23 @@ applies_to: [developer]
     > 
     > Flow: `Password`
     > 
-    > Token URL: `<Catalog API Endpoint Base URL>/oauth2/token`
+    > Token URL: `<Catalog Gateway Endpoint>/oauth2/token`
 
-    **IMPORTANT**:
-
-	{% include important.html content="
+    {% include important.html content="
         The Token URL will be based upon the location of your Org and Space running on Bluemix public.
         <br/><br/>
-        You can find your base URL by logging into the API Manager on Bluemix. Log into Bluemix and launch the API Manager, then navigate into your catalog (the default catalog created is `Sandbox`).
+        You can find your Gateway Endpoint URL by logging into Bluemix and launching the API Connect service, then navigate into your catalog (the default catalog created is `Sandbox`).
         <br/><br/>
-        From there go into `Settings`. If you scroll down a bit you will see what your `API Endpoint` is called, simply copy and paste the contents into the token URL, then append `/oauth2/token`.
+        From there go into `Settings`, then choose the `Gateways` option from the side menu palette. Locate the **ENDPOINT**, simply copy and paste the contents into the Token URL field of your API OAuth settings, then append `/oauth2/token`.
+        <br/><br/>
+        <img src=\"./images/labs/lab3/bmx-api-endpoint.png\"/>
     " %}
 
-    ![](./images/labs/lab3/bmx-api-endpoint.png)
-
-	{% include tip.html content="We are going to need the Token URL later. Go ahead and save the Token URL value to a text editor for easy access.
+	{% include tip.html content="
+	    You will need the Gateway Endpoint URL later. Save the Gateway Endpoing URL value to a text editor for easy access.
     " %}
+    
+    ![](./images/labs/lab3/api-oauth-settings-1.png)
 
 1.  Click the `+` icon in the **Scopes** section to create a new scope. Set the following properties. Note the organization portion of the token URL will be different for each student.
 
@@ -51,7 +52,7 @@ applies_to: [developer]
     > 
     > Description: `Access to all inventory resources`
 	
-    ![](./images/labs/lab3/api-oauth-settings.png)
+    ![](./images/labs/lab3/api-oauth-settings-2.png)
 
 1.  Navigate to the `Security` section and check the `oauth (OAuth)` checkbox.  
 

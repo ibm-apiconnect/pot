@@ -13,6 +13,8 @@ applies_to: [developer]
 
 ## Create the Logistics API Assembly
 
+1.  Click on the `logistics 1.0.0` API to edit its definition.
+
 1.  Switch to the `Assemble` tab and click the `Create assembly` button.
 
 1.  Add an `activity-log` policy to the assembly pipeline.
@@ -21,9 +23,9 @@ applies_to: [developer]
 
 1.  Add an `operation-switch` policy to the right of the activity-log step.
 
-    A single case `case 0` is created by default.
+1.  The **operation-switch** editor will open with a single case, `case 0`, created by default.
 
-1.  Click `search operations...` to bring up the drop-down list of available operations.
+1.  Next to `case 0`, click on `search operations...` to show the drop-down list of available operations.
 
 1.  Select the `shipping.calc` operation.
 
@@ -39,7 +41,11 @@ applies_to: [developer]
 
 This operation will end up invoking two separate back-end services to acquire shipping rates for the respective companies, then utilize a map action to combine the two separate responses back into a single, consolidated message for our consumers.
 
-1.  Add an invoke policy to the `shipping.calc` case with the following properties:
+1.  Add an invoke policy to the `shipping.calc` case.
+
+    ![](./images/labs/lab5/add-invoke-action.gif)
+
+1.  Edit the **invoke** action with the following properties:
 
     > Title: `invoke_xyz`
     >
@@ -77,6 +83,8 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1.  Add a `map` policy after the last invoke, then click it to open the editor.
 
+    ![](./images/labs/lab5/add-map-action.png)
+
 1.  Click the pencil button at the top of the **Input** column, then click on the `+ input` button.
 
     Enter the following input configuration:
@@ -87,46 +95,8 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Content type: `application/json`
     >
-    > Definition: `Inline schema`
+    > Definition: `#/definitions/xyz_shipping_rsp`
 
-1.  After you select `Inline schema`, you will be prompted to **Provide a schema**.
-	
-    Remove any default text that is in the editor window, then copy the YAML text below and paste it into the editor window:
-    
-    ```yaml
-    $schema: 'http://json-schema.org/draft-04/schema#'
-    id: 'http://jsonschema.net'
-    type: object
-    properties:
-      company:
-        id: 'http://jsonschema.net/company'
-        type: string
-        name: company
-      rates:
-        id: 'http://jsonschema.net/rates'
-        type: object
-        properties:
-          next_day:
-            id: 'http://jsonschema.net/rates/next_day'
-            type: string
-            name: next_day
-          two_day:
-            id: 'http://jsonschema.net/rates/two_day'
-            type: string
-            name: two_day
-          ground:
-            id: 'http://jsonschema.net/rates/ground'
-            type: string
-            name: ground
-        name: rates
-    required:
-      - company
-      - rates
-    ```
-
-1.  Click `Done` to close the **Provide a Schema** window  
-	
-    ![](./images/labs/lab5/log-map-xyz-schema.png)
 
 1.  Click the `+ input` button again to add another input. Specify the following input configuration:
   
@@ -136,7 +106,7 @@ This operation will end up invoking two separate back-end services to acquire sh
     >
     > Content type: `application/json`
     >
-    > Definition: `Inline schema`
+    > Definition: `#/definitions/cek_shipping_rsp`
 
 1.  Paste the same schema definition that was used for the previous input (for our lab purposes, the responses from the shipping service are in the same format, thus using the same schema)
 

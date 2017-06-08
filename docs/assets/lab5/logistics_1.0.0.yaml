@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   x-ibm-name: logistics
   title: logistics
-  version: 1.0.0
+  version: 2.0.0
 schemes:
   - https
 basePath: /logistics
@@ -97,3 +97,35 @@ definitions:
         example: 'https://www.google.com/maps?q=34.1030032,-118.4104684'
     required:
       - google_maps_link
+  cek_shipping_rsp:
+    properties:
+      company:
+        type: string
+      rates:
+        type: object
+        properties:
+          next_day:
+            type: string
+          two_day:
+            type: string
+          ground:
+            type: string
+    required:
+      - company
+      - rates
+  xyz_shipping_rsp:
+    properties:
+      company:
+        type: string
+      rates:
+        type: object
+        properties:
+          next_day:
+            type: string
+          two_day:
+            type: string
+          ground:
+            type: string
+    required:
+      - company
+      - rates

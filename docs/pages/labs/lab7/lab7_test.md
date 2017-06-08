@@ -14,7 +14,7 @@ applies_to: [consumer]
 
     ![](./images/labs/lab7/get-shipping.png)
 
-1.  Scroll down to the **Try this operation** section for the `GET /shipping` path. Enter any zip code and click the `Call Operation` button.
+1.  Scroll down to the **Try this operation** section for the `GET /shipping` path. Enter any United States Zip Code (e.g., `90210`) and click the `Call Operation` button.
 
     ![](./images/labs/lab7/call-shipping.png)
 

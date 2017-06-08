@@ -38,8 +38,6 @@ applies_to: [developer]
 1.  Refresh your API Designer page to view the `logistics 1.0.0` draft API.
 
     ![](./images/labs/lab5/logistics-api-imported.png)
-    
-1.  Click on the `logistics 1.0.0` API to edit its definition.
 
 ## Conclusion
 

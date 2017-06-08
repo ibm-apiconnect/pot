@@ -24,9 +24,9 @@ applies_to: [consumer]
     ![](./images/labs/lab7/configure-app.png)
 
     {% include tip.html content="
-        You should have saved the API Endpoint to a text editor earlier, however if you need to find it again return to the API Manager on Bluemix and browse the Catalog Endpoint Settings as shown below:
+        You should have saved the Catalog Gateway Endpoint to a text editor earlier in Lab 3. However, if you need to find it again, return to the API Manager on Bluemix and browse the Catalog Gateway Settings as shown below:
         <br/><br/>
-        <img src=\"./images/labs/lab7/api-endpoint.png\"/>
+        <img src=\"./images/labs/lab7/bmx-api-endpoint.png\"/>
     " %}
 
 1.  Click the `Submit` button to complete the application configuration. The test application saves your settings in browser session variables.

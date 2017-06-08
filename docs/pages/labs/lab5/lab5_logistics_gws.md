@@ -12,7 +12,11 @@ applies_to: [developer]
 
 This operation will call out to the Google Geocode API to obtain location information about the provided zip code, then utilize a simple gatewayscript to modify the response and provide a formatted Google Maps link.
 
-1.  Add an invoke policy to the `get.stores` case with the following properties:
+1.  Add an invoke policy to the `get.stores` case.
+
+    ![](./images/labs/lab5/add-invoke-action-2.gif)
+
+1.  Edit the new **invoke** action with the following properties:
 
     > Title: `invoke_google_geolocate`
     >
@@ -37,11 +41,8 @@ This operation will call out to the Google Geocode API to obtain location inform
     > Copy the following GatewayScript snippet and paste it into the text area:
     > 
     > ```javascript
-    > // Require API Connect Functions
-    > var apic = require('local:///isp/policy/apim.custom.js');
-    > 
     > // Save the Google Geocode response body to variable
-    > var mapsApiRsp = apic.getvariable('google_geocode_response.body');
+    > var mapsApiRsp = apim.getvariable('google_geocode_response.body');
     > 
     > // Get location attributes from geocode response body 
     > var location = mapsApiRsp.results[0].geometry.location;
@@ -52,7 +53,7 @@ This operation will call out to the Google Geocode API to obtain location inform
     > };
     > 
     > // Save the output  	
-    > apic.setvariable('message.body', rspObj);
+    > apim.setvariable('message.body', rspObj);
     > ```
 	
     ![](./images/labs/lab5/log-gws.png)

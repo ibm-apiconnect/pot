@@ -33,9 +33,11 @@ applies_to: [developer]
 
 1.  Click the `+` icon in the **Definitions** section to create a new definition. Then, click on `new-definitions-1` to edit the new definition.
 
-1.  Edit the `Name` of the definition, set it to `paymentAmount`.
+1.  Edit the `Name` of the definition, set it to `paymentAmount`. Leave the definition **Type** set to `object`.
 
-1.  The new definition already adds in a sample property called `new-property-1`. Edit the property values:
+1.  Scroll down to the definition **Properties** section. The new definition already adds in a sample property called `new-property-1`.
+
+    Edit the property values:
 
     > Property Name: `paymentAmount`
     >

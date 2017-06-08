@@ -42,7 +42,7 @@ At this point, your registered consumer application has no entitlements. In orde
 
 1.  Click on the `API Products` tab.
 
-1.  Click on the `inventory 1.0.01` product.
+1.  Click on the `inventory 1.0.0` product.
 
 1.  Click on the `Subscribe` button for the default plan that is listed.
 

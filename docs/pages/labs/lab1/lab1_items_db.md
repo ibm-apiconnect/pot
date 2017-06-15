@@ -32,7 +32,7 @@ applies_to: [developer]
 
     > URL: _leave blank_
     > 
-    > Host: `184.173.4.165`
+    > Host: `184.172.241.143`
     > 
     > Port: `30306`
     > 

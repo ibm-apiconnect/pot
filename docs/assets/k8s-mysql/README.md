@@ -66,3 +66,7 @@
     
     * Username:  `student`
     * Password:  `Passw0rd!`
+
+    Lastly, the `mysql.yaml` deployment config will create a K8s listener service on port `30306`:
+    
+    <https://github.com/ibm-apiconnect/pot/blob/master/docs/assets/k8s-mysql/mysql.yaml#L14>

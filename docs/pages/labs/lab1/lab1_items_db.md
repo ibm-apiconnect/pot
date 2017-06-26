@@ -32,9 +32,9 @@ applies_to: [developer]
 
     > URL: _leave blank_
     > 
-    > Host: `184.172.241.143`
+    > Host: `34.205.29.118`
     > 
-    > Port: `30306`
+    > Port: `3306`
     > 
     > User: `student`
     > 

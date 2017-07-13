@@ -28,6 +28,21 @@ applies_to: [developer]
         <br/><br/>
         If you receive an error stating that there was no response from the Docker engine, follow these instructions to <a href=\"https://docs.docker.com/engine/admin/\" target=\"_blank\">Configure and troubleshoot the Docker daemon</a>
     " %}
-1.  Make sure you have at least 4 GB of RAM that is available for Docker Containers, otherwise the Datapower Gateway container running locally will not start.  Follow your documentation for your respective host OS running docker for more information.
     
-1.  Once Docker is running, proceed to [Install the APIC Toolkit](env_setup_install_apic_toolkit.html).
+1.  Make sure you have at least 4 GB of RAM that is available for Docker Containers, otherwise the Datapower Gateway container running locally will not start.  Follow the documentation for your respective host OS running docker for more information.
+
+## Install Docker Compose
+
+### Linux
+
+1.  Linux users will need to install the `docker-compose` tool in addition to the core docker engine.
+
+1.  Follow the instructions starting at Step 3 to [Install Docker Compose on Linux](https://docs.docker.com/compose/install/){:target="_blank"}.
+
+### macOS and Windows
+
+1.  Docker Compose is already included in the latest versions of Docker for macOS and Windows. 
+
+## Continue
+
+1.  Once you have verified that Docker is running, proceed to [Install the APIC Toolkit](env_setup_install_apic_toolkit.html).

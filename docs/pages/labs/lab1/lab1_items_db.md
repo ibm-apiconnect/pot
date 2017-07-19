@@ -32,7 +32,7 @@ applies_to: [developer]
 
     > URL: _leave blank_
     > 
-    > Host: `34.205.29.118`
+    > Host: `demo.apicww.cloud`
     > 
     > Port: `3306`
     > 

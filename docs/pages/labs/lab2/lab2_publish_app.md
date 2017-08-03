@@ -45,7 +45,7 @@ applies_to: [developer]
     ![](./images/labs/lab2/publish-app-and-product.png)
 	
 	{% include note.html content="
-	    The Developer Toolkit will package up our Node.js Microservice Application and deploy it to the runtime collective.
+	    The Developer Toolkit will package up our Node.js Microservice Application and deploy it to the IBM Cloud.
 	    <br/><br/>
 	    Once the application has been published, the toolkit will update our API definition with the runtime URL of the application in Bluemix, then separately publish the API definition into the API Connect Management Server.
     " %}

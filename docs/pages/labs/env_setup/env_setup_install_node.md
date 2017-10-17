@@ -19,7 +19,7 @@ applies_to: [developer]
 1.  Verify the output.
 
     1.  If the command returns an error or a version number less than `v6.10.3`, continue to [Install Node.js](env_setup_install_node.html#install-nodejs) for your operating system.
-    
+
     1.  If you already have Node.js `v6.10.3` or later, proceed to [Install the API Connect Toolkit](env_setup_install_apic_toolkit.html).
 
 ## Install Node.js
@@ -37,9 +37,9 @@ Select your Operating System:
         <ol>
           <li>
             <p>The API Connect developer toolkit requires Node.js version 6.10.3. Use the links below to download the installation file for your operating system.</p>
-        
+
             <p><a href="https://nodejs.org/dist/v6.10.3/node-v6.10.3-x86.msi" target="_blank">32-bit Windows</a></p>
-        
+
             <p><a href="https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi" target="_blank">64-bit Windows</a></p>
           </li>
           <li>
@@ -47,23 +47,23 @@ Select your Operating System:
           </li>
           <li>
             <p>Before moving on, you will need to update your version of <code class="highlighter-rouge">npm</code>. Launch a <code class="highlighter-rouge">Powershell</code> and run the following command:</p>
-        
+
             <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>npm install npm --global</code></pre>
             </div>
           </li>
           <li>
-            <p>Proceed to <a href="env_setup_install_apic_docker.html">Install Docker</a>.</p>
+            <p>Proceed to <a href="env_setup_install_docker.html">Install Docker</a>.</p>
           </li>
         </ol>
     </div>
-    
+
     <div role="tabpanel" class="tab-pane" id="macOS">
             <ol>
               <li>
                 <p>Remove any existing versions of node. You will only need to complete these steps if node currently exists.</p>
-            
+
                 <p>To remove node completely from your macOS workstation, copy the following command set and run it in your terminal:</p>
-            
+
                 <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>sudo rm /usr/local/bin/npm <span class="o">&amp;&amp;</span> <span class="se">\</span>
 sudo rm /usr/local/share/man/man1/node.1 <span class="o">&amp;&amp;</span> <span class="se">\</span>
 sudo rm /usr/local/lib/dtrace/node.d <span class="o">&amp;&amp;</span> <span class="se">\</span>
@@ -77,7 +77,7 @@ sudo rm -rf /usr/local/include/node/</code></pre>
               </li>
               <li>
                 <p>Run the following command to install the Xcode Command Line Tools:</p>
-            
+
                 <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>xcode-select --install</code></pre>
                 </div>
               </li>
@@ -89,13 +89,13 @@ sudo rm -rf /usr/local/include/node/</code></pre>
               </li>
               <li>
                 <p>Run the following command in your terminal to install the Node Version Manager:</p>
-            
+
                 <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</code></pre>
                 </div>
               </li>
               <li>
                 <p>To install node 6.10.3, issue this command:</p>
-            
+
                 <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>nvm install v6.10.3</code></pre>
                 </div>
               </li>
@@ -109,29 +109,29 @@ sudo rm -rf /usr/local/include/node/</code></pre>
         <ol>
           <li>
             <p>Run the following command in a terminal to install the prerequisite packages:</p>
-        
+
             <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>sudo apt-get install build-essential libssl-dev curl git-core</code></pre>
             </div>
           </li>
           <li>
             <p>Install Node Version Manager by issuing the following command:</p>
-        
+
             <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</code></pre>
             </div>
-        
+
             <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <br>
             When you install <code class="highlighter-rouge">nvm</code> it will also install <code class="highlighter-rouge">npm</code> which is the node package manager used to install Node.js based software modules, including the API Connect Developer Toolkit.
         </div>
           </li>
           <li>
             <p>Close and restart your terminal as indicated in the terminal window, or run this command:</p>
-        
+
             <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code><span class="nb">source</span> ~/.profile</code></pre>
             </div>
           </li>
           <li>
             <p>To install node 6.10.3, issue this command:</p>
-        
+
             <div class="language-bash highlighter-rouge"><pre class="highlight"><button class="codeCopyImg style-scope doc-content" alt=" " role="button" aria-label="copy button" tabindex="0" onclick="copyToClipboard(this.nextSibling)"><svg class="copy--code style-scope doc-content"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/common/bluemix-icons.svg#icon--copy" class="style-scope doc-content"></use></svg></button><code>nvm install v6.10.3</code></pre>
             </div>
           </li>
@@ -140,12 +140,12 @@ sudo rm -rf /usr/local/include/node/</code></pre>
           </li>
         </ol>
     </div>
-    
+
     <div role="tabpanel" class="tab-pane active" id="other">
             <ol>
               <li>
                 <p>Follow the instructions for your system on the Node.js website</p>
-            
+
                 <p><a href="https://nodejs.org/en/download/package-manager/" target="_blank">https://nodejs.org/en/download/package-manager/</a></p>
               </li>
               <li>
@@ -161,7 +161,7 @@ sudo rm -rf /usr/local/include/node/</code></pre>
 1.  The API Connect developer toolkit requires Node.js version 6.10.3. Use the links below to download the installation file for your operating system.
 
     [32-bit Windows](https://nodejs.org/dist/v6.10.3/node-v6.10.3-x86.msi){:target="_blank"}
-    
+
     [64-bit Windows](https://nodejs.org/dist/v6.10.3/node-v6.10.3-x64.msi){:target="_blank"}
 
 1.  Launch the Windows Installer `.msi` binary and then follow the prompts to install on your machine.
@@ -178,7 +178,7 @@ sudo rm -rf /usr/local/include/node/</code></pre>
 1.  Remove any existing versions of node. You will only need to complete these steps if node currently exists.
 
     To remove node completely from your macOS workstation, copy the following command set and run it in your terminal:
-    
+
     ```bash
     sudo rm /usr/local/bin/npm && \
     sudo rm /usr/local/share/man/man1/node.1 && \
@@ -208,11 +208,11 @@ sudo rm -rf /usr/local/include/node/</code></pre>
     ```
 
 1.  To install node 6.10.3, issue this command:
- 
+
     ```bash
     nvm install v6.10.3
     ```
-    
+
 1.  Proceed to [Install the API Connect Toolkit](env_setup_install_apic_toolkit.html#).
 
 ## Debian or Ubuntu Linux
@@ -240,18 +240,18 @@ sudo rm -rf /usr/local/include/node/</code></pre>
     ```
 
 1.  To install node 6.10.3, issue this command:
- 
+
     ```bash
     nvm install v6.10.3
     ```
-    
+
 1.  Proceed to [Install the API Connect Toolkit](env_setup_install_apic_toolkit.html#).
 
 ## Other
 1.  Follow the instructions for your system on the Node.js website</p>
-                
+
     [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/){:target="_blank:}
-    
+
 1.  Once you've installed Node.js, proceed to [Install the API Connect Toolkit](env_setup_install_apic_toolkit.html#).
 
 {% endcomment %}

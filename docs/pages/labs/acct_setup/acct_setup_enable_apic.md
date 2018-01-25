@@ -17,7 +17,7 @@ summary: Follow the steps below to add the API Connect service to your Bluemix a
 
     ![](./images/acct_setup/apic-service.png)
 
-1.  You can read through some of the details about the service. Select the **Essentials** pricing plan and click on the `Create` button.
+1.  You can read through some of the details about the service. Select the **Lite** pricing plan and click on the `Create` button.
  
 1.  Once the API Connect service is attached to your account, you will be automatically launched into the API Drafts screen.
 	
